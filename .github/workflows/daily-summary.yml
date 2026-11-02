@@ -41,6 +41,14 @@ jobs:
           HORIZON_WEBHOOK_URL: ${{ secrets.HORIZON_WEBHOOK_URL }}
         run: uv run horizon --hours 24
 
+      - name: Publish to Content Hub
+        # 日报已写入 docs/_posts，此处转成响应式 HTML 推送到自有内容平台。
+        # 失败不影响主流程（GitHub Pages 发布），但会在日志中显式报错。
+        continue-on-error: true
+        env:
+          HUB_TOKEN: ${{ secrets.HUB_TOKEN }}
+        run: python scripts/publish_hub.py
+
       - name: Set current date as environment variable
         run: echo "DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
 
