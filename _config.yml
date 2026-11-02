@@ -1,6 +1,6 @@
 theme: jekyll-theme-cayman
 title: Horizon Daily
-description: AI-curated daily digest of tech and research news
+description: AI 精选的科技与研究资讯日报
 baseurl: "/Horizon" # the subpath of your site, e.g. /blog
 url: "https://jacky-who.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Horizon 每日速递
 ---
 
 {% assign zh_posts = site.posts | where: "lang", "zh" %}
