@@ -20,6 +20,7 @@ import re
 import sys
 import urllib.error
 import urllib.request
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 # ---------------------------------------------------------------- 配置
@@ -341,8 +342,19 @@ def wrap_full(fragment: str, title: str) -> str:
 
 # ---------------------------------------------------------------- 主流程
 
+def beijing_date() -> str:
+    """
+    推送使用的日期，按北京时间算。
+
+    Horizon 内部用 UTC 日期命名文件，而工作流 UTC 22:30/23:00 触发时
+    北京时间已是次日 —— 若沿用文件名里的 UTC 日期，用户早上看到的日报
+    会被标成前一天。因此标题与 id 统一用北京日期。
+    """
+    return datetime.now(timezone(timedelta(hours=8))).strftime("%Y-%m-%d")
+
+
 def latest_post() -> tuple[str, Path]:
-    """取日期最新的一期日报，返回 (日期, 文件路径)"""
+    """取日期最新的一期日报，返回 (文件名中的日期, 文件路径)"""
     if not POSTS_DIR.exists():
         sys.exit(f"[hub] 找不到目录：{POSTS_DIR}")
     files = sorted(POSTS_DIR.glob(f"*-summary-{LANG}.md"))
@@ -356,8 +368,10 @@ def latest_post() -> tuple[str, Path]:
 
 
 def main():
-    date_str, md_path = latest_post()
-    print(f"[hub] 读取日报：{md_path.name}")
+    file_date, md_path = latest_post()
+    date_str = beijing_date()
+    print(f"[hub] 读取日报：{md_path.name}（文件日期 {file_date}）")
+    print(f"[hub] 推送日期（北京时间）：{date_str}")
 
     meta, toc, secs = parse(md_path.read_text(encoding="utf-8"))
     frag = render(meta, toc, secs, date_str)
