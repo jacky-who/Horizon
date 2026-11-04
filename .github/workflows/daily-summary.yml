@@ -2,10 +2,20 @@ name: Daily Horizon Summary
 
 on:
   schedule:
-    # GitHub 的 schedule 使用 UTC，且不保证准点，实测排隊延迟可达 30 分钟以上。
-    # 22:30 UTC = 北京时间 06:30，提前一小时触发以便延迟后仍在 07:30 前完成。
-    - cron: '30 22 * * *'
+    # GitHub 的 schedule 用 UTC，且官方明确不保证准点：实测延迟 5~30 分钟，
+    # 高峰期甚至整轮被丢弃（本仓库 11-02、11-03 两个窗口均未触发）。
+    # 因此设三个错开的窗口做冗余；下方 guard 步骤按北京日期做幂等判断，
+    # 当天日报已存在时后续窗口直接跳过，不会重复采集、重复调用大模型。
+    # 22:17 UTC = 北京 06:17 / 22:57 UTC = 北京 06:57 / 23:37 UTC = 北京 07:37
+    - cron: '17 22 * * *'
+    - cron: '57 22 * * *'
+    - cron: '37 23 * * *'
   workflow_dispatch:      # Allow manual trigger
+    inputs:
+      force:
+        description: "强制重新生成（忽略今日已存在的日报）"
+        type: boolean
+        default: false
 
 jobs:
   daily-summary:
@@ -17,23 +27,48 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v6
 
+      # 幂等守卫：三个时间窗口 + 手动触发共用同一套判断，避免同日重复生成
+      - name: Check if today's digest already exists
+        id: guard
+        run: |
+          DATE=$(TZ=Asia/Shanghai date +%F)
+          echo "date=$DATE" >> "$GITHUB_OUTPUT"
+          if [ "${{ inputs.force }}" = "true" ]; then
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::force=true，强制重新生成 ${DATE} 的日报"
+            exit 0
+          fi
+          git fetch --depth=1 origin gh-pages >/dev/null 2>&1 || true
+          if git cat-file -e "FETCH_HEAD:_posts/${DATE}-summary-zh.md" 2>/dev/null; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "::notice::${DATE} 的日报已存在于 gh-pages，跳过本次运行"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::${DATE} 尚无日报，开始生成"
+          fi
+
       - name: Set up Python
+        if: steps.guard.outputs.skip != 'true'
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
       - name: Install uv
+        if: steps.guard.outputs.skip != 'true'
         uses: astral-sh/setup-uv@v6
         with:
           version: "0.11.26"
 
       - name: Install dependencies
+        if: steps.guard.outputs.skip != 'true'
         run: uv sync
 
       - name: Prepare GitHub Actions config
+        if: steps.guard.outputs.skip != 'true'
         run: cp data/config.github.json data/config.json
 
       - name: Run Horizon
+        if: steps.guard.outputs.skip != 'true'
         env:
           # 只需要 DeepSeek 的 Key；它对应 config.github.json 里的 ai.api_key_env
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
@@ -44,20 +79,19 @@ jobs:
       - name: Publish to Content Hub
         # 日报已写入 docs/_posts，此处转成响应式 HTML 推送到自有内容平台。
         # 失败不影响主流程（GitHub Pages 发布），但会在日志中显式报错。
+        if: steps.guard.outputs.skip != 'true'
         continue-on-error: true
         env:
           HUB_TOKEN: ${{ secrets.HUB_TOKEN }}
         run: python scripts/publish_hub.py
 
-      - name: Set current date as environment variable
-        run: echo "DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
-
       - name: Deploy to GitHub Pages
+        if: steps.guard.outputs.skip != 'true'
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
           keep_files: true  # Keep existing summaries on gh-pages branch
-          commit_message: "📝 Daily Summary: ${{ env.DATE }}"
+          commit_message: "📝 Daily Summary: ${{ steps.guard.outputs.date }}"
           publish_branch: gh-pages
           enable_jekyll: true
