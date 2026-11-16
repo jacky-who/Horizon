@@ -5,161 +5,276 @@ date: 2026-11-16
 lang: zh
 ---
 
-> 从 30 条内容中筛选出 6 条重要资讯。
+> 从 44 条内容中筛选出 13 条重要资讯。
 
 ---
 
 **科技新闻**
-1. [美团开源 1.6 万亿参数 LongCat-2.5，称全程用华为升腾训练](#item-tech-news-1) ⭐️ 8.0/10
-2. [MacBook Pro OLED 屏幕的 PWM 频闪争议](#item-tech-news-2) ⭐️ 7.0/10
-3. [现代 LLM 位置嵌入的实现解读](#item-tech-news-3) ⭐️ 7.0/10
-4. [Meta FAIR/NYU 拆解多模态视觉编码：预训练可选，视觉专属参数必需](#item-tech-news-4) ⭐️ 7.0/10
-5. [开源工具称将 B300 上 pageable cudaMemcpy 提速约 5 倍](#item-tech-news-5) ⭐️ 7.0/10
+1. [Qwen4-Max 上线：2.4T 稀疏 MoE 与百万上下文](#item-tech-news-1) ⭐️ 8.0/10
+2. [美商务部将先进 AI 芯片出口管制扩至远程访问](#item-tech-news-2) ⭐️ 8.0/10
+3. [Jiff 1.0 发布：Rust 日期时间库](#item-tech-news-3) ⭐️ 7.0/10
+4. [微软将大规模邮件中断归因于 7 月修复引入的缺陷](#item-tech-news-4) ⭐️ 7.0/10
+5. [CMU 在 YouTube 免费上线 CS Learn 完整学期课程](#item-tech-news-5) ⭐️ 7.0/10
+6. [Duetto：不微调，采样时引导预训练音乐 Transformer 实时爵士伴奏](#item-tech-news-6) ⭐️ 7.0/10
+7. [腾讯混元发布 Hy4 flash：224B 总参数、1M 上下文与低价 API](#item-tech-news-7) ⭐️ 7.0/10
+8. [亚马逊称 AI 代理借 Artex 框架窃取并共享 API 密钥](#item-tech-news-8) ⭐️ 7.0/10
+9. [山大团队称给出哥德巴赫猜想条件性证明](#item-tech-news-9) ⭐️ 7.0/10
 
 **财经新闻**
-1. [CNBC：卢特尼克因家族公司与英伟达的关系面临道德质疑](#item-finance-news-1) ⭐️ 8.0/10
+1. [中国 10 月经济放缓加剧：消费、工业产出与投资均低于预期](#item-finance-news-1) ⭐️ 8.0/10
+2. [卢特尼克因英伟达相关关系受审查，其子所在公司持股下降近 50%](#item-finance-news-2) ⭐️ 8.0/10
+3. [中美俄领导人计划在深圳 APEC 场边举行首次三方会晤](#item-finance-news-3) ⭐️ 7.0/10
+4. [全国猪肉价格跌至近十年低位](#item-finance-news-4) ⭐️ 7.0/10
 
 ---
 
 ## 科技新闻
 
 <a id="item-tech-news-1"></a>
-### [美团开源 1.6 万亿参数 LongCat-2.5，称全程用华为升腾训练](https://the-decoder.com/meituan-releases-a-1-6-trillion-parameter-agent-model-that-never-touched-an-nvidia-gpu/) ⭐️ 8.0/10
+### [Qwen4-Max 上线：2.4T 稀疏 MoE 与百万上下文](https://mp.weixin.qq.com/s/pJUt0xwD6H-WMyzd8TjZaQ) ⭐️ 8.0/10
 
-美团 LongCat 团队在模型正式发布一周后公开了 LongCat-2.5 的权重。该模型总参数约 1.6 万亿，每个 token 激活约 480 亿参数，面向需要自主完成冗长多步骤任务（尤其是编程）的智能体场景，支持文本、图像和视频输入，并以 MIT 许可证发布，允许商用。官方称训练全程使用华为升腾加速卡、未使用英伟达 GPU，并称该模型在 Terminal Bench v2.1 上得分 88.4，略低于 Claude Opus 5 的 89.1。上述训练硬件与基准成绩均为美团方面的说法，来源未提供独立验证或详细技术报告。
+据该聚合帖，阿里通义千问正式上线旗舰模型 Qwen4-Max，采用稀疏 MoE 架构，总参数 2.4 万亿，原生支持视觉理解和 100 万 Token 上下文。帖子称它在编程、办公和长程任务上表现突出，前端编程在 Code Arena 盲测中位居全球前列，但这些性能说法尚无独立验证。成本方面，单个任务平均费用由 26.58 元降至 11.16 元，降幅近 58%，Token 消耗减少近 50%，API 定价同步下调。团队还表示，后续将推出更小的 Qwen4 系列模型并公开权重，具体时间、规模和许可证尚未披露。
 
-telegram · zaihuapd · 11月15日 11:08
+telegram · zaihuapd · 11月16日 02:52
 
-**「背景」** LongCat-2.5 采用混合专家（MoE）架构：总参数约 1.6 万亿，但每个 token 仅激活约 480 亿参数；权重以 MIT 许可证发布，并支持 100 万 token 上下文。美团给出的自托管方案基于 194 张华为升腾加速卡的 4 位量化版本，且未提供英伟达 GPU 选项，这与“训练全程未使用英伟达 GPU”的说法相呼应。
+**「背景」** Qwen4-Max 是通义千问新一代旗舰模型，素材称其采用稀疏 MoE，总参数为 2.4 万亿，并原生支持视觉理解和百万 Token 上下文。稀疏 MoE 的关键在于总参数规模很大，但每个 token 只激活部分专家，因此“2.4T 总参数”不能直接理解为每次推理都会用满全部参数。素材还以“上代”为基准给出单任务费用从 26.58 元降至 11.16 元，但未点名上代的具体版本。
 
-**「影响」** 由于权重以 MIT 许可证开放，开发者和企业可以自行部署、微调并用于商业产品，不必依赖闭源 API；但 88.4 的 Terminal Bench 成绩来自厂商自报，团队在选型时应自行复现测试，尤其是长程编程任务上的表现。
+**「迁移与容量规划注意」** 接入 Qwen4-Max 的开发者需要把延迟和输出冗长度纳入容量与成本预算：Artificial Analysis 的评测将该模型列为“每任务明显偏慢、输出相当冗长”，因此即便官方称 token 消耗较上代减少近一半，实际单任务开销仍会随任务类型波动；OpenRouter 还显示该模型默认开启推理，接入时需显式管理推理 token 与超时设置。该模型支持文本、图像和视频输入、上下文约 98.4 万至 100 万 token，现有纯文本调用链需要相应改造。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://the-decoder.com/meituan-releases-a-1-6-trillion-parameter-agent-model-that-never-touched-an-nvidia-gpu/">Meituan releases a 1.6-trillion-parameter agent model that ...</a></li>
-<li><a href="https://phemex.com/news/article/meituan-opensources-16tparameter-longcat25-model-trained-entirely-on-domestic-chinese-hardware-103629">Meituan LongCat-2.5: 1.6T MoE AI Model Trained on Huawei Chi ...</a></li>
-<li><a href="https://www.gate.com/news/detail/meituan-releases-longcat-25-ai-model-with-16-trillion-parameters-trained-on-25640116">Meituan Releases LongCat-2.5 AI Model With 1.6 Trillion ...</a></li>
+<li><a href="https://artificialanalysis.ai/models/qwen4-max">Qwen 4 Max - Intelligence, Performance &amp; Price ... | Artificial Analysis</a></li>
+<li><a href="https://openrouter.ai/qwen/qwen4-max">Qwen 4 Max - API Pricing &amp; Providers | OpenRouter</a></li>
 
 </ul>
 </details>
 
-**标签**: `#open-source AI`, `#large language models`, `#AI agents`, `#Huawei Ascend`, `#AI hardware`
+**标签**: `#Qwen4-Max`, `#sparse MoE`, `#LLM release`, `#long context`, `#open-weight models`
 
 ---
 
 <a id="item-tech-news-2"></a>
-### [MacBook Pro OLED 屏幕的 PWM 频闪争议](https://macanorak.com/the-macbook-pros-oled-pwm-problem-when-a-better-display-becomes-worse-to-use/) ⭐️ 7.0/10
+### [美商务部将先进 AI 芯片出口管制扩至远程访问](https://www.reuters.com/legal/litigation/us-issues-rule-protect-advanced-ai-chips-being-accessed-remotely-2026-11-16/) ⭐️ 8.0/10
 
-一篇技术分析聚焦 MacBook Pro 的 OLED 显示屏，讨论 PWM 调光频闪为何可能让部分用户觉得更难使用，尽管屏幕显示素质更好。文章同时涉及测量方法和实际体感，但现有材料没有给出可核验的完整测试条件，评论区也对 240Hz 等频率结论存在分歧。
+美国商务部于 11 月 16 日发布临时最终规则，将先进 AI 芯片和服务器的出口管制延伸至远程访问，目标是防止通过第三国数据中心绕过限制。规则还要求向印度尼西亚、马来西亚、新加坡、泰国和巴西再出口 AI 芯片时申请许可。源报道未说明规则的生效日期、许可审批标准或完整适用国家名单，这些细节仍待官方文本确认。
 
-hackernews · MacAnorak · 11月15日 13:15 · [社区讨论](https://news.ycombinator.com/item?id=50506719)
+telegram · zaihuapd · 11月16日 14:44
 
-**「背景」** PWM（脉宽调制）调光通过快速开关像素来调节屏幕亮度，频率越低、亮度波动越深，越容易被敏感用户感知为闪烁。Notebookcheck 的实验室测试称，新款 14 英寸 MacBook Pro 的 PROLED XDR 屏幕在亮度 99% 及以下时以 240 Hz PWM 调光，波动深度约 56%；AppleInsider 也报道了相同频率和幅度，并指出 PWM 频率与屏幕刷新率不是一回事。已有用户报告头痛、头晕等不适，且目前没有明确修复方法。
+**「背景」** 美国对先进 AI 芯片的出口管制原本围绕芯片和服务器的跨境出口与再出口展开；当境外数据中心可被远程调用时，这一覆盖范围留下了规避空间。新规因此把远程访问纳入管制，以堵住借第三国数据中心绕开限制的通道。
 
-**「影响」** 对已经知道自己对频闪敏感的用户，实际影响是购买前应在常用亮度下试用，而不能只依据分辨率、色域等参数判断；评论中的严重不适案例也说明个体差异很大，不能据此推断所有用户都会受影响。
+**「影响」** 对通过第三国数据中心远程调用受控芯片的云服务商和企业而言，规则把原先针对实物出口的许可要求扩展到远程使用场景；向上述五国再出口 AI 芯片也需先申请许可，相关跨境算力安排和供应链需按新规调整。由于报道未提供许可条件，实际合规负担取决于后续官方文本。
 
-**「社区讨论」** 评论区的核心分歧在测量：有评论者称 240Hz 不是最坏情况，tandem OLED 的两层可能以 480Hz、180 度反相调光，从而在同时工作时形成约 960Hz 的有效频率。另有评论者强调频闪敏感真实存在，家人会因轻微频闪出现恶心和头痛，也有人表示脑震荡后几乎对各类屏幕都更敏感。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://www.appleheadlines.com/macbook-pro-oled-eye-strain-pwm-flicker/">MacBook Pro OLED Eye Strain &amp; PWM Flicker: 7 Moves - AH</a></li>
-<li><a href="https://www.macobserver.com/news/oled-macbook-pro-owners-report-headaches-and-dizziness-from-screen-flickering/">OLED MacBook Pro Owners Report Headaches and Dizziness From ...</a></li>
-<li><a href="https://appleinsider.com/articles/26/11/10/if-youre-getting-dizzy-using-proled-macbook-pro-you-are-not-alone">Pulse width modulation on MacBook Pro with PROLED - AppleInsider</a></li>
-
-</ul>
-</details>
-
-**标签**: `#OLED PWM`, `#display flicker`, `#MacBook Pro`, `#hardware usability`, `#tandem OLED`
+**标签**: `#AI chips`, `#export controls`, `#US policy`, `#semiconductors`, `#data centers`
 
 ---
 
 <a id="item-tech-news-3"></a>
-### [现代 LLM 位置嵌入的实现解读](https://magazine.sebastianraschka.com/p/understanding-positional-embeddings) ⭐️ 7.0/10
+### [Jiff 1.0 发布：Rust 日期时间库](https://burntsushi.net/jiff/) ⭐️ 7.0/10
 
-一篇面向机器学习读者的技术解释文章《Understanding Positional Embeddings in Modern LLMs》上线，梳理现代大语言模型中位置嵌入的实现方式。从现有摘要看，它属于教育性深入解读，而非新的研究结果、模型发布或基准测试。现有材料未提供正文，因此文中涉及的具体模型、版本和实验结论无法核实。
+Andrew Gallant（burntsushi）开发的 Rust 日期时间库 Jiff 已发布 1.0 版本，面向需要处理日期和时间等任务的 Rust 开发者。当前材料只确认了 1.0 这一版本节点，未提供具体 API、性能或兼容性变更细节。社区讨论主要围绕它与 chrono 的取舍、API 稳定性以及时间尺度处理展开，而非已公布的功能清单。
 
-hackernews · vismit2000 · 11月15日 12:14 · [社区讨论](https://news.ycombinator.com/item?id=50506376)
+hackernews · burntsushi · 11月16日 16:53 · [社区讨论](https://news.ycombinator.com/item?id=50519744)
 
-**「背景」** Transformer 的自注意力机制本身不包含词序信息，因此模型需要位置嵌入来区分不同位置的 token。早期 GPT-2 使用可学习的绝对位置嵌入；Su 等人在 2021 年的 RoFormer 论文中提出 RoPE，通过对 query 和 key 向量施加旋转来编码相对位置，这一方法目前已被前沿模型广泛采用。
+**「背景」** Rust 生态中的日期时间处理长期以 chrono 为主要选择；一位曾维护 chrono 约五年的开发者在前述讨论中表示，其 API 稳定性既是用户采用的原因，也使大幅改进变得困难。Andrew Gallant（burntsushi）开发的 Jiff 以替代方案出现，此次发布 1.0 版本。
 
-**「影响」** 对正在实现或选型位置编码的开发者，这篇文章可作为实现层面的入门梳理；但若需要推导或改造位置编码，评论者提醒还需补充群表示等理论基础。
+**「影响」** Rust 项目在日期时间库选型时多了一个已发布 1.0 的候选；若考虑从 chrono 迁移，仍需自行核验 API、依赖与行为兼容性，现有评论只表达采用意愿，未给出迁移结果。
 
-**「社区讨论」** 评论者 programjames 认为文章只覆盖实现，真正理解位置编码需要群表示理论，并称旋转位置编码是平移群的表示。这是评论者的理论视角，不等同于文章结论。
+**「社区讨论」** 曾维护 chrono 约五年的 quodlibetor 表示，自己当年接手是因为不满其 API，但改进常遇阻力，最终因倦怠停止维护，并对 burntsushi 开发 Jiff 表示感谢；其他评论者则赞赏项目明确说明“并非总是合适”，并希望生态更多采用 Jiff。上述均为社区观点，不能视为对 Jiff 兼容性或采用程度的独立验证。
 
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://magazine.sebastianraschka.com/p/understanding-positional-embeddings">Understanding Positional Embeddings in Modern LLMs</a></li>
-<li><a href="https://www.institutepm.com/knowledge-hub/rope-alibi-yarn-explained">RoPE , ALiBi , and YaRN Explained: How Modern LLMs Handle Long...</a></li>
-
-</ul>
-</details>
-
-**标签**: `#positional embeddings`, `#LLMs`, `#transformer architecture`, `#machine learning education`
+**标签**: `#Rust`, `#datetime`, `#libraries`, `#open source`, `#time handling`
 
 ---
 
 <a id="item-tech-news-4"></a>
-### [Meta FAIR/NYU 拆解多模态视觉编码：预训练可选，视觉专属参数必需](https://www.reddit.com/r/MachineLearning/comments/1xx1k2o/meta_fair_nyu_unbundling_multimodal_vision/) ⭐️ 7.0/10
+### [微软将大规模邮件中断归因于 7 月修复引入的缺陷](https://www.theregister.com/saas/2026/11/16/microsoft-blames-monster-email-outage-on-software-defect-introduced-in-july-fix/5310026) ⭐️ 7.0/10
 
-Meta FAIR 与 NYU 的一篇预印本报告称，他们在相同数据和总算力预算下从头训练 200 多个多模态大模型，以分别检验视觉编码器的三项作用：独立预训练、仅视觉 token 使用的参数，以及把编码器放在 LLM 之前的位置。实验主要采用 Qwen3-1.7B 和 4B 配置、0.4B 视觉容量，覆盖 0.6B 到 6.4B 主干，并在 Cambrian 的 16 个 448px VQA 基准和 12 个语言基准上评测。结果显示，独立视觉预训练是可选的：四种预训练目标至多与随 LLM 从头训练的编码器打平，即使预训练不占算力也无优势；但视觉专属参数仍是必需的，无编码器模型在各规模上均落后，追上约需 3 倍算力。把编码器放在 LLM 之前同样可选，“in-fusion”在前 8 层加入零初始化的视觉专属权重，在 1.7B 到 6.4B 上与编码器相当，并报告首 token 时间低约 13%；这些是作者自述的受控实验结果，尚非同行评审的独立复现。
+据 The Register 11 月 16 日报道，微软将一次大规模电子邮件服务中断归因于一项早在 7 月的修复中引入的软件缺陷。现有信息没有给出受影响用户数量、具体产品版本、缺陷的完整技术细节或独立验证结果，因此这仍是微软方面的归因。相关分析集中在测试环境与生产环境的差异，以及并发问题为何没有在测试阶段暴露。
 
-reddit · r/MachineLearning · /u/trungh98 · 11月15日 17:38
+hackernews · Bender · 11月16日 13:18 · [社区讨论](https://news.ycombinator.com/item?id=50517321)
 
-**「背景」** 在多模态大模型中，标准视觉编码器通常把三项设计选择捆绑在一起：独立的视觉预训练、仅由视觉 token 使用的参数，以及把编码器置于 LLM 之前。不同实验室已发布的模型在数据、算力和这些选择上并不一致，因此仅比较成品模型很难判断哪一项是必要的。
+**「背景」** 这起邮件中断的根源被追溯到 7 月发布的一次修复：该修复在后续运行中引入了软件缺陷，直到 11 月故障爆发才显现。社区讨论中还提到，微软的低配置测试环境通过了 7 月代码，却未能复现高配置生产环境中的并发问题；这一说法来自评论者，并非已独立验证的结论。
 
-**「影响」** 对多模态架构选型而言，这意味着可以把编码器预训练的算力转投入多模态训练，但不能省掉视觉专属参数；试图完全去掉视觉分支的团队需准备约 3 倍算力，或采用 in-fusion 这类在前层加入视觉专属权重的折中。
+**「影响」** 对依赖微软邮件服务的组织而言，直接后果是服务中断期间的邮件收发受阻；报道未说明完全恢复时间、SLA 影响或补偿安排，这些仍需以微软后续披露为准。
 
-**标签**: `#multimodal LLMs`, `#vision encoders`, `#pretraining`, `#model architecture`, `#controlled experiments`
+**「社区讨论」** 评论中，ncr100 质疑用低端测试环境验证 7 月代码、而生产环境是高端机器，可能让并发缺陷逃过测试；k0morebi 则追问超大规模服务为何不在达到阈值时丢弃部分流量，而非继续把请求压向下游。另有评论者对关键网络基础设施中运行 Windows 进程表示意外，这些都属于社区观点而非调查结论。
+
+**标签**: `#Microsoft`, `#outage`, `#software reliability`, `#concurrency bug`, `#testing environments`
 
 ---
 
 <a id="item-tech-news-5"></a>
-### [开源工具称将 B300 上 pageable cudaMemcpy 提速约 5 倍](https://www.reddit.com/r/MachineLearning/comments/1xx2n25/making_cudamemcpy_5x_faster_on_a_b300_p/) ⭐️ 7.0/10
+### [CMU 在 YouTube 免费上线 CS Learn 完整学期课程](https://www.cs.cmu.edu/learn/) ⭐️ 7.0/10
 
-开发者 /u/makneeee 在 Reddit 发布开源工具 cudamemcpy-tuner，声称可显著加快 pageable 内存的 cudaMemcpy 传输，并在 NVIDIA B300 上给出示例。按照帖子中的 1 GB uint8 张量基准，直接运行 PyTorch 的 CPU→GPU 拷贝得到 10.2 GB/s，执行 \`cmt tune -- python bench.py\` 后报告为 51.5 GB/s，约 5 倍。该结果来自作者自行提供的基准，帖子未给出独立复现，工具代码和博客已公开在 GitHub 与作者网站。
+卡内基梅隆大学格里芬计算机科学学院推出 CS Learn，开始在 YouTube 免费发布当前 CMU 计算机科学课程的完整学期讲座，面向希望系统学习计算机科学的公众。项目负责人 Phillip Compeau 在讨论中表示，本周每天首播一门课程，明年 1 月还会上线更多课程，因此上线首日目录尚不完整。Compeau 也提到 MIT 约 25 年前就已开始开放课件；CS Learn 的不同点在于发布现行课程和整学期讲座，并由学生开发的工具承担大量制作工作。
 
-reddit · r/MachineLearning · /u/makneeee · 11月15日 18:20
+hackernews · pcompeau · 11月16日 20:43 · [社区讨论](https://news.ycombinator.com/item?id=50522980)
 
-**「背景：可页内存与页锁定内存」** 在 CUDA 中，当源数据位于普通可页内存（pageable memory）时，cudaMemcpy 无法直接进行 DMA 传输，驱动需要先把数据复制到内部的页锁定（pinned）暂存缓冲区，再传往设备，这一隐藏步骤会明显拉低有效带宽。NVIDIA 的优化文档与多篇实测都指出，改用 cudaMallocHost 分配的页锁定内存可以提升主机到设备的传输速率，代价是占用不可换出的物理内存。这个工具针对的正是默认的可页传输路径，尝试在不改用户代码的前提下缩小这部分开销。
+**「背景」** 开放课件已有很长历史：CS Learn 负责人 Phillip Compeau 在讨论中坦言，MIT 大约 25 年前就已推出 OpenCourseWare，因此免费公开大学课程视频本身并不新鲜。CMU 此次的不同之处在于，放出的是当前正在开设的课程之完整学期讲座，而非少量精选讲座或过期材料。
 
-**「影响」** 对需要在未使用 pinned memory 的情况下把主机数据搬到 GPU 的开发者，这类调优工具提供了一条可能减少传输瓶颈的路径；但当前 5 倍提升仅为作者自报结果，采用前应在目标 GPU、数据规模和 CUDA 版本上自行复测。
+**「影响」** 自学者和课堂辅助使用者可以直接按学期顺序观看 CMU 的现行课程，而不必只依赖零散短视频或单门公开课。实际使用时需注意课程按日、按月分批释出，想按某一主题完整选学的人要先确认相关课程是否已经上线。
+
+**「社区讨论」** 有评论者认为，在 AI 时代更应先把基础学扎实，这样才能把 AI 当作增效工具，否则可能被取代；另一位长期关注开放课件的用户则强调，光有视频还不够，学习计划、提醒和笔记等问责机制才是让人坚持完成课程的关键。
+
+**标签**: `#open courseware`, `#computer science education`, `#CMU`, `#online learning`, `#YouTube`
+
+---
+
+<a id="item-tech-news-6"></a>
+### [Duetto：不微调，采样时引导预训练音乐 Transformer 实时爵士伴奏](https://www.reddit.com/r/MachineLearning/comments/1xxkyh3/steering_a_pretrained_music_transformer_at/) ⭐️ 7.0/10
+
+开发者公开了 Duetto 项目及代码：这是一个面向 MIDI 键盘的实时爵士伴奏系统，它原样使用预训练的 Anticipatory Music Transformer（Thickstun 等，2023），通过采样时的规则化 logit 掩码与偏置来控制独奏、伴奏和走动贝斯，而不做微调。玩家的音符与模型输出被放在同一事件序列中逐音符续写；规则层会屏蔽不允许的音符（如必须等待的手、超出音域的音、非拍点贝斯音），并提高当前和弦音、强拍引导音或待引用乐句下一音的权重。作者称在《Autumn Leaves》、160 bpm 的演示中，约 61% 的独奏音符来自引用乐句或主题，其余由模型生成；服务器预采样约 1 秒音乐，并在玩家弹奏时重采样未播放部分，以兼顾低延迟和模型的“规划”。作者报告 3080 Ti 上每音符约 12 ms（medium）/18 ms（large），大型模型在 Jetson Orin Nano 上约 90 ms/音符，同时承认它会偏离演奏者、响应难预测，规则偏置过强会像“乐句手册”、过弱又不像爵士；代码免费供非商业使用，该项目展示尚非同行评审结果。
+
+reddit · r/MachineLearning · /u/GGAllin43 · 11月16日 09:19
+
+**「背景」** Duetto 依赖的 Anticipatory Music Transformer 由 Thickstun 等人于 2023 年提出，其核心是交错生成“事件”与“控制”序列，从而在生成过程中施加音乐控制（tool-2-1、tool-2-2）。Duetto 将该预训练模型原样用于实时伴奏，因此所有控制都放在采样阶段完成：每次采样前修改 logits，而不通过微调改变模型权重。
+
+**「影响」** 对想在本地或边缘设备上做交互式音乐生成的开发者，Duetto 表明可以把控制逻辑放在采样阶段、直接复用预训练符号音乐模型，省去先收集配对数据做微调的前置工作。实际采用时的主要工作量会落在规则层：作者报告的漂移、不可预测响应和偏置强度敏感，意味着需要按曲目与演奏者反复调整掩码和偏置，而不能把低推理延迟当作稳定合奏的保证。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://developer.nvidia.com/blog/how-optimize-data-transfers-cuda-cc/">How to Optimize Data Transfers in CUDA C/C++ | NVIDIA ...</a></li>
-<li><a href="https://stackoverflow.com/questions/50184146/cuda-pinned-memory-vs-pageable-memory-tradeoffs">optimization - CUDA - Pinned Memory vs. Pageable Memory ... Code sample</a></li>
-<li><a href="https://jinseok-moon.github.io/p/pinned-memory/">CUDA Pinned vs Pageable Memory: Faster Host-to-Device Transfers</a></li>
+<li><a href="https://arxiv.org/abs/2306.08620">[2306.08620] Anticipatory Music Transformer</a></li>
+<li><a href="https://paperswithcode.co/paper/2306.08620">Anticipatory Music Transformer (arXiv...) | Papers with Code</a></li>
 
 </ul>
 </details>
 
-**标签**: `#CUDA`, `#GPU memory transfer`, `#performance optimization`, `#open source tools`
+**标签**: `#music-generation`, `#transformer`, `#sampling-time-control`, `#real-time-systems`, `#jazz`
+
+---
+
+<a id="item-tech-news-7"></a>
+### [腾讯混元发布 Hy4 flash：224B 总参数、1M 上下文与低价 API](https://mp.weixin.qq.com/s/5yBbf-ctYziM5r0i6Y17lA) ⭐️ 7.0/10
+
+腾讯混元发布 Hy4 flash，这是一款总参数 224B、激活参数 12B 的多模态模型，支持 1M 上下文，并已在腾讯云 TokenHub、WorkBuddy 和元宝上线。其 API 定价为每百万 Token 输入 0.5 元、输出 2 元，命中缓存时仅需 0.02 元，较 Hy4 大幅下降；11 月 30 日前 WorkBuddy 限免，API 五折。腾讯混元称，Hy4 flash 的综合效果略优于 Hy4 preview；按 WorkIndex 计算，其单任务成本分别为 Hy4 preview 的 1/13 和 Hy4 的 1/20，但上述效果与成本对比均为厂商说法。腾讯混元还表示计划开源该模型，目前尚未公布具体许可证或权重发布时间。
+
+telegram · zaihuapd · 11月16日 07:17
+
+**「背景：稀疏 MoE 与 Hy4 系列」** Hy4 flash 采用稀疏混合专家（MoE）架构：总参数 224B，但每个 token 只激活其中 12B，推理时仅需计算这部分参数，这是其能把官方所称的单任务成本压到前代零头的结构性原因。它属于腾讯混元 Hy4 系列的轻量版本，官方称综合效果略优于此前的 Hy4 preview。1M 上下文则面向需要一次性读入长文档或大量历史材料的日常任务场景。
+
+**「影响」** 开发者现在可以在腾讯云 TokenHub 以每百万 Token 输入 0.5 元、输出 2 元调用该模型，并把更长、多模态的请求放入 1M 上下文；若要从 Hy4 preview 迁移，需自行验证官方所称的“略优”效果，因为目前缺少独立评测。
+
+**标签**: `#Tencent Hunyuan`, `#LLM release`, `#Mixture-of-Experts`, `#API pricing`, `#open source`
+
+---
+
+<a id="item-tech-news-8"></a>
+### [亚马逊称 AI 代理借 Artex 框架窃取并共享 API 密钥](https://cybernews.com/security/amazon-autonomous-cybercrime-artex-framework/) ⭐️ 7.0/10
+
+亚马逊称，攻击者利用开源渗透测试框架 Artex 驱动 AI 代理，从 LiteLLM、Dify 等公网暴露的 AI 应用中窃取 API 密钥，在验证有效性后汇入共享密钥池，用于支付后续更多大模型调用。亚马逊表示该活动始于 10 月 3 日，于 11 月 5 日被其 MadPot 诱饵网络截获并阻断；公司以“中等信心”将行动归因于与中国相关的威胁组织，并称并非所有被列出的目标都已失陷，已通知可能受影响的 AWS 客户。上述说法目前均为亚马逊单方面披露，尚无独立验证。
+
+telegram · zaihuapd · 11月16日 13:00
+
+**「背景」** LiteLLM、Dify 等 AI 应用通常通过 API 密钥调用付费大模型服务；一旦这些应用在公网暴露且配置不当，密钥就可能被滥用，并直接转化为模型调用额度。亚马逊称，其 MadPot 诱饵网络用于观测并阻断此类恶意活动。
+
+**「影响与应对」** 对在公网暴露 LiteLLM、Dify 等 AI 应用实例的组织而言，直接风险是 API 密钥被取走并用于支付攻击者的大模型调用费用；亚马逊表示已通知可能受影响的 AWS 客户，并称并非所有被点名目标都已失陷。可行的处置是排查此类实例的公网暴露面、轮换并收紧密钥权限、监视异常的模型调用量与账单增长；需注意亚马逊对中国相关组织的归属判断仅为中等信心。
+
+**标签**: `#AI security`, `#API keys`, `#autonomous agents`, `#cybercrime`, `#cloud security`
+
+---
+
+<a id="item-tech-news-9"></a>
+### [山大团队称给出哥德巴赫猜想条件性证明](https://mrc.sdu.edu.cn/info/1018/2193.htm) ⭐️ 7.0/10
+
+山东大学李嘉民、刘建亚在论文中称，在狄利克雷 L 函数广义黎曼猜想成立、并满足两种附加谱假设之一的条件下，可证明所有充分大的偶数都是两个素数之和。论文还称，这两个素数位于该偶数的三分之一至三分之二之间，并称这是首个覆盖所有充分大偶数的二元哥德巴赫猜想条件性证明。该结果并非无条件证明，单靠广义黎曼猜想也不足以推出结论，所用方法不同于经典筛法和圆法。
+
+telegram · zaihuapd · 11月16日 16:01
+
+**「背景」** 哥德巴赫猜想断言每个充分大的偶数都可写成两个素数之和；广义黎曼猜想则是数论中一个尚未证明的假设，涉及狄利克雷 L 函数。山东大学团队的结论以该猜想和两种附加谱假设之一为前提，因此是条件性证明，并未无条件解决哥德巴赫猜想。
+
+**「对研究者的影响」** 研究者在引用该结论时，必须将其限定在广义黎曼猜想成立且满足两种谱假设之一的前提下，不能当作无条件定理使用。该结果不改变哥德巴赫猜想仍未获得无条件证明的现状。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://cloud.tencent.cn/developer/article/2206748">cloud.tencent.cn/developer/article/2206748</a></li>
+<li><a href="https://www.chinanews.com.cn/m/gn/2022/11-22/9899441.shtml">轰动数学界的张益唐究竟证明了啥？ -中国新闻网</a></li>
+
+</ul>
+</details>
+
+**标签**: `#Goldbach conjecture`, `#number theory`, `#conditional proof`, `#mathematics research`, `#Shandong University`
 
 ---
 
 ## 财经新闻
 
 <a id="item-finance-news-1"></a>
-### [CNBC：卢特尼克因家族公司与英伟达的关系面临道德质疑](https://www.cnbc.com/2026/11/13/howard-lutnick-nvidia-jensen-huang-china-cantor-fitzgerald.html) ⭐️ 8.0/10
+### [中国 10 月经济放缓加剧：消费、工业产出与投资均低于预期](https://www.cnbc.com/2026/11/16/china-retail-sales-october-industrial-output-investment.html) ⭐️ 8.0/10
 
-CNBC 11 月 13 日报道，美国商务部长霍华德·卢特尼克在其负责对华芯片出口执法期间，因两个儿子领导的坎托·菲茨杰拉德公司与英伟达的持股及业务往来而面临道德质疑。证交文件显示，该行报告的英伟达持股从 2025 年 9 月的逾 350 万股降至 2026 年 3 月底的 178 万股，降幅 49%；报道称没有证据表明卢特尼克泄露非公开信息，坎托表示相关持仓是客户掉期交易中的非重大自营头寸。
+中国 10 月社会消费品零售总额同比增长 0.4%，低于分析师预期的 0.8%；规模以上工业增加值同比增长 4.8%，也低于 5.3%的预期。今年前 10 个月固定资产投资同比下降 8.1%，而分析师原本预期下降 7%。
 
-rss · CNBC Finance · 11月15日 19:58
+rss · CNBC Finance · 11月16日 03:53
 
-**「背景」** 此前，英伟达首席执行官黄仁勋因被曝与一名疑似中国间谍有婚外情而辞职。美国商务部负责出口管制，而卢特尼克主政期间，该部门因迟迟未将涉嫌向中国转运英伟达 AI 芯片的 Megaspeed 列入限制贸易的实体清单而受到批评。
+**「背景」** 中国房地产市场低迷已进入第五年，房产贬值持续侵蚀家庭财富，是消费疲软、投资收缩的主要背景；官方数据显示，三季度经济同比增长 4.5%，已从三年低点回升。
 
-**「影响」** 只要商务部继续推迟把 Megaspeed 列入实体清单，美国芯片及设备供应商向这家新加坡公司出口 AI 芯片时就仍不需要申请出口许可（据《金融时报》报道）；而财政部长贝森特表示，包括财政部在内的四个部门数月来一直支持将其列入，这表明相关管制措施目前只停留在部分机构的立场上。
+**「影响」** 由于国内消费和投资走弱，增长更加依赖外需；花旗研究警告，欧盟可能出台更多针对中国的贸易措施，这会使中国出口企业面临额外的政策风险。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://nypost.com/2026/11/12/business/commerce-depts-lutnick-kessler-under-fire-over-inaction-on-nvidias-megaspeed-spy-fiasco/">Commerce Dept&#x27;s Lutnick, Kessler under fire over inaction on ...</a></li>
-<li><a href="https://www.theguardian.com/technology/2026/nov/12/nvidia-ceo-jensen-huang-resigns">Jensen Huang resigns as Nvidia CEO after alleged... | The Guardian</a></li>
-<li><a href="https://www.reuters.com/business/retail-consumer/bessent-says-treasury-favored-limits-megaspeed-2026-11-13/">Bessent blames Commerce Dept over lack of export controls for ...</a></li>
-<li><a href="https://www.ft.com/content/afb6c960-a910-4d67-9588-73ba3bea5b06?syn-25a6b1a6=1">US commerce department delays Megaspeed’s inclusion on trade ...</a></li>
+<li><a href="https://www.cnbc.com/2026/11/16/china-retail-sales-october-industrial-output-investment.html">China ’s slowdown deepens in October as key economic data disappoint</a></li>
 
 </ul>
 </details>
 
-**标签**: `#Nvidia`, `#Howard Lutnick`, `#Cantor Fitzgerald`, `#export controls`, `#conflict of interest`
+**标签**: `#China economy`, `#macroeconomic data`, `#consumer spending`, `#fixed investment`, `#trade surplus`
+
+---
+
+<a id="item-finance-news-2"></a>
+### [卢特尼克因英伟达相关关系受审查，其子所在公司持股下降近 50%](https://www.cnbc.com/2026/11/13/howard-lutnick-nvidia-jensen-huang-china-cantor-fitzgerald.html) ⭐️ 8.0/10
+
+美国商务部长霍华德·卢特尼克因两个儿子领导的坎托·菲茨杰拉德公司与英伟达的关系受到审查；据 CNBC 分析证券申报文件，该公司报告的英伟达持股数在 2025 年 9 月至 2026 年 3 月间下降近 50%。据 Axios 11 月 11 日报道，这一变化正值卢特尼克多次抵制对涉嫌向中国走私英伟达芯片的公司采取行动；报道同时指出，没有证据表明存在不当行为，坎托称相关持仓属日常业务且“不重大”。
+
+rss · CNBC Finance · 11月16日 12:14
+
+**「背景」** 美国商务部负责执行出口管制，包括把外国企业列入「实体清单」（受限制企业名单）。卢特尼克于 2025 年 2 月离开投行坎托·菲茨杰拉德（Cantor Fitzgerald）出任商务部长，该公司现由他的两个儿子经营；英伟达首席执行官黄仁勋本周辞职，此前有报道称他与一名被美方怀疑为中国情报机构工作的女性有私情，黄仁勋和卢特尼克均已被传唤于下月到参议院一个委员会作证。
+
+**「影响」** 审查直接落在美国商务部对 Nvidia 芯片出口许可和实体清单的执行上，使 Nvidia 及其依赖先进 AI 芯片的云服务客户面临更严格的合规与政策审视。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://edition.cnn.com/2026/11/16/tech/nvidia-sex-spies-serious-problems">Lies, spies and sex are just one part of the Nvidia story.</a></li>
+<li><a href="https://www.nytimes.com/live/2026/11/12/business/nvidia-jensen-huang-resigns">Nvidia Updates: Huang ’s Resignation Reverberates Through...</a></li>
+<li><a href="https://www.nytimes.com/2026/11/15/us/politics/trump-lutnick-ai-chips-cantor-fitzgerald.html">Lutnick Pushed to Weaken Chip Rules That Overlap With His Family...</a></li>
+
+</ul>
+</details>
+
+**标签**: `#Nvidia`, `#Howard Lutnick`, `#export controls`, `#conflict of interest`, `#China chip smuggling`
+
+---
+
+<a id="item-finance-news-3"></a>
+### [中美俄领导人计划在深圳 APEC 场边举行首次三方会晤](https://apnews.com/article/trump-xi-putin-summit-china-5fe92253ef38100bae913834a9b74d72) ⭐️ 7.0/10
+
+中国外交部发言人宣布，中美俄三国领导人计划于 11 月 19 日在深圳 APEC 峰会期间举行三方会晤；媒体称这将是三国领导人首次专门举行三方会晤，会晤在 APEC 场边举行，不属于 APEC 正式议程。
+
+telegram · zaihuapd · 11月16日 01:38
+
+**「背景」** 亚太经合组织（APEC）是促进亚太地区贸易的 21 个成员经济体政府间论坛；2026 年深圳峰会是继 2001 年上海、2014 年北京之后，中国第三次主办该峰会。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Asia-Pacific_Economic_Cooperation">Asia-Pacific Economic Cooperation - Wikipedia</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/2026%E5%B9%B4%E4%B8%AD%E5%9B%BDAPEC%E5%B3%B0%E4%BC%9A">2026年中国 APEC 峰会 - 维基百科，自由的百科全书</a></li>
+
+</ul>
+</details>
+
+**标签**: `#geopolitics`, `#APEC`, `#US-China-Russia`, `#trade policy`, `#diplomacy`
+
+---
+
+<a id="item-finance-news-4"></a>
+### [全国猪肉价格跌至近十年低位](https://finance.sina.com.cn/jjxw/2026-11-15/doc-iniyupuh6583194.shtml) ⭐️ 7.0/10
+
+11 月以来全国猪肉价格跌至近 10 年低位，11 月 9 日生猪均价降至每公斤 8.63 元；福州生猪收购价为每 50 公斤 480 至 550 元，同比下跌 20%至 26%。业内人士将下跌归因于需求减弱和生猪供应增加，分析人士预计未来 6 至 8 个月猪价反弹仍可能乏力。
+
+telegram · zaihuapd · 11月16日 03:45
+
+**「背景」** 猪价由生猪供需关系决定；业内人士将本轮下跌归因于消费需求减弱、生猪供应增加，以及养殖管理改善使每头母猪每年提供的出栏生猪数量提高。
+
+**「影响」** 此轮猪价下跌直接压低生猪养殖户的销售收入，而零售端猪肉价格低于部分蔬菜则减轻家庭食品开支。
+
+**标签**: `#猪肉价格`, `#生猪养殖`, `#食品通胀`, `#中国CPI`, `#农产品市场`
 
 ---
