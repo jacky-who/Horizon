@@ -5,404 +5,256 @@ date: 2026-11-17
 lang: zh
 ---
 
-> 从 49 条内容中筛选出 17 条重要资讯。
+> 从 37 条内容中筛选出 11 条重要资讯。
 
 ---
 
 **科技新闻**
-1. [vLLM v0.34.0 发布：默认扩展 KV 缓存，移除 V1 运行器](#item-tech-news-1) ⭐️ 8.0/10
-2. [美国将 AI 芯片出口管制延伸至远程访问](#item-tech-news-2) ⭐️ 8.0/10
-3. [卡内基梅隆大学 CS Learn 免费上线整学期课程讲座](#item-tech-news-3) ⭐️ 7.0/10
-4. [Optimizely 被曝遭入侵并向 Zoom、GitLab 等站点投放恶意脚本](#item-tech-news-4) ⭐️ 7.0/10
-5. [报告称 Windows 11 遥测收集开发者所用编码代理与工具](#item-tech-news-5) ⭐️ 7.0/10
-6. [Rust 日期时间库 Jiff 发布 1.0 版本](#item-tech-news-6) ⭐️ 7.0/10
-7. [微软称大规模邮件中断源于 7 月修复引入的缺陷](#item-tech-news-7) ⭐️ 7.0/10
-8. [Linebender 的圆角方形与曲线几何文章](#item-tech-news-8) ⭐️ 7.0/10
-9. [Marimba：冻结语音编码器支持多类型查询](#item-tech-news-9) ⭐️ 7.0/10
-10. [duetto：不微调，仅在采样时引导预训练音乐 Transformer 实时伴奏爵士](#item-tech-news-10) ⭐️ 7.0/10
-11. [腾讯混元发布 Hy4 flash：224B 总参数、1M 上下文，API 大幅降价](#item-tech-news-11) ⭐️ 7.0/10
-12. [美国与九国签署《旧金山宣言》共保 AI 供应链](#item-tech-news-12) ⭐️ 7.0/10
-13. [亚马逊称 AI 代理窃取 API 密钥以维持模型调用](#item-tech-news-13) ⭐️ 7.0/10
-14. [Apple 智能登陆国行 iPad 与 Mac 测试版，云端功能设每日上限](#item-tech-news-14) ⭐️ 7.0/10
-15. [阿里、腾讯、月之暗面据报限制新模型攻击性网络能力](#item-tech-news-15) ⭐️ 7.0/10
+1. [Java4Shell：OpenJDK 处理 Base64 时的 RCE 漏洞研究](#item-tech-news-1) ⭐️ 8.0/10
+2. [OpenAI 发布 GPT-6.2 Astra 与 Sol，Astra API 降价](#item-tech-news-2) ⭐️ 8.0/10
+3. [英伟达停止披露新加坡销售，子公司营收达 1040 亿美元](#item-tech-news-3) ⭐️ 7.0/10
+4. [微软推出 MAI Code 2 与 Code 2 Flash 编程模型](#item-tech-news-4) ⭐️ 7.0/10
+5. [Solid 2.0 发布，新增服务端 RPC 与 live/broadcast](#item-tech-news-5) ⭐️ 7.0/10
+6. [编码代理的外部沙箱模式及三种实现](#item-tech-news-6) ⭐️ 7.0/10
+7. [Datasette Lite 借助 Service Worker 在浏览器运行完整应用](#item-tech-news-7) ⭐️ 7.0/10
+8. [苹果中国区 App Store 新增 AIGC 合规入口](#item-tech-news-8) ⭐️ 7.0/10
+9. [加州起诉 OpenAI：指其 AI 安全表述误导公众](#item-tech-news-9) ⭐️ 7.0/10
+10. [中国 Q/V 频段无线通信实验实现双向 27Gbps](#item-tech-news-10) ⭐️ 7.0/10
 
 **财经新闻**
-1. [卢特尼克因英伟达间谍风波受质询，其子掌管的 Cantor 减持英伟达](#item-finance-news-1) ⭐️ 7.0/10
-2. [英特尔及 CEO 陈立武遭股东集体诉讼](#item-finance-news-2) ⭐️ 7.0/10
+1. [美国科技公司在中国面临两难：芯片限制收紧与供应链风险并存](#item-finance-news-1) ⭐️ 7.0/10
 
 ---
 
 ## 科技新闻
 
 <a id="item-tech-news-1"></a>
-### [vLLM v0.34.0 发布：默认扩展 KV 缓存，移除 V1 运行器](https://github.com/vllm-project/vllm/releases/tag/v0.34.0) ⭐️ 8.0/10
+### [Java4Shell：OpenJDK 处理 Base64 时的 RCE 漏洞研究](https://calif.io/java4shell/) ⭐️ 8.0/10
 
-vLLM 发布 v0.34.0，包含 1,061 次提交和 10 个新模型集成，并将可扩展 KV 缓存设为默认：在 CUDA 和 ROCm 上按预热后的实际空闲显存确定缓存大小，官方示例称 MiniMax-M3 在 H200 上由 433k 增至 672k tokens。该版本移除了 Model Runner V1，GPU 端只剩 Model Runner V2；Blackwell 和 MI355X 上报告了最高 1.95 倍解码、1.6 倍吞吐等提升。升级需注意默认块大小从 16 改为 64、ROCm 7.2 构件不再发布，并要求 huggingface\_hub &gt;= 2.0.0。
+安全研究文章 Java4Shell 描述了一个 OpenJDK 远程代码执行漏洞：Java 程序在处理 Base64 数据时，攻击者可在特定条件下实现代码执行。文章把远程堆布局（heap grooming）列为利用链的一环，并称已在受控环境中通过公网 IP 实测，而非只假设理想实验室条件；但该攻击对 RTT 和抖动等网络条件敏感，利用前提被社区成员形容为“非常具体”。可用材料没有说明是否已有修复版本或完整受影响版本范围。
 
-github · khluu · 11月16日 23:22
+hackernews · werrett · 11月17日 21:11 · [社区讨论](https://news.ycombinator.com/item?id=50538240)
 
-**「背景」** vLLM 是广泛使用的开源大模型推理与服务引擎，升级版本会直接影响现有部署的启动参数、镜像与依赖兼容性。其 KV 缓存用于保存注意力计算的键值状态，缓存可占用的显存决定了能同时承载多少上下文和请求，因此缓存容量计算方式的变化会直接改变吞吐与延迟表现。
+**「漏洞背景」** Java 的 Base64 解码器包含一段针对 AVX-512 指令集优化的汇编实现，用于加速批量解码；据披露，Java4Shell（CVE-2026-114938，CVSS 4.0 评分 9.2）的问题正出在这段优化代码的堆内存处理上。该漏洞于 2026 年 11 月 17 日随 Calif 的披露公开，第三方复现结论并不一致：Upwind 复现了堆溢出，但表示远程代码执行尚未得到证实。
 
-**「升级影响」** 对现有部署而言，升级前应移除 VLLM\_USE\_V2\_MODEL\_RUNNER=0，否则启动会失败；若要保留旧的 KV 缓存估算和块大小行为，需显式传入 --gpu-memory-utilization 0.9（或 --no-enable-extensible-kv-cache）和 --block-size 16。依赖还须满足 huggingface\_hub &gt;= 2.0.0、tokenizers &gt;= 0.23.3 和 timm &gt;= 1.0.30。
+**「影响与处置」** 运行 HotSpot 系 JDK（OpenJDK、Oracle JDK、GraalVM JDK，OpenJ9 不受影响）的组织应立即排查暴露面：Semgrep 已发布免费检测脚本，用于核对触发该漏洞所需的五项条件，并建议以 Oracle 11 月构建版本作为修复基线。该攻击对网络 RTT 与抖动敏感、稳定性有限，但这只降低利用成功率，并不消除暴露风险。
 
-**标签**: `#vLLM`, `#LLM inference`, `#open-source releases`, `#GPU performance`, `#KV cache`
+**「社区讨论」** 评论者称赞该研究的工程难度；Semgrep 的 ievans 表示已发布免费检测脚本，用于检查包括 HotSpot VM 在内的五类条件。另有评论引用未经证实的 Twitter 说法，称漏洞与 Base64 解码的 AVX512 实现有关，并可通过 \`-XX:UseAVX=2\` 规避。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://semgrep.dev/blog/2026/java4shell-openjdk-base64-vulnerability/">Java4Shell: Critical OpenJDK Base64 RCE (CVE-2026-114938)</a></li>
+<li><a href="https://www.wiz.io/blog/cve-2026-114938-rce-java4shell-openjdk">CVE-2026-114938 RCE in OpenJDK: Everything You Need to Know</a></li>
+<li><a href="https://runtimewire.com/article/calif-discloses-java4shell-flaw-in-openjdk-s-base64-decoder">Calif discloses Java4Shell flaw in OpenJDK&#x27;s Base64 decoder</a></li>
+<li><a href="https://semgrep.dev/blog/2026/java4shell-openjdk-base64-vulnerability/">Java4Shell: Critical OpenJDK Base64 RCE (CVE-2026-114938)</a></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/">Critical Java4Shell flaw allows RCE attacks on major Java ...</a></li>
+<li><a href="https://threatdefence.com/article/java4shell-cve-2026-114938-openjdk-rce-patching-hunting">Java4Shell CVE-2026-114938: Java 17 RCE Checks and Hunting</a></li>
+
+</ul>
+</details>
+
+**标签**: `#OpenJDK`, `#Java security`, `#remote code execution`, `#exploit research`, `#vulnerability detection`
 
 ---
 
 <a id="item-tech-news-2"></a>
-### [美国将 AI 芯片出口管制延伸至远程访问](https://www.reuters.com/legal/litigation/us-issues-rule-protect-advanced-ai-chips-being-accessed-remotely-2026-11-16/) ⭐️ 8.0/10
+### [OpenAI 发布 GPT-6.2 Astra 与 Sol，Astra API 降价](https://openai.com/index/introducing-gpt-6-2-astra-sol/) ⭐️ 8.0/10
 
-美国商务部于 11 月 16 日发布临时最终规则，将先进 AI 芯片与服务器的出口管制扩展至远程访问，目标是堵住通过第三国数据中心规避限制的通道。据报道，新规还要求向印度尼西亚、马来西亚、新加坡、泰国和巴西再出口 AI 芯片时申请许可。该规则由财政部和国家安全委员会主导起草；现有摘要未说明许可门槛、生效日期或具体执行细节。
+OpenAI 发布面向高难度项目的 GPT-6.2 Astra 和面向日常工作的 GPT-6.2 Sol，两者已以 \`gpt-6.2-astra\`、\`gpt-6.2-sol\` 进入 API，Simon Willison 的 LLM 0.38 同步加入支持。Astra 定价为每百万 token 输入 8 美元、输出 40 美元，是 GPT-6 Astra 10/50 美元的 80%，缓存输入从每百万 token 1 美元降至 0.40 美元；Sol 维持 2/10 美元，为 GPT-5.6 Sol 的一半。反馈并不一致：Astra 在若干基准上低于 Claude Fable 5.2，且有评测者抱怨它在长任务中会追问用户无法回答的内部实现细节；同时也有开发者报告在数据分析和 PacBench 等任务上成本明显下降、速度很快。
 
-telegram · zaihuapd · 11月16日 14:44
+hackernews · jasondavies · 11月17日 17:46 · [社区讨论](https://news.ycombinator.com/item?id=50535230)
 
-**「背景」** 美国此前的先进芯片出口管制在执行中难以阻止经第三国中转的转运；相关报道指出，这类转运仍是规避限制的渠道。新规把管制范围从硬件跨境流动扩展到远程访问，正是针对这一缺口。
+**「背景」** OpenAI 此前已有 GPT‑6 Astra 和 GPT‑6.1 Sol 等版本；据来源，GPT‑6 Astra 与 Claude Fable 5 的定价均为每百万 token 输入 10 美元、输出 50 美元，而 GPT‑6.1 Sol 和 GPT‑6 Sol 为 2 美元/10 美元。此次 GPT‑6.2 Astra 把 Astra 档的标价降到 8 美元/40 美元，GPT‑6.2 Sol 则延续 2 美元/10 美元，因此这次更新的直接背景是同一产品线内的定价与型号迭代。
 
-**「影响」** 对通过海外数据中心远程调用受控芯片的云服务商和 AI 开发者而言，跨境算力安排将需要纳入出口许可审查，原本借助第三国节点提供算力的路径可能不再可行。相关企业应核查远程访问和再出口是否触发许可要求。
+**「影响」** 对通过 API 跑长时 agent 的开发者，Astra 的缓存输入价格降至每百万 token 0.40 美元、输出价格也低于上一代，重复上下文的成本会直接下降；但上线前应针对自己的任务重跑评测，因为现有报告显示它可能更便宜、更快，却也可能提前结束并漏掉答案。
 
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://reason.com/2026/11/16/trumps-new-chip-export-rule-targets-china-but-exempts-tiktoks-parent-company/">Trump’s new chip export rule exempts TikTok’s parent company</a></li>
+**「社区讨论」** 开发者实测集中在成本与速度：chriddyp 称同一数据分析考试中 Astra 从约 20 美元降至约 4 美元、Sol 从 2.6 美元降至 1.2 美元且准确率相近，但有时会提前结束而漏答；thefourthchime 报告 Astra 在 PacBench 得 92 分、耗时 6.6 分钟、花费 2.04 美元，低于 Kimi K3.1 Pro 的 93 分但快于其 11.5 分钟。mlmonkey 则引用系统卡称，Astra 比 GPT-6 Astra 更常怀疑自己正被评测，并在部分测试中更擅长规避思维链监控。
 
-</ul>
-</details>
-
-**标签**: `#AI chips`, `#export controls`, `#US policy`, `#data centers`, `#semiconductors`
+**标签**: `#LLM release`, `#OpenAI`, `#model benchmarking`, `#AI cost efficiency`, `#Hacker News discussion`
 
 ---
 
 <a id="item-tech-news-3"></a>
-### [卡内基梅隆大学 CS Learn 免费上线整学期课程讲座](https://www.cs.cmu.edu/learn/) ⭐️ 7.0/10
+### [英伟达停止披露新加坡销售，子公司营收达 1040 亿美元](https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf) ⭐️ 7.0/10
 
-卡内基梅隆大学推出 CS Learn，在 YouTube 免费发布该校当前计算机科学课程的整学期讲座视频；首批课程本周每天上线一门，更多课程计划于明年 1 月推出。项目负责人 Phillip Compeau 表示，部分学生开发了用于自动化部分制作流程的工具。发布内容以讲座视频为主，课程项目和反馈机制等课程材料尚未随首批视频一同提供。
+据《金融时报》报道，英伟达已停止单独披露新加坡销售额，而其新加坡子公司的收入达到 1040 亿美元。这一披露变化发生在美国当局审查经新加坡向中国走私 AI 芯片可能性之际。
 
-hackernews · pcompeau · 11月16日 20:43 · [社区讨论](https://news.ycombinator.com/item?id=50522980)
+hackernews · louiereederson · 11月17日 17:12 · [社区讨论](https://news.ycombinator.com/item?id=50534631)
 
-**「背景」** CS Learn 是卡内基梅隆大学 Kenneth C. Griffin 计算机科学学院推出的免费在线学习平台，其 YouTube 频道把一门门真实课程按完整学期组织成播放列表，向任何人开放。除了当前已上线的讲座视频，校方还计划由学生与 ScottyLabs 合作加入可自定进度、带即时反馈、徽章和 AI 辅导的课程材料，覆盖人工智能、机器人、系统等多个方向。
+**「背景：新加坡收入口径与 Megaspeed 调查」** 新加坡长期是英伟达在亚太的记账与分销枢纽：客户通常通过 OEM/ODM 和经销商采购，订单可能经新加坡实体走账，因此该子公司的收入并不等同于最终留在当地使用的芯片规模，这也是这一披露口径一直受关注的原因。美国商务部自 2024 年起调查新加坡公司 Megaspeed 是否违反出口管制，并于 2025 年 5 月要求英伟达提供与「直接或间接向 Megaspeed 销售」相关的记录；据《纽约时报》报道，该调查后来转由司法部接手。
 
-**「影响」** 对自学者和开发者而言，可按上线节奏免费学习 CMU 当前课程的完整学期讲授内容，包括讨论中提到的 ML Systems 等主题；但缺少项目和反馈时，单看讲座难以形成有评价的学习闭环，课程材料是否以及何时补齐会直接影响使用价值。
+**「影响」** 停止单独披露后，投资者和分析师无法再直接从公司财报追踪经新加坡实体确认的收入规模，尤其是在美国审查该渠道是否被用于向中国转运芯片的背景下，区域销售与合规风险的可见度随之下降。
 
-**「社区讨论」** 有 CMU 校友对 Tianqi Chen 的 ML Systems 和 15-259 概率与计算表示期待，并请求增加分布式系统、操作系统等课程；也有人提醒，只有讲座视频而缺少项目和反馈时，学习效果会打折扣。另有评论认为，在 AI 时代更应打好基础，把 AI 当作工具而非替代基本功。
+**「社区讨论」** 评论者 tamarind44 指出，1040 亿美元是新加坡子公司 2025 年的外部收入，可能包含经新加坡实体下单、再通过 OEM/ODM 和经销商完成的 GPU 订单；fra 则认为经新加坡结转亚太收入是常见的税务和法律安排，并质疑 FT 报道有煽动性。mlmonkey 提出，中国开发者未必需要实际持有芯片，远程使用海外数据中心即可训练模型。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.youtube.com/channel/UCqvooOJo8792T83va7LMMSA">CS Learn at Carnegie Mellon - YouTube</a></li>
-<li><a href="https://www.pressreleasepoint.com/cmu-opens-access-top-computer-science-classes-through-free-cs-learn-platform">CMU Opens Access to Top Computer Science Classes Through Free ...</a></li>
-<li><a href="https://zeli.app/story/50522980">Carnegie Mellon opens its CS classrooms · Hacker News | Zeli</a></li>
+<li><a href="https://www.bbc.com/news/articles/cmn504nq5033o">US government confirms investigation into tech firm Megaspeed</a></li>
+<li><a href="https://www.nytimes.com/2026/11/09/business/economy/nvidia-megaspeed-investigation-huang.html">U.S. Commerce Dept. Inquiry Into Megaspeed Was Halted After...</a></li>
 
 </ul>
 </details>
 
-**标签**: `#open courseware`, `#computer science education`, `#YouTube`, `#Carnegie Mellon`, `#ML systems`
+**标签**: `#Nvidia`, `#export controls`, `#AI hardware`, `#semiconductor supply chain`, `#corporate disclosure`
 
 ---
 
 <a id="item-tech-news-4"></a>
-### [Optimizely 被曝遭入侵并向 Zoom、GitLab 等站点投放恶意脚本](https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/) ⭐️ 7.0/10
+### [微软推出 MAI Code 2 与 Code 2 Flash 编程模型](https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/) ⭐️ 7.0/10
 
-据报告，Optimizely 遭到入侵，并通过其面向客户的脚本在 Zoom、GitLab 等网站投放恶意代码；攻击者如何获得跨客户写入权限仍不清楚。评论中引述的说明称，这不是 CDN 缓存投毒：Optimizely 的 CDN 分发了被植入的代码，连 www.optimizely.com 和 login.optimizely.com 的脚本片段也受到影响。
+微软公布了 MAI Code 2 和 MAI Code 2 Flash 两款面向编程的 AI 模型。目前可用的信息仅停留在发布层面，没有提供可验证的基准成绩、模型规模、价格或独立测试结果，也未说明两款模型是否已向开发者开放，以及与 GitHub Copilot 的具体集成方式。因此，现阶段能确认的是产品名称和编程场景定位，而非实际能力或可用性。
 
-hackernews · kristjansson · 11月16日 23:00 · [社区讨论](https://news.ycombinator.com/item?id=50524767)
+hackernews · lemonish97 · 11月17日 18:25 · [社区讨论](https://news.ycombinator.com/item?id=50535885)
 
-**「背景：第三方脚本与标签管理的暴露面」** Optimizely 属于一类通过 cdn.optimizely.com 向客户页面注入实验与标签脚本的第三方服务，这些脚本在访问者浏览器中以站点自身的权限执行，因此一旦该域名下发的内容被篡改，影响会同时落到所有接入的站点上。社区评论把这一模式追溯到 Google Tag Manager 的设计初衷——让市场团队无需工程介入即可往页面加“标签”，评论者称其代价是每篇新闻文章都要加载约 10MB 的 JavaScript。换言之，本次事件的核心并非 CDN 缓存污染，而是评论者所指的那条“第三方脚本可被任意改写”的信任链。
+**「背景」** 微软 AI 将 MAI Code 2 和 Code 2 Flash 定位为面向日常企业编码的模型，其中 Flash 侧重高调用量、低成本的例行任务。发布材料用 DeepSWE 1.1、Terminal Bench 2.1、SWE-Atlas 和 FrontierCode v1.1 四项基准来支撑性价比主张：MAI Code 2 据称达到 GPT-6.1 Sol 的 98% 性能而成本为 40%，达到 Claude Opus 5.5 的 96% 性能而成本为 5%。这些对比数字来自微软自己的公告，尚未经过独立复现。
 
-**「影响」** 直接后果是，嵌入 Optimizely 脚本的站点会把被篡改的第三方脚本加载给访问者；报道点名 Zoom 和 GitLab，评论还提到 Optimizely 自家域名也受影响。在 Optimizely 查清攻击者如何获得写入权限并完成清理前，这些站点的运营者应审计、暂停或移除该脚本，而不能只把它当作 CDN 缓存问题处理。
+**「社区讨论」** 有评论者质疑这些基准能否在真实使用中成立，并猜测微软快速追赶的原因；也有人表示已取消 GitHub Copilot 订阅，认为现有付费档位性价比不足，但愿意试用新模型。另有评论者希望微软继续发布像 MAI-Thinking-1 那样深入的技术报告。这些均为个人观点，并非对模型能力的独立验证。
 
-**「社区讨论」** 有评论者批评 Google Tag Manager 这类让市场团队绕过工程团队添加脚本的机制，认为它使页面加载大量第三方 JavaScript 并扩大攻击面；也有人主张大型站点应自托管关键脚本或对供应商脚本实施更严格的发布审查，另有用户表示已在 hosts 文件中屏蔽 cdn.optimizely.com。
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/">MAI Code 2 and Code 2 Flash: Everyday coding at scalable ...</a></li>
+<li><a href="https://www.unite.ai/microsoft-ai-releases-mai-code-2-and-mai-code-2-flash-for-enterprises/">Microsoft AI Releases MAI Code 2 and MAI Code 2 Flash for ...</a></li>
+<li><a href="https://www.datastudios.org/post/microsoft-mai-code-2-github-copilot-code-2-flash-free-plan">Microsoft MAI Code 2 and Code 2 Flash in GitHub Copilot ...</a></li>
 
-**标签**: `#supply chain security`, `#third-party scripts`, `#web security`, `#malware`, `#Optimizely`
+</ul>
+</details>
+
+**标签**: `#Microsoft`, `#AI coding models`, `#model releases`, `#GitHub Copilot`, `#AI competition`
 
 ---
 
 <a id="item-tech-news-5"></a>
-### [报告称 Windows 11 遥测收集开发者所用编码代理与工具](https://xusheng.dev/posts/windows-coding-agent-telemetry/) ⭐️ 7.0/10
+### [Solid 2.0 发布，新增服务端 RPC 与 live/broadcast](https://www.solidjs.com/blog/solid-2-0-the-long-hold/) ⭐️ 7.0/10
 
-一篇开发者博客文章称，Windows 11 会收集用户运行了哪些编码代理和开发者工具的信息，该文在 Hacker News 上引发讨论。由于原文正文未能获取，目前可依据的只有文章标题和社区转述：评论者 not\_a\_bot\_4sho 称，开发工具的使用情况会随“可选诊断数据”一并上传（其说法是默认开启），并可通过“设置 → 隐私和安全性 → 诊断和反馈”关闭。这些说法来自文章作者与评论者，现有材料中没有微软的确认或回应，具体收集哪些字段、上传频率和保留期限均不清楚。
+Solid 2.0 已发布，这是该 JavaScript 框架的一次大版本更新，重点加入面向服务端的新能力，包括 server RPC 以及 live/broadcast 功能。现有材料没有给出具体 API、兼容范围或迁移要求，因此这些能力的确切用法和升级影响仍需以官方文档为准。
 
-hackernews · cwaffles · 11月16日 22:58 · [社区讨论](https://news.ycombinator.com/item?id=50524736)
+hackernews · pier25 · 11月17日 18:56 · [社区讨论](https://news.ycombinator.com/item?id=50536387)
 
-**「技术背景」** 这次争议的技术背景是 Windows 11 的 ETW 诊断报告：一篇逆向分析称，系统组件 MissionControlAggregator 会把 Codex、Claude、Copilot、Cursor 等编码代理和开发工具的使用情况编码成位图，放入可选诊断数据并排队等待上传。该分析称未发现提示词或源代码被收集，因此争论焦点集中在“运行了哪些工具”这类元数据是否应纳入遥测。
+**「候选版本铺垫」** Solid 2.0 并非突然发布：2026 年 8 月的 2.0 RC 已经重构了包结构，将响应式核心拆为 @solidjs/signals、Web 运行时拆为 @solidjs/web，store 留在 solid-js 本体中。同一轮候选版本还宣布异步成为响应式图本身的属性、以 start mode 取代 SolidStart，并默认搭载 Rust/OXC 编译器，这些设计构成了此次正式版的基础。
 
-**「对开发者的影响」** 对在 Windows 11 上运行编码代理的开发者而言，可立即采取的动作是检查“设置 → 隐私和安全性 → 诊断和反馈”中的可选诊断数据开关，按评论者的说法，关闭后这类开发工具遥测就不再上传。由于缺少微软公开的字段清单，企业也难以判断哪些工具名称或路径会进入遥测数据，从而评估合规与保密风险。
+**「影响」** 对 Solid 开发者而言，服务端 RPC 与 live/broadcast 进入框架层后，前后端调用和实时数据推送可以不再完全依赖外部方案；但在缺少兼容性与迁移说明的情况下，现有项目升级前应先核对官方文档。
 
-**「社区讨论」** 评论者对该做法的定性存在分歧：dannyw 指出 Intel、AMD、NVIDIA 驱动以及 Chrome 等早已收集可执行文件名和路径，认为 Windows 并非特例；herf 则认为非侵入式遥测有助于微软确定功能优先级，理由是 Windows 的 AI 代理沙箱 MXC 直到 10 月 7 日才推出、Claude Code 尚未支持，不少代理仍在无沙箱环境或 WSL 中运行。另有数位评论者建议转向 Linux，s\_dev 称单机游戏在 Linux 上基本可正常游玩、多人游戏仍有问题，dead\_hn\_theory 则认为适应期大约一周。
+**「社区讨论」** 有评论认为，Solid 的 server RPC、live 和 broadcast 集成顺滑，比 LiveView 或 htmx/datastar 更自然；也有人指出 Solid 的组件库仍不多，但会在新项目中尝试。另有评论把“Built to Be Written by Agents”理解为改善调试诊断，认为这些改进对手写代码同样有益。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://xusheng.dev/posts/windows-coding-agent-telemetry/">Windows 11 Is Collecting Data on Which Coding Agents and ...</a></li>
-<li><a href="https://windowsforum.com/news/windows-11-optional-telemetry-can-report-coding-agent-usage-research-finds.452631/">Windows 11 Optional Telemetry Can Report Coding Agent Usage ...</a></li>
-<li><a href="https://www.startuphub.ai/ai-news/technology/2026/windows-11-logs-which-coding-agent-you-ran">Windows 11 logs which coding agent you ran | StartupHub.ai</a></li>
+<li><a href="https://www.solidjs.com/blog/solid-2-0-rc-the-big-reveal">Solid 2.0 RC: The Big | SolidJS</a></li>
+<li><a href="https://www.solidjs.com/blog">Blog | SolidJS</a></li>
 
 </ul>
 </details>
 
-**标签**: `#Windows 11 telemetry`, `#developer tools`, `#coding agents`, `#privacy`, `#operating systems`
+**标签**: `#SolidJS`, `#JavaScript frameworks`, `#web development`, `#reactivity`, `#server RPC`
 
 ---
 
 <a id="item-tech-news-6"></a>
-### [Rust 日期时间库 Jiff 发布 1.0 版本](https://burntsushi.net/jiff/) ⭐️ 7.0/10
+### [编码代理的外部沙箱模式及三种实现](https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/) ⭐️ 7.0/10
 
-Rust 日期时间库 Jiff 发布 1.0 版本，作者为 burntsushi，面向需要在 Rust 中处理日期和时间的开发者。当前材料未给出具体 API 变更、性能数据或兼容性承诺，因此这次发布应理解为库进入 1.0 阶段，而不是已公布可量化改进。Hacker News 讨论显示社区关注其技术质量和 API 设计，并把它视为 chrono 之外的一个可选方案。
+Simon Willison 与 Prime Radiant 发布了面向编码代理的“外部沙箱”模式及三个服务端实现：代理生成的代码在专用沙箱内执行，代理本身留在沙箱外。三个实现分别是基于 v86 在 WebAssembly 中运行 Alpine Linux 的 Node.js 服务器、在 Apple Containers 中运行 Alpine Linux 的 Python 服务器，以及基于微软 Quicksand（内置 QEMU 和 Alpine Linux）的 Python 服务器。它们提供相同的 localhost API，可让 Pi、Claude Code 或 Codex 在需要执行代码时调用沙箱；还带有可选的 HTTP/HTTPS 主机允许列表代理，并支持在不向代理暴露密钥的情况下替换凭据。作者将其定位为更安全地试验本地模型、降低误操作或提示注入造成破坏的途径，但来源未给出独立安全验证或保证。
 
-hackernews · burntsushi · 11月16日 16:53 · [社区讨论](https://news.ycombinator.com/item?id=50519744)
+rss · Simon Willison · 11月17日 22:52
 
-**「背景」** Jiff 是 BurntSushi 开发的 Rust 日期时间库，项目文档将其定位为提供难以误用的高层日期时间原语，同时保持合理性能。其文档还专门设有与 Rust 其他主流开源日期时间库的对比页面，便于开发者评估不同库之间的取舍。
+**「背景」** 编码代理通常需要直接在开发机上执行命令和代码，因此模型误操作或提示注入可能造成真实破坏，这也是本地试用模型时的主要顾虑。外部沙箱的做法是把代理本身留在隔离环境之外，只通过 API 把待执行代码交给独立沙箱；本次三个实现分别依托 WebAssembly、Apple Containers 和 Quicksand，但暴露同一个 localhost 接口。
 
-**「影响」** 对正在选型的 Rust 项目来说，Jiff 1.0 值得纳入评估；但材料没有提供与 chrono 的迁移路径或兼容性说明，采用前需自行验证现有日期时间代码的替换成本。
+**「影响」** 对使用编码代理的开发者而言，实际影响是可将 Pi、Claude Code 或 Codex 的代码执行请求改指向沙箱的 localhost API，同时通过允许列表限制沙箱内代码可访问的主机，并用凭据替换机制避免把密钥交给代理。部署时仍需按所选实现准备 WebAssembly、Apple Containers 或 QEMU 运行环境。
 
-**「社区讨论」** chrono 前维护者 quodlibetor 表示，他当年接手是因为 API 不理想，但用户更看重稳定性，改进常遇阻力，最终因倦怠停止维护，并对 burntsushi 编写 Jiff 表示感谢。另有评论者赞赏 Jiff 明确说明并非适用于所有场景，也有人询问 TAI、UT1 等时间尺度支持。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://github.com/BurntSushi/jiff">GitHub - BurntSushi/jiff: A datetime library for Rust that ...</a></li>
-<li><a href="https://docs.rs/jiff/latest/jiff/_documentation/comparison/index.html">jiff::_documentation::comparison - Rust - Docs.rs</a></li>
-
-</ul>
-</details>
-
-**标签**: `#Rust`, `#datetime`, `#libraries`, `#open-source`, `#time zones`
+**标签**: `#AI coding agents`, `#sandboxing`, `#prompt injection`, `#security`, `#developer tools`
 
 ---
 
 <a id="item-tech-news-7"></a>
-### [微软称大规模邮件中断源于 7 月修复引入的缺陷](https://www.theregister.com/saas/2026/11/16/microsoft-blames-monster-email-outage-on-software-defect-introduced-in-july-fix/5310026) ⭐️ 7.0/10
+### [Datasette Lite 借助 Service Worker 在浏览器运行完整应用](https://simonwillison.net/2026/Nov/17/datasette-lite/) ⭐️ 7.0/10
 
-微软将一次大规模邮件服务中断归因于 7 月一次修复中引入的软件缺陷，相关说明以事后复盘形式给出。根据社区评论引用的复盘内容，其负载测试主要覆盖核心较少、性能较弱的硬件，而争用问题在核心更多、更新的机器上反而更严重。给定材料只呈现微软的归因及围绕恢复和负载测试的解释，未提供独立验证或完整故障时间线。
+Simon Willison 发布了 Datasette Lite 的完全重写版：它通过 Service Worker 和 Pyodide，在浏览器中运行完整的 Datasette Python 应用，而不再只是模拟请求并把返回的 HTML 注入页面。用户可通过 lite.datasette.io 的 URL 参数加载 SQLite 数据库、JSON、CSV 或 SQL 脚本，指定 PyPI 上的 Datasette 版本，加载 GitHub 仓库的提交、标签或分支，选择 100 多个 SQLite 版本，并从 PyPI 或 wheel 链接安装插件。该版本已经发布，作者称其与服务器端应用几乎无差别；但远程数据库和元数据 URL 必须支持开放 CORS。
 
-hackernews · Bender · 11月16日 13:18 · [社区讨论](https://news.ycombinator.com/item?id=50517321)
+rss · Simon Willison · 11月17日 16:48
 
-**「背景」** 2026 年 11 月 12 日，Outlook 与 Teams 等 Microsoft 365 服务发生全球性中断；CNET 与 NPR 当时的报道称，Microsoft 表示故障并非网络攻击所致并在抢修，但未给出根本原因（tool-2-1、tool-2-2）。本次报道是事后给出的解释：问题源自 7 月一次修复中引入的软件缺陷，且在受影响服务恢复后，Microsoft 才逐步公布这一归因。
+**「背景」** Datasette Lite 最早于 2022 年发布，当时通过 Pyodide Web Worker 模拟请求，再把生成的 HTML 用 innerHTML 注入页面；由于 innerHTML 中的 script 标签不会执行，依赖 JavaScript 的功能会失效。此次重写改用 service worker 在浏览器内接管请求，使完整的 Datasette 应用及其插件资源能像服务端一样加载。
 
-**「影响」** 这次复盘暴露了负载测试的硬件覆盖差距：若争用确实在核心更多、更新的机器上更严重，只按低核数设备验证容量的团队会低估生产环境风险，应把高核数配置纳入容量测试和恢复演练。
+**「影响」** 开发者可以用一个可分享的 URL 锁定 Datasette 版本、提交或插件组合，直接复现分页等缺陷或演示未完成功能，无需搭建服务器；代价是数据与元数据托管地址必须允许跨域访问。
 
-**「社区讨论」** 评论区把焦点放在恢复策略上：有用户用电网‘黑启动’类比说明不能直接满载恢复，另有人主张按 IP 段限流或轮换连接以逐步恢复服务。还有评论质疑为何负载测试覆盖了较弱硬件却漏掉问题更严重的高核数新硬件，并对关键网络设施使用 Windows 表示意外。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://www.cnet.com/news-live/microsoft-outlook-outage-11-12-2026/">Microsoft Blames Outlook Outage on Software Bug in July ... - CNET</a></li>
-<li><a href="https://www.npr.org/2026/11/12/nx-s1-6039343/outlook-down-widespread-outage-microsoft-email">A negative Outlook : Microsoft scrambles to fix email outage : NPR</a></li>
-
-</ul>
-</details>
-
-**标签**: `#incident postmortem`, `#cloud reliability`, `#Microsoft`, `#load testing`, `#outage`
+**标签**: `#Datasette`, `#Pyodide`, `#WebAssembly`, `#service workers`, `#Python`
 
 ---
 
 <a id="item-tech-news-8"></a>
-### [Linebender 的圆角方形与曲线几何文章](https://linebender.org/wiki/curves/squircle/) ⭐️ 7.0/10
+### [苹果中国区 App Store 新增 AIGC 合规入口](https://www.ithome.com/1/028/158.htm) ⭐️ 7.0/10
 
-Linebender 的 wiki 上有一篇由 raphlinus 撰写的技术文章，主题是圆角方形（squircle）和平滑曲线几何。文章面向图形渲染、UI 设计以及曲率连续曲线相关读者。可用材料没有提供文章正文，因此无法核实其具体方法、示例或结论。
+苹果 App Store Connect 后台新增“AIGC 服务声明与备案信息”和“安全评估证明”两项面向中国大陆分发的合规必填项。现有应用须在 2027 年 1 月 31 日前补齐，新应用则需立即提交。适用对象包括含聊天机器人、图像或视频生成、语音或人脸编辑等 AIGC 服务的应用；使用第三方技术的还须上传授权协议和算法备案号。苹果 2026 年审核指南已纳入生成式 AI 条款。
 
-hackernews · raphlinus · 11月16日 07:55 · [社区讨论](https://news.ycombinator.com/item?id=50515151)
+telegram · zaihuapd · 11月17日 04:29
 
-**「背景」** squircle 是介于正方形与圆形之间的形状，没有单一的数学定义；常见的实现之一是超椭圆，此外还有源自光学领域的另一类定义。Linebender 的文章将 squircle 视为一族可参数化、能在圆形与方形之间连续变化的曲线。超椭圆因用于 iOS 应用图标而广为人知，CSS 中也有 \`corner-shape\` 或 \`figma-squircle\` 等复现方案。
+**「背景」** 苹果此前已在 2026 年审核指南中加入生成式 AI 相关条款，因此这次在 App Store Connect 新增入口，可视为把既有审核规则细化为中国区分发时必须填写的申报字段。中国区对生成式 AI 服务本身有备案和安全评估要求，这也是相关应用需要提交相应证明材料的前提。
 
-**「社区讨论」** 评论中，darthcircuit 以 Zune 第二代播放器的方向键为例，称 squircle 在实体交互中手感顺滑；mosura 则强调曲线若在导数上保持连续，对需要与物理现实交互的设计很重要。另有 thot\_experiment 分享用于样条与超椭圆/回旋曲线的实验工具，scarecrw 提到四维“sphube”并链接论文。
+**「对开发者的直接影响」** 对中国大陆分发含 AIGC 功能应用的开发者来说，AIGC 服务声明、备案信息与安全评估证明已成为 App Store Connect 的必填项：新应用须立即提交，存量应用须在 2027 年 1 月 31 日前补齐。使用第三方 AIGC 技术的团队应提前向供应商索取授权协议和算法备案号，否则可能因材料不全而无法完成这些必填项。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Squircle">Squircle - Wikipedia</a></li>
-<li><a href="https://linebender.org/wiki/curves/squircle/">Squircles - Linebender</a></li>
-<li><a href="https://elsolitario.org/en/2026/11/16/squircle-css-ios-icon-superellipse/">Squircle in CSS: What It Is and How to Build One</a></li>
+<li><a href="https://aigc.news/events/app-store-aigc-2027-1-31-2026-11-17-5a388a40/">Reportedly: Apple adds AIGC compliance fields to China App ...</a></li>
+<li><a href="https://technode.com/2026/11/17/apple-adds-generative-ai-compliance-filings-to-app-store-connect-in-china/">Apple adds generative AI compliance filings to App Store ...</a></li>
 
 </ul>
 </details>
 
-**标签**: `#squircles`, `#computer graphics`, `#UI design`, `#curves and splines`, `#geometry`
+**标签**: `#Apple App Store`, `#AIGC 合规`, `#中国区`, `#App Store Connect`, `#生成式 AI`
 
 ---
 
 <a id="item-tech-news-9"></a>
-### [Marimba：冻结语音编码器支持多类型查询](https://www.reddit.com/r/MachineLearning/comments/1xxsqro/marimba_a_system_one_model_for_speech_r/) ⭐️ 7.0/10
+### [加州起诉 OpenAI：指其 AI 安全表述误导公众](https://www.theregister.com/ai-and-ml/2026/11/16/california-sues-openai-for-misleading-public-about-ai-safety/5310297) ⭐️ 7.0/10
 
-Reddit 研究帖介绍了 Marimba：它针对每 8 秒音频窗口只运行一次冻结的 Qwen3-ASR-0.6B 编码器，并用校准后的概率回答用户输入的词项、语言、话轮结束、说话人变化和说话人数等查询。作者报告，在 1,000 道公共问题上，Marimba 在 9 项测试中的 6 项追平或超过 Qwen3-Omni（30B-A3B），但在 Speech Commands 上仍落后；语言识别在 300 条 FLEURS 片段上达到 100%，说话人变化 AUROC 为 0.966–0.980。作者也承认，话轮结束检测在 Smart Turn 自身测试集上的 AUROC 为 0.930，低于 Smart Turn v3.2 的 0.982；在 ICSI 会议上，Marimba 为 0.716，Smart Turn v3.2 为 0.712，基本持平；并且所有任务头在 CochlScene 场景分类上只达到随机水平。代码、Apache-2.0 权重和 pip 包 marimba-audio 已发布，但上述结果来自作者自述的论文摘要，尚待独立验证。
+加州总检察长 Rob Bonta 以不公平竞争和妨害公共利益为由起诉 OpenAI，指控其在缺乏适当监管与安全措施的情况下测试具有潜在危险的模型，并就此误导、危及公众。诉状援引 Hugging Face 基础设施被攻破的事件，称同类事故已知达 80 起。Bonta 还称 OpenAI 未实质配合其 9 月发出的调查传票；OpenAI 未回应置评请求。上述内容均为检方指控，目前尚无法院裁定，且现有信息仅为简要转述，诉状细节有限。
 
-reddit · r/MachineLearning · /u/solanotodesch · 11月16日 15:47
+telegram · zaihuapd · 11月17日 06:00
 
-**「背景」** Marimba 建立在已有的 Qwen3-ASR-0.6B 语音识别模型之上：它不重新训练编码器，而是把冻结编码器的输出当作共享特征，再为不同查询接上轻量读出层或校准步骤。作者表示，这是对上周帖子的后续，此次补充了论文、Apache-2.0 权重、代码和在线演示，因此当前材料已从初步预告扩展为可供检查的技术说明。
+**「背景」** 诉状以加州不公平竞争与妨害公共利益为法律依据，因此需要论证 OpenAI 的公开表述和测试行为如何误导公众并造成公共危害。诉状还援引 Hugging Face 基础设施被攻破事件，称同类事故已知达 80 起；Bonta 同时指出，OpenAI 未实质配合 9 月发出的调查传票。
 
-**「影响」** 对语音机器学习开发者而言，Marimba 的主要价值是同一个冻结编码器可复用于多种查询，并输出校准后的概率；但它的层读出方案在未见任务上失效，因此不能直接当作通用音频分类器部署。已发布的 Apache-2.0 权重和 pip 包可用于复现和基线比较。
+**「潜在影响」** 若该案成立，AI 公司公开的安全承诺与安全表述可能被直接纳入消费者保护与不公平竞争责任的审查范围，而不只是技术文档问题；同时，Bonta 关于未配合 9 月传票的说法意味着，在加州运营的 AI 公司面对调查时的文件留存与响应流程也可能成为争点。
 
-**标签**: `#speech recognition`, `#audio foundation models`, `#model calibration`, `#efficient inference`, `#Qwen3-ASR`
+**标签**: `#AI regulation`, `#OpenAI`, `#California lawsuit`, `#AI safety`, `#tech policy`
 
 ---
 
 <a id="item-tech-news-10"></a>
-### [duetto：不微调，仅在采样时引导预训练音乐 Transformer 实时伴奏爵士](https://www.reddit.com/r/MachineLearning/comments/1xxkyh3/steering_a_pretrained_music_transformer_at/) ⭐️ 7.0/10
+### [中国 Q/V 频段无线通信实验实现双向 27Gbps](https://www.news.cn/tech/20261117/d6323540dccf4e2a976c48a762795956/c.html) ⭐️ 7.0/10
 
-Reddit 用户 /u/GGAllin43 发布了 duetto：一个面向 MIDI 键盘的实时爵士伴奏程序，把演奏者与模型的音符合并为同一事件序列，逐音符预测，并直接使用预训练的 Anticipatory Music Transformer（Thickstun 等，2023）而不做微调，所有控制都放在采样阶段——用规则层遮蔽不允许的 logits（该等待的手、超出音域的音、不在拍点上的低音），并对当前和弦音、强拍引导音、待引用乐句的下一个音加权。乐句取自 Weimar Jazz Database 的转谱独奏，按独奏者换气处切分、移调到曲目和弦上并在一个 chorus 内发展；作者称演示中约 61% 的独奏音符来自引用乐句或主题，其余由模型生成。服务端始终提前采样约 1 秒音乐，并在演奏者弹奏时重采样尚未播放的部分，以降低延迟；速度约为 3080 Ti 上每音符 12 ms（medium）和 18 ms（large），large 模型在 Jetson Orin Nano 上约 90 ms/音符，仍可现场演奏。作者也列出局限：可能偏离演奏者、响应难以预测、模型想法与规则之间的平衡很脆弱（偏置过强像乐句手册，过弱则不像爵士），且未给出量化评测；代码在 GitHub 上免费供非商业使用，演示曲为 160 bpm 的《Autumn Leaves》。
+中科院空天信息创新研究院等单位在丽江中国遥感卫星地面站完成 Q/V 频段高阶体制高码速率双向通信实验，首次系统测试 64QAM 至 512QAM 多种调制模式。512QAM 下单通道双向速率达 6.75Gbps，结合双载频和极化复用提升至 27Gbps，被表述为刷新国内该频段纪录，关键指标达国内领先、国际先进水平。团队后续争取实现超过 50Gbps；目前成果属于实验验证，尚未成为部署系统，其 6G 与卫星互联价值仍是潜在应用方向。
 
-reddit · r/MachineLearning · /u/GGAllin43 · 11月16日 09:19
+telegram · zaihuapd · 11月17日 08:45
 
-**「背景：预期式音乐 Transformer」** Anticipatory Music Transformer 是 Thickstun 等人于 2023 年提出的自回归符号音乐模型（arXiv:2306.08620），它把事件序列与控制序列交错排列作为建模对象，使模型在生成一路内容时能“预期”另一路输入，从而支持音乐控制任务。正因为预训练模型本身就建立在交错序列之上，duetto 才能把演奏者的音符与模型的输出拼成同一条事件序列，并把控制放在采样阶段而不是微调阶段完成。
+**「背景」** Q/V 频段属于毫米波高频段，可用带宽远大于常规微波频段，被视为卫星通信与 6G 研究的候选频谱；但频率越高，传输损耗和雨衰影响越明显。高阶调制（如 512QAM）能在单位符号内承载更多比特，却对信号质量和链路余量要求更高，因此本次实验同时测试 64QAM 至 512QAM 多种模式，再以双载频和极化复用叠加容量。
 
-**「对实时 MIDI 伴���开发者的影响」** 对想做实时 MIDI 合奏系统的开发者来说，这个项目说明可以不改动预训练模型权重，把乐理约束全部放到采样阶段——用一个规则层在每次采样前屏蔽非法音符（该等待的手、超出音域的音、不在拍上的低音）并加权当前和弦音与导音——而代价是这套掩码与偏置规则需要按声部、音域和节拍逐条编写和调参，作者也承认偏置过多会像背乐句库、过少则不像爵士，且模型会偏离演奏者。延迟数据（3080 Ti 上每音符约 12 ms/18 ms，Jetson Orin Nano 上大型模型约 90 ms/音符）表明嵌入式现场演出在算力上可行，但代码仅限非商业用途，商用需要另行获得授权；此外作者未提供任何量化评测，效果仍属演示级别。
+**「峰值速率不等于在轨服务能力」** 对卫星互联和 6G 链路开发者来说，27 Gbps 目前只是地面站实验中的双向峰值：单通道在 512QAM 下为 6.75 Gbps，依靠双载频和极化复用才达到这一数字。它尚不能作为在轨服务速率承诺，后续系统设计仍需在真实星地链路上验证高阶调制与复用能否稳定维持。
 
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://arxiv.org/abs/2306.08620">[2306.08620] Anticipatory Music Transformer</a></li>
-<li><a href="https://paperswithcode.co/paper/2306.08620">Anticipatory Music Transformer (arXiv...) | Papers with Code</a></li>
-
-</ul>
-</details>
-
-**标签**: `#music generation`, `#transformer models`, `#sampling-time control`, `#real-time interaction`, `#MIDI`
-
----
-
-<a id="item-tech-news-11"></a>
-### [腾讯混元发布 Hy4 flash：224B 总参数、1M 上下文，API 大幅降价](https://mp.weixin.qq.com/s/5yBbf-ctYziM5r0i6Y17lA) ⭐️ 7.0/10
-
-腾讯混元发布 Hy4 flash，这是一个总参数 224B、激活 12B 的多模态模型，支持 1M 上下文，并已上线腾讯云 TokenHub、WorkBuddy 和元宝。定价为每百万 Token 输入 0.5 元、输出 2 元，命中缓存时输入为 0.02 元，明显低于 Hy4。官方称其综合效果略优于 Hy4 preview，WorkIndex 单任务成本为 Hy4 preview 的 1/13、Hy4 的 1/20；上述效果与成本数字均为厂商自述，尚无独立验证。11 月 30 日前 WorkBuddy 限免、API 五折，开源仅为计划，尚未落地。
-
-telegram · zaihuapd · 11月16日 07:17
-
-**「背景」** 腾讯混元此前已提供 Hy4 preview 与 Hy4，二者是此次 Hy4 flash 在效果和成本上的参照。Hy4 flash 以 224B 总参数、12B 激活参数和 1M 上下文面向日常任务，官方把 API 定价下调作为主要区分点。
-
-**「影响」** 对开发者而言，直接变化是长上下文多模态推理的单价被压低到每百万输入 Token 0.5 元、缓存命中 0.02 元，使批量文档处理类任务可以先按官方公布的 WorkIndex 成本口径试算再接入；但自托管方案暂时不可行，因为开源只是计划，且实际效果仍需以自有任务集验证厂商宣称的“略优于 Hy4 preview”。
-
-**标签**: `#Tencent Hunyuan`, `#LLM release`, `#multimodal`, `#long context`, `#API pricing`
-
----
-
-<a id="item-tech-news-12"></a>
-### [美国与九国签署《旧金山宣言》共保 AI 供应链](https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-san-francisco-declaration-on-the-secure-foundations-of-enduring-prosperity/) ⭐️ 7.0/10
-
-11 月 15 日，美国与澳大利亚、印度、以色列、日本、韩国、卡塔尔、新加坡、阿联酋和英国签署《旧金山宣言》，称将共同保护支撑超级智能（SI）的敏感技术和关键基础设施。宣言设立五个工作组，分别负责创新政策框架、SI 在关键领域的应用、SI 全栈供应链协作、安全港与供应链安全枢纽，以及 SI 安全与韧性。目前公布的内容未包含约束性承诺、资金安排、时间表或具体技术标准，因此其直接效果限于启动政府间协调机制，而非已生效的监管或采购规则。
-
-telegram · zaihuapd · 11月16日 10:40
-
-**「背景」** 《旧金山宣言》是在美国负责经济事务的副国务卿雅各布·赫尔伯格（Jacob Helberg）召集的 Pax Silica 创始人闭门会议（Pax Silica Founders Retreat）上签署的，该活动于 2026 年 11 月 15 日在旧金山举行，签署方被称为“Pax Silica 参与方”。据维基百科条目记述，宣言要求参与方设立工作组，最终目标是减少各国在关键矿产、AI 模型和半导体芯片上对美国对手的依赖；美国国务院的声明则称，参与方要先把“必须保护什么”确定下来，再承诺共同保护。
-
-**「影响」** 对半导体和 AI 供应链企业而言，现阶段没有新增的约束性合规义务或截止期限；需要关注的是“安全港与供应链安全枢纽”和“全栈供应链协作”两个工作组后续是否形成出口管制、采购或认证要求。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/San_Francisco_Declaration_on_the_Secure_Foundations_of_Enduring_Prosperity">San Francisco Declaration on the Secure Foundations of Enduring Prosperity</a></li>
-<li><a href="https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-san-francisco-declaration-on-the-secure-foundations-of-enduring-prosperity/">The San Francisco Declaration on the Secure Foundations of ...</a></li>
-
-</ul>
-</details>
-
-**标签**: `#AI policy`, `#AI supply chain`, `#international cooperation`, `#AI governance`, `#semiconductors`
-
----
-
-<a id="item-tech-news-13"></a>
-### [亚马逊称 AI 代理窃取 API 密钥以维持模型调用](https://cybernews.com/security/amazon-autonomous-cybercrime-artex-framework/) ⭐️ 7.0/10
-
-亚马逊报告称，一个 AI 代理活动利用开源渗透测试框架 Artex 驱动，窃取公网暴露的 LiteLLM、Dify 等 AI 应用的 API 密钥，验证后将有效密钥汇入共享池，用于支付更多大模型调用。该活动据称自 10 月 3 日开始，11 月 5 日被亚马逊的诱饵网络 MadPot 截获并阻断。亚马逊以中等信心将该行动归因于中国相关威胁组织，并称并非所有被列出的目标都已失陷，已通知可能受影响的 AWS 客户。上述内容均为亚马逊的单方面说法，来自二手聚合渠道的转述，尚无独立验证。
-
-telegram · zaihuapd · 11月16日 13:00
-
-**「背景」** Artex 是一个开源的代理式 AI 渗透测试框架，攻击者可让 AI 代理自动扫描公网暴露的 AI 应用；LiteLLM、One API、Dify 这类应用通常保存着模型提供商的 API 密钥，一旦暴露，这些密钥就可能被读取和滥用。亚马逊的 MadPot 是一个分布式诱饵传感器网络，此次通过把传感器伪装成可被利用的服务，捕获了代理发出的请求。
-
-**「影响与关注点」** 对运行公网暴露的 LiteLLM、Dify 等 AI 网关或代理服务的团队而言，直接风险是密钥泄露后可被用于支付攻击者自身的模型调用费用，而非仅造成一次性数据泄露；这也意味着密钥轮换与出站调用额度监控需要按已被滥用的前提来核查。已被亚马逊通知的 AWS 客户应优先确认自身密钥是否出现在暴露实例中。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://aws.amazon.com/blogs/security/amazon-threat-intelligence-observes-threat-actors-running-cybercrime-campaigns-with-artex-ai-agents/">Amazon Threat Intelligence observes threat actors running ...</a></li>
-<li><a href="https://cybernews.com/security/amazon-autonomous-cybercrime-artex-framework/">AI credential theft campaign used stolen API keys to scale</a></li>
-<li><a href="https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html">Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify ...</a></li>
-
-</ul>
-</details>
-
-**标签**: `#AI 安全`, `#自主代理`, `#API 密钥`, `#网络犯罪`, `#云安全`
-
----
-
-<a id="item-tech-news-14"></a>
-### [Apple 智能登陆国行 iPad 与 Mac 测试版，云端功能设每日上限](https://www.theverge.com/tech/1034581/apple-intelligence-siri-ai-daily-usage-limits-icloud-subscription) ⭐️ 7.0/10
-
-据 The Verge 报道，Apple 智能（Apple Intelligence）已在中国区（国行）iPad 和 Mac 的测试版上线，用户需升级到 iPadOS 27.3 beta 2 或 macOS 27.3 beta 2 才能体验。同一批测试版中，苹果开始测试部分 Siri AI 与 Apple 智能功能的每日设备使用上限：基础 Siri 命令仍免费且不限量，受限于云端进阶功能，包括多步骤个人情境请求以及图片生成与编辑。报道还称，影响所有 Apple 操作系统的一个 worse\_query 文件沙箱逃逸漏洞已被修复。上述内容来自简短的聚合测试版报道，未披露具体限额数值或漏洞技术细节。
-
-telegram · zaihuapd · 11月16日 20:12
-
-**「背景」** MacRumors 汇总称，苹果表示 WWDC 2026 发布的 Siri AI 及其他 Apple Intelligence 功能不会在国行 iOS 27.3 上提供。此次国行 iPad 和 Mac 的 27.3 beta 2 可体验这些能力，说明中国区上线至少先落在 iPad 和 Mac 测试版，iOS 侧是否同步尚不明确。
-
-**「影响」** 对国行 iPad 与 Mac 测试用户而言，升级后虽然能用上 Apple 智能，但多步骤个人情境请求和图片生成、编辑等云端功能在达到每日上限后当天将不可用，只有基础 Siri 命令不受限制；依赖这些功能做日常工作的用户需要预留替代方案。此外，报道称沙箱逃逸漏洞已在各系统测试版中修复，正式版用户何时获得修复尚未说明。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://www.macrumors.com/2/">MacRumors: Apple News and Rumors - Page 2</a></li>
-
-</ul>
-</details>
-
-**标签**: `#Apple Intelligence`, `#China`, `#Siri`, `#security vulnerability`, `#usage limits`
-
----
-
-<a id="item-tech-news-15"></a>
-### [阿里、腾讯、月之暗面据报限制新模型攻击性网络能力](https://www.bloomberg.com/news/articles/2026-11-16/china-s-top-ai-firms-limit-cyber-capabilities-in-latest-models) ⭐️ 7.0/10
-
-据 Bloomberg 报道，阿里巴巴、腾讯和月之暗面等中国头部 AI 公司在新一代模型中削弱了进攻性网络能力，同时提升防御表现。阿里最新旗舰 Qwen 未开放权重，用户无法下载并自定义完整版本；腾讯在 11 月发布 Hy4 前已削减网络功能。报道将这些调整与中国商务部上月公布的出口管制草案联系起来，该草案拟禁止可攻击关键基础设施或政府网络的 AI 工具出口。上述报道为简要汇总，未说明各模型具体削减了哪些能力，也未提供独立验证。
-
-telegram · zaihuapd · 11月17日 02:20
-
-**「背景」** 此次收紧发生在 10 月中国商务部公布出口管制措施之后：据 AP 和 Tech Times 报道，该措施涉及 40 项技术，并首次将 AI 模型权重纳入出口限制范围，路透则将其概括为围绕中国 AI 核心资产划出界线。对于以开放权重为主要发布方式的中国厂商，模型权重和能力能否对外提供，由此成为发布前需要评估的合规问题。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://apnews.com/article/china-export-restrictions-ai-chips-solar-us-5ac381c0c6d6628bbea2e0da7d855a5b">China moves to curb tech exports including for AI and solar ...</a></li>
-<li><a href="https://www.reuters.com/business/retail-consumer/chinas-new-export-curbs-draw-line-around-its-ai-crown-jewels-2026-10-28/">China&#x27;s new export curbs draw a line around its AI crown ...</a></li>
-<li><a href="https://www.techtimes.com/articles/329196/20261019/chinas-new-ai-export-controls-apply-now-if-you-licensed-deployed-covered-chinese-models.htm">China&#x27;s New AI Export Controls Apply Now if You Licensed or ...</a></li>
-
-</ul>
-</details>
-
-**标签**: `#AI policy`, `#export controls`, `#AI safety`, `#open-weight models`, `#China AI industry`
+**标签**: `#6G`, `#Q/V band`, `#wireless communications`, `#satellite internet`, `#modulation`
 
 ---
 
 ## 财经新闻
 
 <a id="item-finance-news-1"></a>
-### [卢特尼克因英伟达间谍风波受质询，其子掌管的 Cantor 减持英伟达](https://www.cnbc.com/2026/11/13/howard-lutnick-nvidia-jensen-huang-china-cantor-fitzgerald.html) ⭐️ 7.0/10
+### [美国科技公司在中国面临两难：芯片限制收紧与供应链风险并存](https://www.cnbc.com/2026/11/17/us-tech-firms-china-ties-political-pressure.html) ⭐️ 7.0/10
 
-据 CNBC 报道，美国商务部长霍华德·卢特尼克因其前公司 Cantor Fitzgerald 与英伟达的关系面临质询；CNBC 对证券文件的分析显示，该公司报告的英伟达持股数量在 2025 年 9 月至 2026 年 3 月间下降 49%，至 178 万股，但目前没有证据表明存在不当行为。
+美国政府周一收紧限制，阻止中国企业通过海外数据中心远程使用美国先进芯片。据 CNBC 报道，这让英伟达、苹果等美国科技公司在中国的客户准入与供应链安排上更难取舍；苹果大中华区（含中国大陆、香港和台湾）约占其销售额的 15%，且大部分 iPhone 仍在中国生产。
 
-rss · CNBC Finance · 11月16日 12:14
+rss · CNBC Finance · 11月17日 08:52
 
-**「背景」** 美国商务部主管出口管制；卢特尼克曾任坎托·菲茨杰拉德负责人，该公司现由其子经营。据 Axios 报道，他曾抵制对涉嫌将英伟达先进芯片转运至中国的 Megaspeed 采取行动。
+**「背景」** 上周，英伟达 CEO 黄仁勋因被指与一名美方怀疑为中国间谍的女性等人存在婚外情而辞职，公司任命首席财务官 Colette Kress 为临时 CEO；苹果则已于 9 月 1 日由约翰·特努斯接替蒂姆·库克出任 CEO。同一周，特朗普政府收紧对中国企业远程使用美国先进芯片的限制，美国国务院主导的《旧金山宣言》也由新加坡、英国等多国签署，承诺保护支撑人工智能供应链的敏感技术。
 
-**「影响」** 美国商务部已针对中国数据中心使用方面的漏洞采取行动，这是 Nvidia 丑闻后的首个政策回应；相关限制若落地，可能进一步收紧 Nvidia 芯片对华销售，并直接影响依赖这些芯片的中国数据中心运营商。
+**「影响」** 据咨询公司 Tidalwave Solutions 的 Cameron Johnson，若北京以关键矿产作为贸易谈判筹码，钇等稀土供应紧张可能限制飞机发动机的生产和维修，波及依赖这些材料的美国制造商。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.bbc.com/news/articles/c67429m3vem3o">How a sex scandal at Nvidia is putting pressure on the White House</a></li>
-<li><a href="https://www.cnbc.com/2026/11/13/howard-lutnick-nvidia-jensen-huang-china-cantor-fitzgerald.html">Howard Lutnick&#x27;s sons&#x27; Nvidia ties amid Jensen Huang China ...</a></li>
-<li><a href="https://www.cnbc.com/2026/11/16/nvidia-commerce-china-lutnick.html">Nvidia fallout: Commerce targets loophole for China &#x27;s data center use</a></li>
+<li><a href="https://www.nytimes.com/2026/11/12/technology/nvidia-jensen-huang.html">Jensen Huang Resigns From Nvidia After Affairs - The New York...</a></li>
+<li><a href="https://www.npr.org/2026/11/12/nx-s1-6037833/jensen-huang-nvidia-stepped-down">Nvidia CEO Jensen Huang resigns amid spy scandal : NPR</a></li>
+<li><a href="https://www.apple.com/newsroom/2026/04/tim-cook-to-become-apple-executive-chairman-john-ternus-to-become-apple-ceo/">Tim Cook to become Apple Executive Chairman John Ternus to ...</a></li>
+<li><a href="https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-san-francisco-declaration-on-the-secure-foundations-of-enduring-prosperity/">The San Francisco Declaration on the Secure Foundations of ...</a></li>
+<li><a href="https://www.industry.gov.au/publications/san-francisco-declaration-secure-foundations-enduring-prosperity-signed-countries-attending-pax-silica-summit-15-november-2026">The San Francisco Declaration on the Secure Foundations of ...</a></li>
 
 </ul>
 </details>
 
-**标签**: `#Nvidia`, `#U.S. export controls`, `#conflict of interest`, `#Commerce Department`, `#semiconductor industry`
-
----
-
-<a id="item-finance-news-2"></a>
-### [英特尔及 CEO 陈立武遭股东集体诉讼](https://www.investing.com/news/stock-market-news/intel-sued-by-shareholders-following-29-stock-plunge-5028171) ⭐️ 7.0/10
-
-英特尔及 CEO 陈立武、CFO 津斯纳遭股东集体诉讼，股东指控他们在公司 10 月 29 日发布不及预期的第四季度营收和利润预测之前，隐瞒了 PC 需求疲软和库存积压的影响；预测发布后的次日，公司股价暴跌 28.6%，市值蒸发约 1400 亿美元。该诉讼由一家密歇根州养老基金牵头，上周五在美国圣何塞联邦法院提起，代表 2026 年 7 月 23 日至 10 月 29 日期间买入股票的投资者。
-
-telegram · zaihuapd · 11月16日 11:10
-
-**「背景」** 陈立武自 2025 年起出任英特尔 CEO；这起集体诉讼拟代表 2026 年 7 月 23 日至 10 月 29 日买入股票的投资者，并已在圣何塞联邦法院提起，指控称公司在 10 月 29 日发布不及预期的第四季度营收和利润预测前，隐瞒了 PC 需求疲软和库存积压。
-
-**「影响」** 美国政府持有的英特尔 9.9%股份因这轮股价暴跌账面缩水逾 100 亿美元，尽管仍约为其买入价的三倍。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Lip-Bu_Tan">Lip - Bu Tan - Wikipedia</a></li>
-<li><a href="https://finance.yahoo.com/markets/article/intel-stock-plunges-nearly-29-its-worst-day-since-1974-205955309.html">Intel stock plunges nearly 29%, its worst day since 1974</a></li>
-
-</ul>
-</details>
-
-**标签**: `#Intel`, `#shareholder class action`, `#stock plunge`, `#earnings guidance`, `#semiconductors`
+**标签**: `#US-China tech tensions`, `#semiconductor export controls`, `#Nvidia`, `#Apple supply chain`, `#rare earth minerals`
 
 ---
