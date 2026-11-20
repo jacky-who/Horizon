@@ -5,368 +5,520 @@ date: 2026-11-20
 lang: en
 ---
 
-> From 34 items, 15 important content pieces were selected
+> From 38 items, 21 important content pieces were selected
 
 ---
 
 **Technology News**
-1. [PostgreSQL 19 ships with WAIT FOR LSN consistency](#item-tech-news-1) ⭐️ 9.0/10
-2. [Anthropic debuts on Nasdaq, testing AI valuations in public markets](#item-tech-news-2) ⭐️ 8.0/10
-3. [PHP stream wrapper bug silently drops TLS for mixed-case HTTPS and FTPS schemes](#item-tech-news-3) ⭐️ 8.0/10
-4. [UK government forced to admit secret Apple encryption order](#item-tech-news-4) ⭐️ 7.0/10
-5. [OpenJDK &\#x27;java4shell&\#x27; PR draws Oracle and LLM questions](#item-tech-news-5) ⭐️ 7.0/10
-6. [European Commission rolls out Matrix to more than 40,000 staff](#item-tech-news-6) ⭐️ 7.0/10
-7. [Anthropic reports Claude contributions to two black-hole physics problems](#item-tech-news-7) ⭐️ 7.0/10
-8. [PHP 8.6 Release Notes Cover Runtime Changes and ZTS Overhead](#item-tech-news-8) ⭐️ 7.0/10
-9. [PHP plans CRITICAL security release across supported versions](#item-tech-news-9) ⭐️ 7.0/10
-10. [Google Play to require foldable and large-screen adaptation from 2027](#item-tech-news-10) ⭐️ 7.0/10
-11. [OpenAI reports chip-design gains, AMD GPU PPA up to 14%](#item-tech-news-11) ⭐️ 7.0/10
-12. [Gemini can control Mac apps for US subscribers](#item-tech-news-12) ⭐️ 7.0/10
+1. [Levent Alpöge Posts Claimed Generalized Riemann Hypothesis Proof](#item-tech-news-1) ⭐️ 9.0/10
+2. [Terry Tao Discusses Unforced Fluid Singularities and GRH](#item-tech-news-2) ⭐️ 8.0/10
+3. [Unverified Navier–Stokes blow-up claim posted on GitHub](#item-tech-news-3) ⭐️ 8.0/10
+4. [PHP mixed-case https:// schemes silently skip TLS, patched in 8.2.36+](#item-tech-news-4) ⭐️ 8.0/10
+5. [Meta&\#x27;s AI Agent Muse Reportedly Mixes Accounts, Exposing Private Data](#item-tech-news-5) ⭐️ 8.0/10
+6. [KVM CVE-2026-99312 lets AMD guests read host memory](#item-tech-news-6) ⭐️ 8.0/10
+7. [Alessandro Masullo Announces Claimed GRH Proof in Haste](#item-tech-news-7) ⭐️ 7.0/10
+8. [Inkling 2 Mini: open-weight looped MoE model for local inference](#item-tech-news-8) ⭐️ 7.0/10
+9. [Report: SEC probing Nvidia accounting as shares extend rout](#item-tech-news-9) ⭐️ 7.0/10
+10. [Paper Claims a Language Model Can Rewrite Its Own Weights; HN Questions Novelty](#item-tech-news-10) ⭐️ 7.0/10
+11. [Scott Aaronson on an apparent LLM proof of the Riemann Hypothesis](#item-tech-news-11) ⭐️ 7.0/10
+12. [Signal describes privacy work as users debate AI app access and VPN CAPTCHAs](#item-tech-news-12) ⭐️ 7.0/10
+13. [AI-designed Frostbite CPU claim prompts debate on novelty and verification](#item-tech-news-13) ⭐️ 7.0/10
+14. [Levent Alpöge claims Claude-assisted Riemann Hypothesis proof](#item-tech-news-14) ⭐️ 7.0/10
+15. [Gemini can now control Mac apps on users&\#x27; behalf in the US](#item-tech-news-15) ⭐️ 7.0/10
+16. [UK tribunal rules for Apple, opens encryption backdoor case to public](#item-tech-news-16) ⭐️ 7.0/10
+17. [U.S. House panel discloses nearly 880,000 AI chip export approvals to China](#item-tech-news-17) ⭐️ 7.0/10
+18. [US tightens chip exports as India seeks AI compute growth](#item-tech-news-18) ⭐️ 7.0/10
+
+**Technology Blog**
+1. [Day-0 vLLM Support for the Looped Inkling 2 Mini](#item-tech-blog-1) ⭐️ 8.0/10
+2. [Why Output Caching Is Low-Leverage for LLM Costs](#item-tech-blog-2) ⭐️ 6.0/10
 
 **Financial News**
-1. [Anthropic Reportedly Opens 34% Above IPO Price in Nasdaq Debut](#item-finance-news-1) ⭐️ 9.0/10
-2. [GTA 6 preorders estimated at 17.07 million, 75% on PS5](#item-finance-news-2) ⭐️ 7.0/10
-3. [Asian stocks fall as AI spending doubts mount after Anthropic IPO](#item-finance-news-3) ⭐️ 7.0/10
+1. [Beijing draft lease contract would bar deposit deductions for normal wear and tear](#item-finance-news-1) ⭐️ 7.0/10
 
 ---
 
 ## Technology News
 
 <a id="item-tech-news-1"></a>
-### [PostgreSQL 19 ships with WAIT FOR LSN consistency](https://simonwillison.net/2026/Nov/19/postgresql-19/) ⭐️ 9.0/10
+### [Levent Alpöge Posts Claimed Generalized Riemann Hypothesis Proof](https://alpo.ge/remark.pdf) ⭐️ 9.0/10
 
-PostgreSQL 19 has been released, about two months later than its usual September cadence; the post attributes the delay mainly to a wave of AI-reported vulnerability issues the team had to address. The release adds \`WAIT FOR LSN\`, which lets a session on a standby wait until it has replayed WAL up to a specified log sequence number before running a query, providing read-your-writes consistency for applications that send reads to replicas. An application can capture the primary&\#x27;s current WAL insert LSN and pass it to the standby, optionally with a timeout that errors if the replica has not caught up.
+Levent Alpöge has posted a claimed proof of the Generalized Riemann Hypothesis at alpo.ge/remark.pdf, reportedly supported by a large Lean formalization rather than a conventional short paper. Commenters describe the Lean artifact as about 1.3 GB and roughly 15 million lines, split into 14 downloadable parts, and point to an MIT page associated with Andrew Sutherland that lists verification checks and says more were still finishing as of 2026-11-20 22:05 UTC. The result has not been independently confirmed in the supplied material, so it remains a claim; a separate “completely human proof” is also linked in the discussion.
 
-rss · Simon Willison · Nov 19, 20:43
+hackernews · iamronaldo · Nov 20, 14:16 · [Discussion](https://news.ycombinator.com/item?id=50574968)
 
-**「Background」** PostgreSQL has typically shipped a major release each September, but this cycle slipped by about two months. The post attributes the delay mainly to a wave of AI-reported vulnerability issues the team had to address. The new WAIT FOR LSN command addresses a related replication issue: standbys replay the write-ahead log asynchronously, so reads can lag behind writes made on the primary unless the application explicitly waits for replay to catch up.
+**「What the conjecture says and who is claiming it」** The Riemann Hypothesis is the 167-year-old conjecture about the distribution of the primes; the Generalized Riemann Hypothesis, which Alpöge says his proof confirms, extends that guess far beyond Riemann&\#x27;s original formulation into a much broader class of zeta and L-functions. The author of the claimed proof, Levent Alpöge, is a Turkish-American number theorist known for work in number theory and arithmetic statistics who was a junior fellow in the Harvard Society of Fellows before joining Anthropic as a member of its technical staff.
 
-**「Impact」** For teams that route reads to standbys, the new command can replace hand-rolled replication-lag checks: they must capture the primary&\#x27;s LSN and issue \`WAIT FOR LSN\` on the standby, and can set a timeout to fail rather than serve stale data.
+**「Impact」** For mathematicians and formal-methods researchers, assessing the claim means auditing a very large Lean development—commenters cite 1.3 GB and about 15 million lines delivered in 14 parts—so independent checking is a substantial engineering and compute task, not just a reading exercise; the MIT checks page indicates verification was still in progress at the reported timestamp.
 
-**Tags**: `#PostgreSQL`, `#databases`, `#open source`, `#software releases`, `#WAIT FOR LSN`
+**「Community discussion」** Commenters report that the Lean checks provide strong evidence and also link a separate “completely human proof,” while one objects to framing that could shift credit from Alpöge as a mathematician to a company. One commenter also cites a recent Terence Tao remark that current AI alone could not have solved the Riemann hypothesis, making the role of AI in this claim a point of debate.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Levent_Alp%C3%B6ge">Levent Alpöge - Wikipedia</a></li>
+<li><a href="https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/">Anthropic mathematician claims to prove Riemann hypothesis , most...</a></li>
+<li><a href="https://www.clarin.com/us-news/who-is-levent-alpoge-the-anthropic-mathematician-who-claims-solved-the-riemann-hypothesis-with-claude_0_2WdGvYKBVM.html">Who is Levent Alpöge ? The Anthropic mathematician who claims he...</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#Riemann Hypothesis`, `#formal verification`, `#Lean`, `#mathematics`, `#research breakthrough`
 
 ---
 
 <a id="item-tech-news-2"></a>
-### [Anthropic debuts on Nasdaq, testing AI valuations in public markets](https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/) ⭐️ 8.0/10
+### [Terry Tao Discusses Unforced Fluid Singularities and GRH](https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/) ⭐️ 8.0/10
 
-Anthropic made its Nasdaq debut, Reuters reported on Nov. 19, 2026, moving the AI developer&\#x27;s valuation from private fundraising into a public-market test. The item supplied only the headline and reader comments, so pricing details are unverified: one commenter reported shares priced at $83, opening at $111.50 and closing at $97.17 — up 17.07% from the IPO price but down 12.85% from the first trade — while another said the market capitalization had slipped to roughly $1.26T after expectations of $2T or more a few weeks earlier. Those figures come from community commenters, not from the Reuters article text, and should be treated as unconfirmed.
+A post by Terry Tao addresses unforced Euler and Navier-Stokes singularities and the Generalized Riemann Hypothesis, according to the item&\#x27;s title and metadata. The supplied material contains no post text, theorem statement, or proof artifact, so it cannot be determined from this item alone whether the post announces a new result, surveys prior work, or reports a formalization. The accompanying Hacker News discussion focuses on Lean kernel verification and AI-assisted mathematics rather than on the technical claims.
 
-hackernews · wslh · Nov 19, 17:02 · [Discussion](https://news.ycombinator.com/item?id=50562754)
+hackernews · archon1410 · Nov 20, 17:21 · [Discussion](https://news.ycombinator.com/item?id=50578358)
 
-**「Background」** Anthropic, the maker of Claude, priced its initial public offering at $83 a share and raised $81.3 billion, the largest stock-market debut on record, before its shares began trading on the Nasdaq Global Select Market under the symbol ANT on November 19, 2026. The offering was expected to close on November 20, and the stock closed its first trading session at $97.17, up 17% from the IPO price.
+**「Background」** The unforced Euler and Navier–Stokes singularity questions ask whether the incompressible equations can blow up in finite time from smooth data without external forcing; the Generalized Riemann Hypothesis extends the Riemann hypothesis from the Riemann zeta function to Dirichlet L-functions. Tao&\#x27;s November 20, 2026 post is tagged as covering the incompressible Euler equations and naming Levent Alpöge, Tristan Buckmaster, and Matei Coiculescu, and a secondary summary describes their work as heavily AI-assisted while noting that the available text is truncated and that methods and verification remain to be confirmed.
 
-**「Impact」** A public share price gives investors a daily, auditable benchmark for an AI lab&\#x27;s value, replacing the private-round marks that previously set expectations for the sector. Commenters argued that a valuation landing below OpenAI&\#x27;s private target would make that target harder to defend, though the specific figures they cite remain unverified.
-
-**「Community Discussion」** Commenters split between career anxiety and trading arithmetic: one longtime software engineer called the debut the likely end of software engineering as a reliable living and said he could not advise juniors on a path, while another stressed that the stock was simultaneously up 17% from its IPO price and down about 13% from its opening price, so only buyers at the offer price were ahead. A third read the drop from opening as evidence that earlier private valuations were far too high.
+**「Community Discussion」** Commenters debated trust in Lean formalization: one reported that two independent kernels accepted the result, while another asked how a large Lean build can be checked to prove the intended theorem rather than a trivial statement. A separate thread questioned whether AI-driven proof search can create new mathematical abstractions, not only verify consequences of existing ones.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.reuters.com/live/anthropic-ipo-live-claude-maker-goes-public-nasdaq-after-record-share-offering-2026-11-19/">Anthropic IPO live: Claude maker breaks $2 trillion valuation ...</a></li>
-<li><a href="https://finance.yahoo.com/technology/live/anthropic-ipo-live-anthropic-stock-begins-trading-in-record-81b-raise-with-15t-valuation-192410598.html?fr=sycsrp_catchall">Anthropic IPO live: Anthropic stock closes up 17% from ...</a></li>
-<li><a href="https://www.anthropic.com/news/anthropic-prices-initial-public-offering">Anthropic prices initial public offering \ Anthropic</a></li>
+<li><a href="https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/">Unforced Euler singularity, unforced Navier-Stokes ...</a></li>
+<li><a href="https://todayforai.com/en/items/art-87f06889-96c">Tao Reports AI-Assisted Proofs on Euler and Navier-Stokes ...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#Anthropic`, `#AI industry`, `#IPO`, `#Nasdaq`, `#AI valuations`
+**Tags**: `#mathematics`, `#formal verification`, `#Lean`, `#AI-assisted proofs`, `#Navier-Stokes`
 
 ---
 
 <a id="item-tech-news-3"></a>
-### [PHP stream wrapper bug silently drops TLS for mixed-case HTTPS and FTPS schemes](https://x.com/ljachowicz/status/2123477025268924514) ⭐️ 8.0/10
+### [Unverified Navier–Stokes blow-up claim posted on GitHub](https://github.com/tristanbuckmaster/navier-stokes/) ⭐️ 8.0/10
 
-A reported bug in PHP&\#x27;s HTTP and FTP stream wrappers matches the URL scheme case-insensitively but enables TLS only when the scheme&\#x27;s fifth character is a lowercase &quot;s&quot;, so URLs written as HTTPS://, httpS:// or FTPS:// are sent as plaintext HTTP or FTP. Requests to those addresses expose tokens, Basic authentication headers, cookies, POST bodies and FTP login credentials — including when a third party redirects to such a URL — and the flaw reportedly went unnoticed for roughly two decades. It is tracked as CVE-2026-128064 \(GHSA-f6gg-rchx-xw8j\) with a CVSS 4.0 score of 8.2, and fixes ship in PHP 8.2.36, 8.3.37, 8.4.28, 8.5.13 and 8.6.0, while 8.1 and earlier are end-of-life and will not be patched. The account is a social/Telegram summary rather than the primary advisory, so exact affected-version ranges beyond the listed fix releases are not established here.
+A Hacker News post links to a GitHub repository whose title asserts a finite-time blow-up result for the Navier–Stokes equations, a claim that would matter to mathematicians and fluid-dynamics researchers if established. The supplied item contains no proof text, paper, or peer review, so the result is unverified and should be treated as an announced claim rather than a confirmed theorem. Commenters describe it as the &\#x27;unforced&\#x27; version of the problem and contrast it with a separate result attributed in the thread to OpenAI, which they say uses a carefully designed external force; those details come only from discussion.
 
-telegram · zaihuapd · Nov 20, 03:04
+hackernews · trotro · Nov 20, 15:34 · [Discussion](https://news.ycombinator.com/item?id=50576232)
 
-**「Background」** PHP’s HTTP and FTP stream wrappers sit under URL-aware functions such as file\_get\_contents\(\) and fopen\(\), and URL schemes are case-insensitive. The wrappers therefore accepted uppercase and mixed-case spellings, but the advisory for GHSA-f6gg-rchx-xw8j \(CVE-2026-128064\) says TLS was enabled only when the scheme contained a lowercase “s” at a fixed position.
+**「Background」** The Navier–Stokes existence and smoothness question is a Millennium Prize problem: whether the three-dimensional equations governing viscous fluid flow can develop a singularity in finite time from smooth initial data with no external force. A finite-time singularity has already been constructed for the inviscid three-dimensional Euler equations by Alpöge, Buckmaster and Coiculescu, using smooth periodic initial data. Coverage of the current claim describes it as the unforced Navier–Stokes case, distinguishing it from an earlier example that relied on a carefully designed external force.
 
-**「Impact」** Code that builds URLs from user input, configuration or third-party redirects can keep leaking credentials even though the request completes normally, because the traffic is silently downgraded rather than failing; upgrading to a fixed release is the direct remedy, and projects stuck on PHP 8.1 or older must normalize the scheme to lowercase before every request.
+**「Prize stakes and verification burden」** A verified finite-time blow-up for the unforced three-dimensional Navier–Stokes equations would settle the Clay Mathematics Institute&\#x27;s existence-and-smoothness Millennium Prize problem in the negative, which is what makes the repository&\#x27;s claim consequential rather than routine. As posted, it is an unrefereed GitHub document rather than a published proof, so researchers and journals should treat the result as unverified until independent experts can check the argument.
+
+**「Community discussion」** Commenters focus on the distinction between this claimed &\#x27;unforced&\#x27; blow-up and a separate OpenAI result they say relies on a designed external force, with one calling the unforced case more &\#x27;realistic.&\#x27; That framing is community opinion, and the thread offers no independent check of the proof.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://everycve.com/CVE-2026-128064">CVE - 2026 - 128064 : Mixed-case HTTPS and FTPS URLs can expose...</a></li>
+<li><a href="https://officechai.com/ai/tristan-buckmaster-levent-alpoge-claim-proof-of-navier-stokes-millennium-prize-problem-without-forcing/">Tristan Buckmaster, Levent Alpöge Claim Proof Of Navier ...</a></li>
+<li><a href="https://cims.nyu.edu/~tristanb/cc.pdf">Finite-Time Singularity Formation for the Three-Dimensional ...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_existence_and_smoothness">Navier – Stokes existence and smoothness - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#PHP`, `#TLS`, `#security vulnerability`, `#CVE`, `#HTTP stream wrapper`
+**Tags**: `#Navier-Stokes equations`, `#mathematical proof`, `#fluid dynamics`, `#computational science`, `#Hacker News discussion`
 
 ---
 
 <a id="item-tech-news-4"></a>
-### [UK government forced to admit secret Apple encryption order](https://macanorak.com/uk-government-forced-to-admit-it-issued-apple-a-secret-encryption-order/) ⭐️ 7.0/10
+### [PHP mixed-case https:// schemes silently skip TLS, patched in 8.2.36+](https://x.com/ljachowicz/status/2123477025268924514) ⭐️ 8.0/10
 
-The UK government has acknowledged, after being forced to do so, that it issued a secret encryption order to Apple. The admission raises questions about government access to encrypted data and the scope of Apple&\#x27;s security assurances. The order&\#x27;s contents remain undisclosed, so what it requires Apple to do has not been publicly established.
+A reported flaw in PHP&\#x27;s HTTP and FTP stream wrappers causes URLs whose scheme is written with non-lowercase letters — HTTPS://, httpS:// or FTPS:// — to be sent as plaintext HTTP or FTP instead of over TLS. The wrapper matches the scheme case-insensitively but reportedly enables TLS only when the fifth character is a lowercase &quot;s&quot;, so tokens, Basic authentication credentials, cookies, POST bodies and FTP logins would travel in cleartext; requests reached through a third-party redirect to such a URL are said to be affected the same way. The issue is tracked as CVE-2026-128064 \(GHSA-f6gg-rchx-xw8j\) with a CVSS 4.0 score of 8.2 and is fixed in PHP 8.2.36, 8.3.37, 8.4.28, 8.5.13 and 8.6.0. PHP 8.1 and earlier are end-of-life and will not receive a fix, leaving lowercasing the scheme before use as the workaround. The claim originates from a single social-media report and has not been independently confirmed here.
 
-hackernews · Terretta · Nov 19, 16:21 · [Discussion](https://news.ycombinator.com/item?id=50562113)
+telegram · zaihuapd · Nov 20, 03:04
 
-**「Background」** The admission came in a 19 November 2026 judgment by the UK’s Investigatory Powers Tribunal, an independent court that hears challenges to government surveillance orders, in Apple Inc v Home Secretary and others. The tribunal confirmed that the government had served Apple with a secret legal notice aimed at its cryptographic protections for iCloud accounts, ending almost two years of official refusal to acknowledge a measure that had been widely reported.
+**「Background」** PHP&\#x27;s HTTP and FTP stream wrappers parse a URL&\#x27;s scheme before opening a remote connection. The wrappers recognize schemes case-insensitively, but enable TLS only when the scheme contains a lowercase &quot;s&quot; at a fixed position, so capitalization can change the transport without changing the parsed protocol. That mismatch is the precondition for the reported cleartext exposure.
 
-**「Impact」** For UK Apple users, the admitted order creates a concrete assurance gap around encrypted iCloud data: the renewed Technical Capability Notice reported in August 2026 targeted only British users, so they cannot assume the same end-to-end encryption protections as users elsewhere. Users who rely on iCloud for sensitive data should verify whether Advanced Data Protection is available for their account and use a separate end-to-end encrypted backup or storage service if it is not.
-
-**「Community discussion」** Commenters focused on how the admission affects Apple&\#x27;s past security claims, with one arguing that Apple&\#x27;s wording shifted from &quot;nobody can access your data&quot; to &quot;Apple cannot access your data&quot; and questioning the key hierarchy behind that assurance. Another commenter linked the tribunal judgment and noted that the media learned of the order through confidential security briefings rather than a leak, while the order&\#x27;s contents remain secret.
+**「Impact」** Anyone running PHP 8.1 or older has no patched release available and must normalize URL schemes to lowercase in application code before handing them to stream wrappers, and should audit code paths that follow redirects with attacker-influenced targets — a redirect to a mixed-case scheme URL is described as sufficient to trigger cleartext transmission.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://techcrunch.com/2026/11/19/u-k-government-forced-to-disclose-secret-apple-backdoor-order/">UK government forced to disclose secret Apple backdoor order</a></li>
-<li><a href="https://www.judiciary.uk/judgments/apple-inc-v-home-secretary-and-others/">Apple Inc -v- Home Secretary and others - Courts and ...</a></li>
-<li><a href="https://therecord.media/apple-uk-encryption-notice">UK court confirms British government served Apple with secret ...</a></li>
-<li><a href="https://cunicula.com/en/articles/uk-apple-adp-technical-capability-notice">Apple Advanced Data Protection and the UK Technical Capability ...</a></li>
-<li><a href="https://www.malwarebytes.com/blog/news/2026/08/apple-battles-it-out-again-with-uk-over-encrypted-icloud-access">Apple battles it out again with the UK over encrypted iCloud access</a></li>
-<li><a href="https://www.macrumors.com/2025/02/26/advanced-data-protection-uk-need-to-know/">Apple &#x27;s Data Encryption Changes in the UK Explained - MacRumors</a></li>
+<li><a href="https://everycve.com/CVE-2026-128064">CVE - 2026 - 128064 : Mixed - case HTTPS and FTPS URLs can expose...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#encryption`, `#UK surveillance`, `#Apple`, `#privacy`, `#Investigatory Powers Tribunal`
+**Tags**: `#PHP`, `#security vulnerability`, `#TLS`, `#CVE`, `#HTTPS`
 
 ---
 
 <a id="item-tech-news-5"></a>
-### [OpenJDK &\#x27;java4shell&\#x27; PR draws Oracle and LLM questions](https://github.com/openjdk/jdk/pull/32781) ⭐️ 7.0/10
+### [Meta&\#x27;s AI Agent Muse Reportedly Mixes Accounts, Exposing Private Data](https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/) ⭐️ 8.0/10
 
-An OpenJDK pull request, \#32781, is tied to a reported &quot;java4shell&quot; Java vulnerability, but the supplied material provides no public advisory, affected-version list, or confirmation of a shipped fix for Java users. Commenters quote the related Adoptium support issue as saying Oracle asked the PR author on October 1 not to proceed until approval, and that Oracle took over the work by October 28; those statements come from the linked discussion and are not independently verified here. The thread frames the episode as a disclosure and research-credit dispute rather than a fully documented technical incident.
+Meta employees reported that the company&\#x27;s AI assistant Muse mixed conversations across accounts and displayed other users&\#x27; private information, according to internal posts cited by Reuters and reported by TechCrunch. The reported exposures included parenting requests and career advice the recipients never sent, orders they never placed, and bank balances belonging to someone else; one employee said Muse inserted Capital One and Charles Schwab balances into a weather chat. Another employee said Muse prompted her on her personal phone to reply to her sister&\#x27;s Signal message despite her not authorizing access to other apps. The account relies on secondary reporting of internal posts rather than independent technical verification.
 
-hackernews · notmine1337 · Nov 19, 11:47 · [Discussion](https://news.ycombinator.com/item?id=50558906)
+telegram · zaihuapd · Nov 20, 05:10
 
-**「Background」** OpenJDK security reports are handled through coordinated disclosure, with the OpenJDK Vulnerability Group and Oracle reviewing issues privately before a public fix and pull request. The flaw was later tracked as CVE-2026-114938, a memory-corruption bug in OpenJDK&\#x27;s Base64 decoder that can lead to remote code execution; Oracle and the OpenJDK Vulnerability Group confirmed it on November 18 and fixed it in November 17 builds, with Java 21, 25, and 27 confirmed affected.
+**「Background」** Muse is Meta’s AI agent, and the incident account is based on internal company posts reviewed by Reuters rather than an independent technical audit. Meta disputed the most alarming outputs, telling Ars Technica that the erratic messages showing random bank and bitcoin balances were not real.
 
-**「Who needs to act」** The vulnerability is tracked as CVE-2026-114938, an unauthenticated Java RCE in the OpenJDK HotSpot Base64 decoder with a CVSS score of 9.2, according to third-party advisories. The OpenJDK advisory does not list standard Java 8 or Java 11 as affected, so teams should verify their exact JDK build rather than assume every Java runtime is exposed. Applications that decode untrusted Base64 through the JDK can be affected even when the vulnerability is not in their own code; Apache Shiro, for example, notes that Shiro apps remain vulnerable because Shiro uses the JDK decoder.
-
-**「Community discussion」** Commenters debate whether an LLM-assisted research effort independently found the bug or may have read the earlier public report, with one arguing that recognizing criticality and building an exploit still require supervision. Another commenter says their fuzzing harness found the issue independently before disclosure and that they reported it to Oracle, but this is an unverified personal account.
+**「Account isolation at risk」** For users, the reported behavior means account boundaries cannot be assumed: Muse surfaced another person&\#x27;s Capital One and Charles Schwab balances in a weather chat and referenced a Signal message without authorization, so users should review their Muse history for unfamiliar financial or message content and revoke app access they did not intend to grant. Meta&\#x27;s earlier pause of Muse&\#x27;s conversation-sharing feature after a separate flaw involving discoverable chat links is not evidence that this reported cross-account mixing has been fixed; the scope remains unresolved until Meta confirms it.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://threatdefence.com/article/java4shell-cve-2026-114938-openjdk-rce-patching-hunting">Java 4 Shell CVE- 2026 -114938: Java 17 to 27 Fixes and Hunting...</a></li>
-<li><a href="https://www.phoronix.com/news/Java4Shell-Vulnerability">Java 4 Shell Vulnerability For OpenJDK Java That Can... - Phoronix</a></li>
-<li><a href="https://www.tenable.com/blog/java4shell-cve-2026-114938-frequently-asked-questions-about-openjdk-rce-vulnerability">Java 4 Shell ( CVE -2026-114938): OpenJDK RCE Vulnerability FAQ</a></li>
-<li><a href="https://www.getastra.com/blog/security-advisory/cve-2026-114938/">Security Advisory : CVE -2026-114938 ( Java 4 shell ) - Astra Security Blog</a></li>
-<li><a href="https://shiro.apache.org/blog/2026/11/apache-shiro-java4shell.html">Java 4 Shell ( CVE -2026-114938): what Shiro users... | Apache Shiro</a></li>
+<li><a href="https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/">Meta ’s AI agent Muse is mixing up conversations and... | TechCrunch</a></li>
+<li><a href="https://arstechnica.com/tech-policy/2026/11/muse-privacy-invasions-are-freaking-out-meta-staffers-internal-chats-show/">Muse privacy invasions are freaking out Meta staffers, internal chats...</a></li>
+<li><a href="https://cybersecuritynews.com/meta-muse-ai-privacy-flaw/">Meta Muse AI Privacy Flaw Exposes Confidential Business Data ...</a></li>
+<li><a href="https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/">Meta’s AI agent Muse is mixing up conversations and exposing ...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#Java security`, `#OpenJDK`, `#vulnerability disclosure`, `#LLM-assisted security research`, `#Oracle`
+**Tags**: `#AI agents`, `#privacy`, `#data leakage`, `#Meta`, `#security incident`
 
 ---
 
 <a id="item-tech-news-6"></a>
-### [European Commission rolls out Matrix to more than 40,000 staff](https://element.io/blog/how-the-european-commission-rolled-out-matrix-to-more-than-40-000-staff/) ⭐️ 7.0/10
+### [KVM CVE-2026-99312 lets AMD guests read host memory](https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html) ⭐️ 8.0/10
 
-The European Commission has rolled out Matrix to more than 40,000 staff, with Element publishing a vendor account of the deployment. The post documents a large government migration to an open-source, decentralized messaging protocol; the supplied discussion quotes it saying live presence was disabled because the load from real-time online/away indicators affected performance as more users joined. The account is not an independent evaluation and does not resolve user concerns about Matrix encryption or client usability.
+A Linux KVM vulnerability, CVE-2026-99312, allows guests to read host memory on AMD systems when nested virtualization is enabled. Researchers demonstrated the flaw on DigitalOcean by reading about 127 GB of host memory from inside a guest. The upstream fix shipped on November 18 in stable kernel 7.3.5 and related stable releases, but Debian, Ubuntu, and other distribution kernels remain unpatched. Until those updates arrive, the reported mitigation is to disable nested virtualization.
 
-hackernews · liotier · Nov 19, 10:58 · [Discussion](https://news.ycombinator.com/item?id=50558533)
+telegram · zaihuapd · Nov 20, 14:23
 
-**「What Matrix is」** Matrix is an open-source, decentralized messaging protocol rather than a single hosted service, and Element is a client application built on it; the Commission&\#x27;s tool is built on both. Accounts of the rollout describe it as a digital-sovereignty measure, with the Commission running its own Matrix-based system to keep operational control of staff communications instead of depending on an external commercial provider.
+**「Background」** KVM is the Linux kernel&\#x27;s built-in hypervisor, and nested virtualization lets a guest VM run its own virtual machines. DigitalOcean&\#x27;s advisory describes CVE-2026-99312 as a stale-pointer bug in KVM&\#x27;s nested-virtualization support on AMD, which is why Intel-based hosts are not affected. Terra Security&\#x27;s analysis traces the flaw&\#x27;s roots to a previous security fix in that same area.
 
-**「What comparable rollouts should plan for」** Organizations contemplating a similar migration should treat the Commission&\#x27;s disabling of live presence as a capacity-planning constraint rather than an incidental detail: the real-time online/away indicator had to be switched off once load grew with the user base. Evaluators should also pin down which end-to-end encryption mechanism is actually in use, since Matrix supports multiple E2EE mechanisms, including MLS, and commenters report that session verification and encryption errors remain part of daily use.
-
-**「Community Discussion」** Commenters split between practical enthusiasm and security skepticism: a self-hosting user praises Matrix for private group messaging and live location, while a critic argues its E2EE is not mature enough for national-security use and that MLS migration appears stalled. A daily user reports client fragmentation, session-verification and encryption errors, but hopes the Commission&\#x27;s deployment brings development resources.
+**「Impact」** For operators of affected AMD hosts, guest workloads may expose host memory contents until the hypervisor kernel is fixed; the immediate action is to turn off nested virtualization on Debian and Ubuntu hosts that have not received the patch.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://sitem.co/public/summary/7908/the-european-commission-s-sovereign-matrix-rollout-scaling-to-40000-users">The European Commission&#x27;s Sovereign Matrix Rollout: Scaling ...</a></li>
-<li><a href="https://news.ycombinator.com/item?id=46784523">In 2026 , you should be implementing MLS instead of Matrix .</a></li>
+<li><a href="https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html">Linux KVM Flaw CVE - 2026 - 99312 Lets Guest VMs Access Host ...</a></li>
+<li><a href="https://www.digitalocean.com/blog/cve-2026-99312-kvm-patch">Virtualization , Responsible Disclosure, and CVE - 2026 - 99312</a></li>
+<li><a href="https://www.terra.security/blog/kvm-guest-to-host-escape">KVM Guest-to- Host Escape | Terra Security Research</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#Matrix`, `#open source`, `#government IT`, `#digital sovereignty`, `#E2EE`
+**Tags**: `#KVM`, `#Linux kernel`, `#virtualization security`, `#CVE-2026-99312`, `#AMD`
 
 ---
 
 <a id="item-tech-news-7"></a>
-### [Anthropic reports Claude contributions to two black-hole physics problems](https://www.anthropic.com/research/claude-black-hole-physics) ⭐️ 7.0/10
+### [Alessandro Masullo Announces Claimed GRH Proof in Haste](https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/) ⭐️ 7.0/10
 
-Anthropic&\#x27;s research post reports that Claude contributed to two black-hole physics results, but the announcement—as quoted by a Hacker News commenter—says neither result describes our own universe directly or has practical applications. The supplied material provides no independent validation or details of the prompts used, so the extent of the model&\#x27;s contribution cannot be assessed from the available evidence. One commenter who read the papers describes the first result as a complex and error-prone calculation and the second as Claude proving an upper mass limit for a black hole with a given central charge.
+A blog post announced that Alessandro Masullo has published a claimed proof of the Generalized Riemann Hypothesis, with the release described as hurried. The item supplies no manuscript text or independent verification, so the proof remains an unconfirmed claim rather than a validated result. Hacker News commenters treated it as a developing priority dispute, citing a 940-page draft and an empty early section as reasons for caution.
 
-hackernews · cybermango · Nov 19, 17:30 · [Discussion](https://news.ycombinator.com/item?id=50563148)
+hackernews · jasondavies · Nov 20, 18:33 · [Discussion](https://news.ycombinator.com/item?id=50579568)
 
-**「Background」** The modular bootstrap is a theoretical method that uses consistency conditions, especially modular invariance, to constrain the spectrum of conformal field theories—frameworks used to study black holes in quantum gravity. Anthropic&\#x27;s announcement places the two results within that program and notes that neither result describes our own universe directly.
+**「Background」** The Generalized Riemann Hypothesis extends the Riemann Hypothesis from the Riemann zeta function to a broader class of L-functions and constrains the distribution of primes in arithmetic progressions. Coverage of the announcement describes Masullo&\#x27;s 940-page preprint, &quot;The Music of the Primes,&quot; as following months of review by Brian Conrad, Masullo&\#x27;s former Stanford advisor, and says AMS president Ravi Vakil announced it on November 20, 2026, to invite rapid community scrutiny. A separate Claude-assisted Lean proof claim by Levent Alpöge appeared the same day.
 
-**「Verification burden」** For AI-for-science teams, Claude Fable 5.2&\#x27;s reported black-hole solutions are a derivation target rather than a validated physics result: any group extending the work would need to reproduce the symbolic steps and subject them to peer review. Because the announced results are theoretical and not presented as describing our universe, reproducibility—not raw problem-solving—is the gating step before the outputs can be cited as settled results.
+**「Verification Burden」** Vakil&\#x27;s post explicitly asks mathematicians to review Masullo&\#x27;s 940-page preprint, so the practical burden falls on analytic number-theory experts willing to check a draft that commenters note has an empty section 1.1.1. Until that scrutiny produces a verdict, the proof remains an unverified claim rather than an established result.
 
-**「Community discussion」** Commenters criticized the “Claude solves” framing as anthropomorphic and noted that the word “prompt” does not appear in the blog post, abstracts, or papers, leaving unclear what the model was asked to do. Another commenter characterized the first result as a complex, error-prone calculation and the second as more interesting because it establishes an upper mass limit for a black hole with a given central charge.
+**「Community Discussion」** Commenters debated priority and verification: one said a 12-year effort made a hurried release understandable given the Anthropic announcement, while another called the 940-page draft with an empty section 1.1.1 a red flag. Another proposed that mathematicians post verifiable, timestamped hashes of in-progress work to secure partial credit if an AI system solves the problem first, and one speculated without evidence that an AI cross-check could have exposed the work.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.anthropic.com/research/claude-black-hole-physics">Claude Fable 5.2 solves two open problems in the physics of black ...</a></li>
-<li><a href="https://www.anthropic.com/research/claude-black-hole-physics">Claude solves two open problems in the physics of black holes</a></li>
-<li><a href="https://dev.to/amrithesh_dev/claude-fable-52-solves-black-hole-paradoxes-the-ai-that-just-changed-physics-1chd">Claude Fable 5.2 Solves Black‑Hole Paradoxes – The AI That ...</a></li>
+<li><a href="https://explainx.ai/blog/alessandro-masullo-grh-human-proof-claimed-vs-verified-november-2026">Masullo GRH Draft: What Vakil Announced (Nov 20) | explainx ...</a></li>
+<li><a href="https://x.com/i/trending/2123859232806064131">Mathematician Claims Proof of Generalized Riemann Hypothe...</a></li>
+<li><a href="https://kingy.ai/blog/two-riemann-proof-claims-timeline/">Two Riemann proof claims in one day. What counts as first ...</a></li>
+<li><a href="https://x.com/i/trending/2123859232806064131">Mathematician Claims Proof of Generalized Riemann Hypothe...</a></li>
+<li><a href="https://explainx.ai/blog/alessandro-masullo-grh-human-proof-claimed-vs-verified-november-2026">Masullo GRH Draft: What Vakil Announced (Nov 20) | explainx ...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI for science`, `#LLM research`, `#black hole physics`, `#scientific validation`
+**Tags**: `#Generalized Riemann Hypothesis`, `#mathematics research`, `#AI competition`, `#research verification`, `#Hacker News`
 
 ---
 
 <a id="item-tech-news-8"></a>
-### [PHP 8.6 Release Notes Cover Runtime Changes and ZTS Overhead](https://www.php.net/releases/8.6/en.php) ⭐️ 7.0/10
+### [Inkling 2 Mini: open-weight looped MoE model for local inference](https://thinkingmachines.ai/news/inkling-2-mini/) ⭐️ 7.0/10
 
-Official release notes for PHP 8.6 are available, listing language and runtime changes for PHP developers; the release is an incremental update to the PHP 8.x line. Community attention centers on reduced ZTS \(thread-safe build\) overhead, which commenters describe as the most consequential change. Commenters also note that a recently announced security vulnerability affects PHP 8.5 and later, while Debian users on PHP 8.3-8.4 appear unaffected for now.
+Inkling 2 Mini is described as an open-weight, locally runnable AI model built on a looped transformer and mixture-of-experts design. A GGUF version is reported for Ollama and Llama.cpp, making it usable in common local inference stacks. Commenters compare its benchmarks to Qwen3.8-27B and describe the results as strong, but those comparisons are community claims and were not independently validated in the supplied material. A Reddit note quoted in the comments also says the model was trained end-to-end in nvfp4.
 
-hackernews · netol · Nov 19, 09:27 · [Discussion](https://news.ycombinator.com/item?id=50557870)
+hackernews · jasondavies · Nov 20, 20:12 · [Discussion](https://news.ycombinator.com/item?id=50581260)
 
-**「Context: ZTS builds and PHP&\#x27;s minor-release cadence」** PHP is distributed in two build modes: thread-safe \(ZTS\), which allows parallel execution inside a process, and non-thread-safe \(NTS\), with ZTS historically carrying extra runtime overhead that commenters singled out as the notable item in this release. PHP 8.6 is a minor release following 8.5, and some users in the discussion said they had not yet moved to 8.5 to use its pipe operator.
+**「Background」** A looped transformer reuses the same middle layers multiple times per token instead of stacking more unique layers; Inkling 2 Mini runs its middle layers three times for each token, adding repeated computation without increasing parameter count. It is also a mixture-of-experts model with 26 billion total parameters but only 5.4 billion active per token, which lowers the compute required for each token during inference.
 
-**「Upgrade and compatibility implications」** Projects that adopt PHP 8.6 features such as partial function application, the new Duration class, or clamp\(\) must raise their minimum PHP version to 8.6, since that syntax and those classes do not exist in 8.5 and earlier. Teams remaining on 8.5 should separately review the recent security advisories: one commenter reports the disclosed vulnerability affects 8.5+, while Debian&\#x27;s 8.3/8.4 packages were said to be unaffected.
+**「Local deployment and evaluation caveat」** Because quantized GGUF builds are published through Unsloth and llama.cpp, local-inference users can run Inkling 2 Mini on their own hardware instead of only through a hosted API. Thinking Machines claims it leads comparable models on agentic coding benchmarks such as DeepSWE v1.1 and SWE-bench Pro v2 but trails Qwen 3.8-27B on others, so teams considering a swap for coding-agent work should validate it against their own tasks rather than assume a uniform improvement.
 
-**「Community Discussion」** Commenters welcomed the ZTS overhead reduction: beberlei argued that further cuts could make ZTS the only needed mode and open a path to native async support like the existing parallel extension, while yabones noted that the recent vulnerability affects PHP 8.5+ and that Debian&\#x27;s 8.3-8.4 packages look safe for now. p4bl0 also pointed to a remaining type-system gap—no way to limit the number of arguments for user-defined functions—as a backward-compatible feature they would like to see.
+**「Community discussion」** Commenters are enthusiastic but conditional: one calls the benchmark results “bonkers good” only if they hold up in real-world use, and another plans to test the GGUF build on an AMD 7900XTX against Qwen 3.8 27B while expecting the MoE design to provide higher decode speed.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.php.net/releases/8.6/en.php">PHP : PHP 8 . 6 Release Announcement</a></li>
+<li><a href="https://thinkingmachines.ai/news/inkling-2-mini/">Introducing Inkling 2 Mini - Thinking Machines Lab</a></li>
+<li><a href="https://artificialanalysis.ai/articles/inkling-2-mini">Thinking Machines has released Inkling 2 Mini, an open ...</a></li>
+<li><a href="https://thinkingmachines.ai/news/inkling-2-mini/">Introducing Inkling 2 Mini - Thinking Machines Lab</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#PHP`, `#programming languages`, `#release notes`, `#thread safety`, `#security advisories`
+**Tags**: `#open-weight models`, `#looped transformers`, `#Mixture-of-Experts`, `#local inference`, `#AI model releases`
 
 ---
 
 <a id="item-tech-news-9"></a>
-### [PHP plans CRITICAL security release across supported versions](https://www.php.net/archive/2026.php) ⭐️ 7.0/10
+### [Report: SEC probing Nvidia accounting as shares extend rout](https://finance.yahoo.com/markets/article/nvidia-stock-extends-25-trillion-rout-as-sec-probe-reportedly-investigates-its-accounting-194945274.html) ⭐️ 7.0/10
 
-PHP&\#x27;s security team has announced a security update for November 19, 2026, scheduled for 14:00–14:30 UTC, fixing vulnerabilities across all supported PHP versions with a maximum severity of CRITICAL. The update follows PHP&\#x27;s regular four-week release cycle. Officials said the CRITICAL-rated issue requires non-default configuration or an uncommon environment to trigger, and technical details and fixed version numbers will be published with the release.
+Reporting attributed to unnamed sources says the SEC is investigating Nvidia&\#x27;s accounting, according to a Yahoo Finance article that also said the chipmaker&\#x27;s shares extended a steep selloff. The supplied material does not say whether the inquiry is formal or informal, which periods or figures it covers, or whether Nvidia or the SEC have commented, so the probe remains an unconfirmed report rather than a disclosed enforcement action. No filing, company statement or regulator confirmation accompanies the claim.
 
-telegram · zaihuapd · Nov 19, 07:10
+hackernews · ftchd · Nov 20, 20:22 · [Discussion](https://news.ycombinator.com/item?id=50581438)
 
-**「Background」** PHP maintains several supported release branches at once, so a flaw affecting all supported versions requires coordinated patches rather than a single update. The security team issues advance notice through its regular four-week release cycle, publishing technical details and fixed version numbers only when the release goes live.
+**「Scope of the reported SEC review」** The report describes SEC enforcement staff examining potential accounting issues at Nvidia, based on two people briefed on the matter, rather than a filed case or a finding of wrongdoing. Reuters reported the examination on Nov. 20, 2026, but the supplied reports did not specify which accounting practices are at issue.
 
-**「Impact」** Maintainers of supported PHP versions should plan to upgrade soon after the release window, but cannot yet determine which specific versions or configurations are affected until the advisory and fixed version numbers are published.
+**「Impact」** Nvidia&\#x27;s quarterly reports are the main public gauge of AI data-center demand, so an accounting inquiry whose scope is undisclosed leaves investors and hardware buyers unable to tell whether specific revenue figures — for example from multi-year chip and capacity deals — are in question.
 
-**Tags**: `#PHP`, `#security update`, `#critical vulnerability`, `#open source`, `#software maintenance`
+**「Community discussion」** Commenters attributed the trouble to what one called years of &quot;circular financing&quot; and predicted that renegotiating usage deals with neocloud customers would backfire, while another questioned why the board would name the CFO interim CEO if it suspected accounting problems. One commenter noted the stock is down nearly 50% from its high six weeks earlier; these are reader claims and opinions, not established facts.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.reuters.com/world/us-secs-nvidia-probe-is-examining-potential-accounting-issues-sources-say-2026-11-20/">Nvidia&#x27;s accounting is a focus of US SEC investigation ...</a></li>
+<li><a href="https://www.unite.ai/sec-enforcement-staff-examine-nvidia-accounting-reuters-reports/">SEC Enforcement Staff Examine NVIDIA Accounting, Reuters Reports</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#nvidia`, `#sec-investigation`, `#ai-hardware`, `#accounting`, `#tech-industry`
 
 ---
 
 <a id="item-tech-news-10"></a>
-### [Google Play to require foldable and large-screen adaptation from 2027](https://developer.android.google.cn/blog/posts/google-play-adaptive-quality-standards?hl=zh-cn) ⭐️ 7.0/10
+### [Paper Claims a Language Model Can Rewrite Its Own Weights; HN Questions Novelty](https://arxiv.org/abs/2611.21885) ⭐️ 7.0/10
 
-Google Play announced that, starting in April 2027, Android apps must meet specified adaptive compatibility levels for foldables and other large-screen devices. The requirements target stretched interfaces, black bars, locked aspect ratios, and failure to preserve app state when the device form factor changes. Developers must also provide foldable-device screenshots; apps that do not meet the standards may face update-publishing restrictions or reduced store exposure. From August 2027, new apps and updates must target Android 17 \(API 37\).
+An arXiv preprint titled &quot;Language Models Can Rewrite Their Own Weights&quot; \(arXiv:2611.21885\) argues that a language model can improve itself by editing its own weights through its own reasoning, with no gradients and no training, according to the abstract text quoted in the Hacker News thread. No source content or full paper was available, so the methodology, model, and benchmark details behind that claim could not be verified here. Commenters pushed back on the result: the one self-modification described was shortening the model&\#x27;s reasoning traces to avoid hitting a token limit, which they said echoes earlier weight-space programming and &quot;sleep&quot;-style work rather than demonstrating general self-improvement. The thread also disputed the framing that skipping gradients means the process is not training, since the model reportedly tests edits on practice problems and keeps only those that work.
 
-telegram · zaihuapd · Nov 19, 08:42
+hackernews · lwhsiao · Nov 20, 16:29 · [Discussion](https://news.ycombinator.com/item?id=50577265)
 
-**「Background」** Android apps have traditionally handled different screens through manifest declarations and layouts designed around fixed window sizes, but foldables and large-screen devices require interfaces that resize, reflow, and retain state when the window or device posture changes. Google Play already uses target API level requirements for new apps and updates; under this plan, the next stated threshold is Android 17 \(API 37\) in August 2027.
+**「Background」** The paper sits between two existing lines of work: weight editing, which changes a model&\#x27;s behavior by modifying its parameters instead of only its prompt, and self-improvement, in which a model generates its own practice material or revision targets. Commenters in the HN thread compared it with earlier weight-space programming and Google&\#x27;s &quot;sleep&quot; framework, which they described as also updating weights from self-generated experience, and questioned how much the new result adds beyond those approaches.
 
-**「Impact」** Developers should plan large-screen layout testing and foldable screenshot assets before April 2027, and prepare updates targeting API 37 before August 2027. Falling short can limit update publishing or reduce discovery on Google Play.
+**「Impact」** For developers evaluating self-editing models, commenters&\#x27; concrete advice is to benchmark any reported gain against prior weight-space programming and Google&\#x27;s &quot;sleep&quot; framework, which they say produced comparable effects. One commenter raises a safety concern specific to this capability: a model that can autonomously rewrite its own weights could, if directed, locate and suppress activations associated with safety and alignment behavior; this is presented as a plausible risk, not a demonstrated result in the paper.
 
-**Tags**: `#Android`, `#Google Play`, `#折叠屏适配`, `#应用兼容性`, `#平台政策`
+**「Community Discussion」** The most substantive disagreement is over novelty: one commenter says the only self-edit reported was trimming reasoning-trace length to avoid a token limit, matching what the weight-space programming write-up found even for a strong model, while another points to Google&\#x27;s &quot;sleep&quot; framework, which already updates numerical weights offline from self-generated examples. A separate commenter argues the &quot;no training&quot; framing is misleading because the model tests candidate edits on practice problems and submits only the ones that work, and another raises the concern that autonomous self-weight editing is a particularly risky direction for AI safety research.
+
+**Tags**: `#language models`, `#weight editing`, `#self-improvement`, `#AI safety`, `#research`
 
 ---
 
 <a id="item-tech-news-11"></a>
-### [OpenAI reports chip-design gains, AMD GPU PPA up to 14%](https://openai.com/index/advancing-chip-design-with-our-models/) ⭐️ 7.0/10
+### [Scott Aaronson on an apparent LLM proof of the Riemann Hypothesis](https://scottaaronson.blog/?p=10344) ⭐️ 7.0/10
 
-OpenAI says its models contributed to the design of its Jalapeño inference chip and to AMD flagship GPU IP, reporting about 13% smaller standard-cell area for vector units and about 10% for matrix units, with the optimizations validated during chip bring-up. In the AMD collaboration, power, performance, and area improved by up to 14% over a highly optimized baseline, and some changes have entered designs sent for manufacturing. OpenAI also announced a collaboration with Synopsys to train a GPT-Synopsys model. These are vendor-reported results from an OpenAI announcement, with limited methodology and no independent verification provided.
+Scott Aaronson&\#x27;s blog post takes up an apparent proof of the Riemann Hypothesis produced with a large language model, framed in its title as &quot;the stochastic parrots&quot; having &quot;apparently proved&quot; it. The supplied material contains no statement of the argument, no indication of independent checking by mathematicians, and no outcome beyond the post&\#x27;s own framing, so the claim stays unconfirmed. Discussion around the post centered on the size of the accompanying Lean formalization and on the compute such an effort would require.
 
-telegram · zaihuapd · Nov 19, 09:30
+hackernews · stratos123 · Nov 20, 20:03 · [Discussion](https://news.ycombinator.com/item?id=50581084)
 
-**「Background」** In chip design, PPA—power, performance, and area—is the standard set of trade-offs used to judge an implementation, and standard-cell area measures the silicon footprint of reusable logic blocks such as vector and matrix units. Those metrics matter because physical area and efficiency constrain how much logic fits on a die and whether a design can meet frequency and power targets.
+**「What preceded the claim」** The phrase &quot;stochastic parrots&quot; comes from a 2021 critique of large language models that treated them as remixing training text without understanding it, and Aaronson&\#x27;s post notes social-media users turning the term back on him now that &quot;these so-called &\#x27;stochastic parrots&\#x27; just proved the Riemann Hypothesis.&quot; The immediate backdrop, as summarized by AGI Hunt, is Levent Alpöge&\#x27;s claim that Anthropic models proved the Generalized Riemann Hypothesis, which Aaronson had commented on.
 
-**「What to verify before trusting the numbers」** Chip design teams get a vendor-reported data point rather than a reproducible method: OpenAI attributes up to 14% PPA improvement on AMD&\#x27;s flagship GPU IP and roughly 13% and 10% standard-cell area reduction in Jalapeño&\#x27;s vector and matrix units, but the baselines and validation flow behind those figures are not published. Since OpenAI says some AMD changes are already in designs sent to manufacturing, the practical check for anyone weighing similar flows is whether the gains survive signoff and silicon bring-up rather than only the pre-fab comparison reported here.
+**「Impact」** For readers trying to judge the claim, the decisive artifact is a Lean development that actually compiles against the proof checker&\#x27;s kernel rather than prose describing a proof; commenters&\#x27; reaction suggests the formalization, if present, is large enough that few will audit it line by line. Until that artifact and an independent check are available, the result should be treated as unverified.
+
+**「Community discussion」** Commenters focused on comprehensibility rather than correctness: one asked whether anyone can understand the Lean formalization &quot;in it&\#x27;s entirety,&quot; another wondered how many mathematicians could reach similar breakthroughs given near-infinite compute, and a third worried that researchers are becoming unable to follow machine-produced science at all. A separate thread derailed into a complaint about blogs, including this author&\#x27;s, returning nginx 403 pages.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.gate.com/news/detail/AMD/openai-models-achieve-14-ppa-gains-on-amd-gpu-13-optimization-on-jalapeo-25718089">OpenAI Models Achieve 14% PPA Gains on AMD GPU, 13% ...</a></li>
+<li><a href="https://scottaaronson.blog/?p=10344">Shtetl-Optimized » Blog Archive » The stochastic parrots have ...</a></li>
+<li><a href="https://agihunt.info/en/p/1a1faf3ca85035bde600331be64">Scott Aaronson: Alpöge claims Anthropic models… · AGI Hunt</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI for chip design`, `#OpenAI`, `#AMD`, `#EDA`, `#semiconductor hardware`
+**Tags**: `#LLMs`, `#Riemann Hypothesis`, `#Lean`, `#formal verification`, `#AI for mathematics`
 
 ---
 
 <a id="item-tech-news-12"></a>
-### [Gemini can control Mac apps for US subscribers](https://www.bloomberg.com/news/articles/2026-11-19/google-s-gemini-can-now-control-mac-devices-on-users-behalf) ⭐️ 7.0/10
+### [Signal describes privacy work as users debate AI app access and VPN CAPTCHAs](https://signal.org/blog/protecting-your-privacy/) ⭐️ 7.0/10
 
-Google has added a &quot;computer use&quot; capability to Gemini on Mac that can click, type, navigate menus, and fill out forms to complete tasks on a user&\#x27;s behalf. It is available in the US to people using Gemini for Mac with a Google AI Plus, Pro, or Ultra subscription. Gemini can run in a separate background window while the user continues using the main screen and cursor; users can also restrict which apps it can access, watch its actions live, pause it, and approve key operations before they happen.
+Signal published a blog post describing privacy-protection work for its users. The supplied excerpt does not name a release version, describe a specific technical mechanism, or provide independent measurements, so the post is best treated as a vendor description rather than a verified new capability. The accompanying discussion focuses on AI apps that may reach Signal chats and on spam defenses that affect VPN users.
 
-telegram · zaihuapd · Nov 20, 02:51
+hackernews · dotcoma · Nov 20, 09:42 · [Discussion](https://news.ycombinator.com/item?id=50572348)
 
-**「Background」** Gemini already had a native macOS app that runs on Apple Silicon Macs with macOS Sequoia \(15.0\) or later; this update adds a “computer use” capability that lets it operate desktop apps and websites on the user’s behalf. The agent runs in an isolated background window, so the user’s screen and cursor remain free while Gemini works.
+**「Background」** Mobile AI assistants can read on-screen content or reach app data outside an app&\#x27;s own sandbox, so screenshot blocking is only one layer of defense for a messenger. The Verge reported that Signal is blocking Gemini and Siri from reading messages, while acknowledging that this remedy is incomplete because AI agents may still retrieve app data through the device file system \(tool-1-1\).
 
-**「Impact」** For eligible users, app-level restrictions and pre-action approvals bound what the agent can do during a delegated task, but background runs still require live monitoring and manual intervention when a sensitive step needs review.
+**「Impact」** Because the supplied post includes no implementation details or rollout version, users and third-party developers cannot yet verify what effect the privacy protections have on third-party app access to Signal chats.
+
+**「Community Discussion」** Commenters pressed on two practical tensions: one cited Meredith Whittaker&\#x27;s interview warning that AI apps can access Signal chats indirectly through contacts, while another reported that Signal&\#x27;s spam defenses produce repeated CAPTCHAs for VPN users adding contacts, pushing some privacy-sensitive users to other apps. Others asked Signal to publish its forensics findings and complained that blocking screenshots on Windows removes a basic feature.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.androidauthority.com/gemini-mac-computer-use-3737396/">Gemini for Mac adds computer use to control desktop apps</a></li>
-<li><a href="https://gemini.google/gb/mac/?hl=en-GB">Gemini for macOS – native AI assistant and Mac automation</a></li>
+<li><a href="https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app">Signal is blocking Gemini and Siri AI from reading your... | The Verge</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#Gemini`, `#AI agents`, `#macOS`, `#desktop automation`, `#Google`
+**Tags**: `#privacy`, `#secure messaging`, `#Signal`, `#AI app permissions`, `#mobile security`
+
+---
+
+<a id="item-tech-news-13"></a>
+### [AI-designed Frostbite CPU claim prompts debate on novelty and verification](https://architectlabs.com/blog/frostbite) ⭐️ 7.0/10
+
+Architect Labs has published a blog post claiming that an AI system discovered, designed, and verified a CPU architecture called Frostbite, which is built around interaction nets. The post frames Frostbite as an AI-originated design, but the available account provides no independent verification of its performance or implementation status. For chip architects and hardware-verification researchers, the significance depends on whether the design can be reproduced and compared against modern processors, not just described as AI-generated.
+
+hackernews · shioyama · Nov 20, 10:01 · [Discussion](https://news.ycombinator.com/item?id=50572503)
+
+**「Background: interaction nets and prior dataflow work」** Interaction nets \(also called the interaction calculus\) are a graph-rewriting model of computation in which reduction happens through local rewrites on a network of nodes rather than a program counter stepping through memory; a Hacker News commenter characterized these reductions as &quot;more physically-meaningful, local, topologically-smooth.&quot; Frostbite is presented as a CPU architecture built around that paradigm instead of a conventional von Neumann-style design. Commenters also pointed to earlier dataflow architecture research, such as WaveScalar from more than 20 years ago, as prior art for the general approach.
+
+**「Impact」** Chip architects and verification teams should treat Frostbite as a claim to reproduce rather than an established result: commenters note that the comparison uses an in-order CPU baseline and a small program set, so the reported performance does not yet support conclusions against modern out-of-order designs.
+
+**「Community Discussion」** Commenters disputed the headline&\#x27;s framing: jkhdigital argued that humans supplied the insights while AI synthesized decades of research into a coherent engineered product, and pizza234 questioned the novelty, citing WaveScalar&\#x27;s dataflow work and criticizing the in-order baseline and limited benchmark set. shioyama, who posted the item, urged readers to focus on interaction nets as a fundamentally different paradigm rather than dismiss the work outright.
+
+<details><summary>References</summary>
+<ul>
+<li>There&#x27;s a model of computation called &#x27;interaction nets ... - Hacker News</li>
+
+</ul>
+</details>
+
+**Tags**: `#CPU architecture`, `#AI-assisted design`, `#interaction nets`, `#hardware verification`, `#computer architecture`
+
+---
+
+<a id="item-tech-news-14"></a>
+### [Levent Alpöge claims Claude-assisted Riemann Hypothesis proof](https://simonwillison.net/2026/Nov/20/levent-alpoge/) ⭐️ 7.0/10
+
+Levent Alpöge has publicly claimed that, working with Anthropic&\#x27;s Claude, he discovered a proof of the Riemann Hypothesis and formalized the arguments without assumptions. In a short PDF statement at alpo.ge/remark.pdf, he says the method &quot;easily extends&quot; to the Generalized Riemann Hypothesis and that he expects the Extended Riemann Hypothesis to follow with more time. The quotation, relayed by Simon Willison, contains no proof details, no statement of which formal system or proof assistant was used, and no evidence of peer review or independent verification, so the claim remains an unverified personal assertion rather than a demonstrated result.
+
+rss · Simon Willison · Nov 20, 16:30
+
+**「Background」** The Riemann Hypothesis is the 167-year-old conjecture about the nontrivial zeros of the Riemann zeta function, and proving it would settle central questions about how the prime numbers are distributed. Levent Alpöge is a mathematician employed at Anthropic, and the argument he describes was formalized in the Lean 4 proof assistant. Such a formalization checks that each step follows from the stated assumptions, but it does not by itself establish that the formal statement matches the conjecture as it is normally posed.
+
+**「Verification burden falls on the formalization」** The decisive test is not the announcement but the accompanying Lean archive, since the claim asserts the arguments were formalized &quot;without assumptions&quot; and that a large Lean code archive accompanies it; mathematicians and formal-verification practitioners would need to check that archive independently before treating the result as established. Because the source provides no proof details or peer review, and the claimant is an Anthropic technical staff member as well as a number theorist, the claim should be read as an unverified personal assertion until such checking occurs.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Levent_Alp%C3%B6ge">Levent Alpöge - Wikipedia</a></li>
+<li><a href="https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/">Anthropic mathematician claims to prove Riemann hypothesis ...</a></li>
+<li><a href="https://www.ibm.com/think/news/anthropic-claude-riemann-hypothesis-math-proof">Anthropic mathematician claims AI helped solve a 167 ... - IBM</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Levent_Alp%C3%B6ge">Levent Alpöge - Wikipedia</a></li>
+<li><a href="https://interestingengineering.com/ai-robotics/anthropic-167-year-old-riemann-hypothesis-claude">Claude helped prove 167-year-old Riemann hypothesis , researcher...</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI-assisted mathematics`, `#Riemann Hypothesis`, `#Claude`, `#formal verification`, `#research claims`
+
+---
+
+<a id="item-tech-news-15"></a>
+### [Gemini can now control Mac apps on users&\#x27; behalf in the US](https://www.bloomberg.com/news/articles/2026-11-19/google-s-gemini-can-now-control-mac-devices-on-users-behalf) ⭐️ 7.0/10
+
+Google Gemini has added a &quot;computer use&quot; feature that lets it click, type, navigate menus, and fill out forms on a Mac to complete tasks for the user. The feature is available to US users of the Gemini Mac app who subscribe to Google AI Plus, Pro, or Ultra. Gemini runs in a separate background window while the user continues using the main screen and cursor. Users can restrict which apps it can access, watch its actions in real time, pause it at any time, and approve key actions before they proceed.
+
+telegram · zaihuapd · Nov 20, 02:51
+
+**「Why desktop agents need controls」** Desktop-control agents differ from ordinary chat assistants because they operate through the same graphical interface a person uses: clicking controls, typing into fields, and moving through menus rather than calling an application programming interface. That makes app-level restrictions, live observation, and approval before sensitive steps the relevant safeguards when an agent is allowed to run in the background.
+
+**「Impact」** Eligible subscribers can delegate repetitive desktop tasks while retaining oversight, but they need to set app restrictions and review approval prompts before letting the agent act in sensitive apps or complete consequential actions.
+
+**Tags**: `#Google Gemini`, `#AI agents`, `#macOS`, `#desktop automation`, `#product launch`
+
+---
+
+<a id="item-tech-news-16"></a>
+### [UK tribunal rules for Apple, opens encryption backdoor case to public](https://appleinsider.com/articles/26/11/19/uk-cant-hide-that-it-tried-ordering-apple-to-allow-access-to-user-data) ⭐️ 7.0/10
+
+Britain&\#x27;s Investigatory Powers Tribunal ruled in Apple&\#x27;s favor and barred the Home Office from keeping secret its order demanding access to encrypted iPhone data, according to AppleInsider. The tribunal ordered that most of the case be heard in public and found the government&\#x27;s national-security rationale &quot;impractical.&quot; The Home Office confirmed it had issued a technical capability notice \(TCN\) and said the measure was meant to bring criminals to justice.
+
+telegram · zaihuapd · Nov 20, 04:13
+
+**「Background」** The case concerns a Technical Capability Notice \(TCN\), the mechanism the Home Office confirmed it used to demand that Apple provide access to encrypted iPhone data. Apple challenged the notice at the Investigatory Powers Tribunal, an independent judicial body, which has now rejected the Home Office&\#x27;s bid to keep the matter secret and cleared the way for a public hearing.
+
+**「Impact」** The immediate consequence is that the Home Office&\#x27;s technical capability notice will be examined in largely public proceedings, giving researchers and privacy advocates a documented record of the government&\#x27;s demand for encrypted iPhone access. The supplied report does not specify whether the tribunal quashed the underlying notice or only rejected the secrecy order, leaving the order&\#x27;s operational status unclear.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.ft.com/content/46a5cf3c-a827-477f-b72f-e7415565e729?syn-25a6b1a6=1">UK loses bid to keep Apple ‘backdoor’ order secret</a></li>
+<li><a href="https://iclg.com/news/home-secretary-loses-bid-to-keep-apple-surveillance-notice-secret/">Home Secretary loses bid to keep Apple surveillance notice ...</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#苹果`, `#英国`, `#加密后门`, `#隐私安全`, `#法律裁定`
+
+---
+
+<a id="item-tech-news-17"></a>
+### [U.S. House panel discloses nearly 880,000 AI chip export approvals to China](https://foreignaffairs.house.gov/news/press-releases/chairman-brian-mast-exercises-legislative-authority-to-publicly-release-ai-chip-license-information-for-china) ⭐️ 7.0/10
+
+A public release of licensing data by the U.S. House Foreign Affairs Committee shows that from December 2025 through May 2026 the United States approved 879,868 AI chips for export to China, including Nvidia H200 and AMD MI325X accelerators, out of 3.444 million chips requested. Approved recipients include Tencent and ByteDance at 150,000 chips each; Alibaba, Kuaishou and Didi at 75,000 each; and miHoYo, Baidu and JD, according to the documents. The release notes that Alibaba, Tencent, Baidu and BYD appear on a U.S. list of companies tied to China&\#x27;s military, raising congressional scrutiny, and that 21 approved licenses showed no shipments as of May 11, so approvals do not equal deliveries.
+
+telegram · zaihuapd · Nov 20, 04:25
+
+**「Background」** Under U.S. export controls, chipmakers must obtain licenses before exporting advanced AI accelerators such as NVIDIA&\#x27;s H200 or AMD&\#x27;s MI325X to China. A license approval authorizes a potential shipment but does not establish that the chips were actually delivered.
+
+**「Approvals are not delivered capacity」** For the Chinese cloud and AI companies named in the disclosure, the nearly 880,000 approved chips do not represent usable compute: the report says 21 approved licenses had not shipped as of May 11, so capacity planning and model-training schedules should depend on confirmed deliveries rather than approval totals.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.yahoo.com/news/politics/articles/license-information-ai-chips-sent-201033356.html">US signed off on sales of nearly 900,000 AI chips to China in six...</a></li>
+<li><a href="https://foreignaffairs.house.gov/news/press-releases/chairman-brian-mast-exercises-legislative-authority-to-publicly-release-ai-chip-license-information-for-china">Chairman Brian Mast Exercises Legislative Authority to Publicly...</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI chips`, `#export controls`, `#NVIDIA`, `#AMD`, `#US-China tech`
+
+---
+
+<a id="item-tech-news-18"></a>
+### [US tightens chip exports as India seeks AI compute growth](https://www.bloomberg.com/news/articles/2026-11-20/nvidia-scandal-fallout-india-ai-yotta-ambani-adani-am-intelligence-e2e-networks) ⭐️ 7.0/10
+
+The post reports that U.S. restrictions on advanced chip exports to Malaysia, Thailand and Singapore are leading India&\#x27;s AI industry to position the country as a destination for redirected demand. Yotta says it will add about 100,000 GPUs over the next year, equivalent to roughly a 10% increase in India&\#x27;s existing compute, while Reliance has committed up to $110 billion and Adani $100 billion to AI infrastructure. India currently has 153 data centers, ranking 14th globally, but the report says expansion remains constrained by shortages of compute infrastructure and limited capital. The GPU target and investment figures are announced plans, not confirmed installed capacity.
+
+telegram · zaihuapd · Nov 20, 07:31
+
+**「Background」** The tighter export environment described here follows a mid-November U.S. proposal aimed at preventing China from obtaining advanced AI chips through Southeast Asian data centers, a route that had helped fuel the region’s data-center investment boom. Malaysia said it was seeking clarification on the new licensing requirements and on providing data-center services to third parties, leaving key implementation details unsettled.
+
+**「Impact」** Indian AI developers and cloud buyers would gain additional domestic GPU capacity if Yotta&\#x27;s planned ~100,000 GPUs come online, but the post&\#x27;s own figure puts that at only about a 10% increase over India&\#x27;s existing compute. Yotta had already announced 20,736 liquid-cooled NVIDIA Blackwell Ultra GPUs in February 2026 as part of a $2 billion AI hub, so the new plan extends an existing buildout; actual capacity still depends on U.S. export licensing and on converting Reliance&\#x27;s and Adani&\#x27;s large infrastructure commitments into operating data centers.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.nytimes.com/2026/11/17/business/southeast-asia-china-ai-chips.html">Trump’s New A.I. Chip Rules Rattle Southeast Asia - The New York...</a></li>
+<li><a href="https://www.freemalaysiatoday.com/category/nation/2026/11/18/malaysia-seeks-us-clarification-on-new-ai-chip-restrictions">Malaysia seeks US clarification on new AI chip restrictions | FMT</a></li>
+<li><a href="https://www.cnbc.com/2026/02/27/india-yotta-nvidia-ai-gpu-demand-data-centers-investment.html">India’s Yotta to build $2 billion AI hub with Nvidia GPUs ...</a></li>
+<li><a href="https://yotta.com/press-releases/yotta-to-deploy-20000-nvidia-blackwell-ultra-gpus/">Yotta Deploys 20,000+ NVIDIA Blackwell GPUs in India</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI infrastructure`, `#export controls`, `#GPU compute`, `#India`, `#data centers`
+
+---
+
+## Technology Blog
+
+<a id="item-tech-blog-1"></a>
+### [Day-0 vLLM Support for the Looped Inkling 2 Mini](https://vllm.ai/blog/2026-11-20-inkling2-mini) ⭐️ 8.0/10
+
+rss · vLLM Blog · Nov 20, 00:00
+
+**「Background」** Inkling 2 Mini is a 26B-total, 3.5B-active multimodal MoE whose middle 12 layers run three times per token with shared weights, yet each pass keeps its own KV and conv-state caches and passes gated messages forward. Serving it on day 0 therefore required vLLM to treat the repeated computation as a first-class caching and kernel problem rather than unrolling a custom path.
+
+**「Solution」** The authors&\#x27; key move is to register every extra pass of a core layer as an ordinary attention layer with its own KV and conv-state cache, so the existing KV-cache manager and prefix caching work unchanged; the 24-layer model appears as 48 KV caches and 48 conv-state caches. To avoid many small launches, vLLM reads a layer&\#x27;s four messages in one attention-residual kernel, stacks the four rank-64 controllers&\#x27; weights into batched GEMMs, and fuses controller RMSNorm and the gated FP32 merge with the receiving sublayer&\#x27;s RMSNorm. It generalizes Inkling 2 Small&\#x27;s fused all-reduce, convolution, residual and RMSNorm kernels from hidden size 4,608 to 2,304 and reuses them at every tensor-parallel size, including TP1. The released TML-d24-varloop-research checkpoint exposes pass count and shared-versus-per-pass KV cache at startup, but not on fixed-loop checkpoints. On one GB200 at 4K context, forward-only decode at batch 32 rose from 3.81 ms with one pass to 5.92 ms with two and 8.11 ms with three; KV capacity fell from 352K to 233K to 175K tokens, and sharing the KV cache at three passes raised capacity only to 194K because conv states remain per pass. The authors report numerics matching the reference within its own attention-path variation, with MoE outputs bitwise identical given the same inputs.
+
+**「Takeaway」** The broader point is that a looped MoE can be served with ordinary cache abstractions and targeted fusion, while the variable-loop checkpoint makes the latency-quality tradeoff explicit—though the evidence here is one GB200 configuration and largely qualitative accuracy reporting.
+
+**Tags**: `#looped models`, `#vLLM`, `#KV cache`, `#MoE inference`, `#kernel fusion`
+
+---
+
+<a id="item-tech-blog-2"></a>
+### [Why Output Caching Is Low-Leverage for LLM Costs](https://seangoedecke.com/why-output-caching-doesnt-work/) ⭐️ 6.0/10
+
+rss · Sean Goedecke · Nov 21, 00:00
+
+**「Background」** Input caching is central to LLM inference economics because it prevents the entire conversation history from being recomputed on every message. Sean Goedecke asks whether output-side repetition should be cached in a similar way, since coding agents often repeat code snippets, evidence documents, and sample outputs in their responses.
+
+**「Solution」** The proposed mechanism is to make models reference earlier content—for example, emitting “src/script.py:12-15” instead of reproducing the lines—and let the harness expand those references, whether through prompting or fine-tuning. The author argues that this is low leverage because it only targets visible output: based on his own agent histories, he estimates that visible output is roughly 6% of output tokens, with 50% reasoning tokens and 44% tool calls. That estimate is anecdotal, and he is only moderately confident that frontier models avoid repetition in their chain of thought. Applying Amdahl’s law, even saving two-thirds of visible tokens would reduce total output tokens by only about 4%. The remaining 94% is largely tied to model intelligence: stronger models need fewer reasoning and tool-call tokens, which can make a more expensive model cheaper overall—5x the per-token price but 6x fewer tokens.
+
+**「Takeaway」** The author concludes that output caching optimizes a minor share of LLM output costs, while the higher-leverage path is reducing invisible reasoning and tool-call tokens through smarter models.
+
+**Tags**: `#LLM inference economics`, `#output caching`, `#token economics`, `#Amdahl&\#x27;s law`, `#AI agents`
 
 ---
 
 ## Financial News
 
 <a id="item-finance-news-1"></a>
-### [Anthropic Reportedly Opens 34% Above IPO Price in Nasdaq Debut](https://www.cls.cn/detail/2539480) ⭐️ 9.0/10
+### [Beijing draft lease contract would bar deposit deductions for normal wear and tear](https://mp.weixin.qq.com/s/PmGxh5knIyxiBRhpRoJnoQ) ⭐️ 7.0/10
 
-Anthropic reportedly began trading on Nasdaq at $111.50 a share, 34% above its $83 IPO price, giving the AI company a market capitalization of about $1.5 trillion at the opening price, according to a CLS report relayed on Telegram. The listing was accompanied by a $26 billion concurrent private placement involving strategic investors including Google, Nvidia, Microsoft, AMD, Broadcom, Micron and TSMC.
+Beijing&\#x27;s housing authority and market regulator opened public comment on Nov 20 on a draft model residential lease contract that would bar landlords from deducting from a tenant&\#x27;s deposit for normal wear and tear caused by ordinary use. The draft, which is not yet finalized, would also require rental companies that sublet apartments to pay tenants&\#x27; deposits and rent into supervised accounts.
 
-telegram · zaihuapd · Nov 19, 16:56
+telegram · zaihuapd · Nov 20, 13:46
 
-**「Background」** Anthropic’s debut follows an initial public offering priced at $83 a share—above the $70–$78 range it had marketed—that raised $81.3 billion in what Euronews described as the largest IPO in history.
+**「Background」** A &quot;model contract&quot; is a template drafted by Beijing&\#x27;s housing and market regulators that landlords and tenants can adopt when signing a lease; this revised version is still a draft open for public comment, so it is not yet in force.
+
+**「Who is affected」** If finalized, the draft would mainly affect Beijing renters, who could cite the model contract&\#x27;s terms when disputing deductions for ordinary wear and tear, and subletting rental companies, which would have to route tenant deposits and rent through supervised accounts rather than holding the money themselves.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.euronews.com/2026/11/19/anthropic-shares-open-34-above-ipo-price-in-nasdaq-debut-after-record-listing">Anthropic shares open 34% above IPO price in Nasdaq ... | Euronews</a></li>
-<li><a href="https://www.tradingview.com/symbols/NASDAQ-ANT/">Anthropic IPO : ANT Stock Price &amp; Chart — NASDAQ ... — TradingView</a></li>
+<li><a href="https://news.fang.com/open/51098736.html">北 京 新规： 租 房 押 金 和 租 金 监管更靠谱！ - 房 产资讯- 房 天下</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#Anthropic IPO`, `#Nasdaq`, `#AI companies`, `#private placement`, `#market valuation`
-
----
-
-<a id="item-finance-news-2"></a>
-### [GTA 6 preorders estimated at 17.07 million, 75% on PS5](https://www.gamespot.com/articles/gta-6-has-sold-almost-8-million-copies-so-far-and-ps5-is-dominating-the-split-of-course/) ⭐️ 7.0/10
-
-Sensor Tower estimates that Grand Theft Auto 6 drew 17.07 million preorders and about $1.65 billion in revenue before its November 19, 2026 release, with PS5 accounting for 75% \(12.73 million\) and Xbox Series X\|S 25% \(4.35 million\).
-
-telegram · zaihuapd · Nov 19, 13:41
-
-**「Background」** Rockstar Games announced in November 2025 that Grand Theft Auto VI would launch on November 19, 2026 — a delay it said was needed to finish the game with the expected level of polish — and the title is being released only on PS5 and Xbox Series X\|S, with no PC version announced.
-
-**「Impact」** On launch day, some third-party PS5 Pro prices rose, with Tmall listings showing 9,498 yuan for the mainland digital edition and 14,579 yuan for the Hong Kong version.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026">Grand Theft Auto VI is Now Set to Launch November 19, 2026</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#GTA 6`, `#game preorders`, `#PS5`, `#Xbox Series X\|S`, `#console pricing`
-
----
-
-<a id="item-finance-news-3"></a>
-### [Asian stocks fall as AI spending doubts mount after Anthropic IPO](https://www.bloomberg.com/news/articles/2026-11-19/stock-market-today-dow-s-p-live-updates) ⭐️ 7.0/10
-
-Asian stocks fell broadly, with the MSCI Asia-Pacific index down 1.7% for a seventh consecutive session, as doubts about AI spending intensified after Anthropic&\#x27;s IPO; Anthropic itself fell more than 5% after hours to below $92.
-
-telegram · zaihuapd · Nov 20, 01:58
-
-**「Background」** Anthropic priced its initial public offering at $83 a share — above its stated $70–$78 range — and the stock began trading on the Nasdaq on November 19, 2026 under the ticker &quot;ANT.&quot; Even so, technology shares sold off on debut day, with the listing failing to revive enthusiasm for AI-related stocks.
-
-**「Impact」** The selloff hit semiconductor shares, with Tokyo Electron down 7.19% and SK Hynix down 6%, as investors questioned whether large AI investments will generate commensurate returns.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.anthropic.com/news/anthropic-prices-initial-public-offering">Anthropic prices initial public offering</a></li>
-<li><a href="https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/">Anthropic prices IPO at $83 a share, above projected range</a></li>
-<li><a href="https://www.cnbc.com/2026/11/19/anthropic-ipo-ai-stocks-selloff.html">Anthropic IPO fails to lift AI stocks - CNBC</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#Asian equities`, `#AI investment`, `#semiconductor stocks`, `#Anthropic IPO`, `#market selloff`
+**Tags**: `#住房租赁`, `#押金监管`, `#北京住建委`, `#租户权益`, `#征求意见稿`
 
 ---
