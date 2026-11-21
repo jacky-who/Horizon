@@ -24,6 +24,10 @@
       "finance-news": {
         "threshold": 7.0,
         "topic_dedup": true
+      },
+      "chip-news": {
+        "threshold": 7.0,
+        "topic_dedup": true
       }
     }
   },
@@ -102,6 +106,13 @@
         "category": "cuda",
         "profile": "tech-blog",
         "content_extractor": "trafilatura"
+      },
+      {
+        "name": "Google News - Global chips (example)",
+        "url": "https://news.google.com/rss/search?q=NVIDIA+chip+China+when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
+        "enabled": true,
+        "category": "chips",
+        "profile": "chip-news"
       },
       {
         "name": "LWN.net (subscriber full-text)",
@@ -211,6 +222,7 @@
     "max_items": null,
     "profile_order": [
       "tech-news",
+      "chip-news",
       "tech-blog",
       "finance-news"
     ],

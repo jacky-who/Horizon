@@ -29,6 +29,10 @@
       "finance-news": {
         "threshold": 7.0,
         "topic_dedup": true
+      },
+      "chip-news": {
+        "threshold": 7.0,
+        "topic_dedup": true
       }
     }
   },
@@ -115,6 +119,41 @@
         "profile": "tech-news"
       },
       {
+        "name": "Google News - NVIDIA and China",
+        "url": "https://news.google.com/rss/search?q=NVIDIA+chip+China+when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
+        "enabled": true,
+        "category": "chips-nvidia-china",
+        "profile": "chip-news"
+      },
+      {
+        "name": "Google News - Global chip vendors",
+        "url": "https://news.google.com/rss/search?q=NVIDIA+OR+TSMC+OR+AMD+GPU+when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
+        "enabled": true,
+        "category": "chips-global",
+        "profile": "chip-news"
+      },
+      {
+        "name": "Google News - China domestic chips",
+        "url": "https://news.google.com/rss/search?q=%E4%B8%AD%E8%8A%AF%E5%9B%BD%E9%99%85+OR+%E5%8D%8E%E4%B8%BA%E6%98%87%E8%85%BE+OR+%E5%9B%BD%E4%BA%A7%E8%8A%AF%E7%89%87+when%3A1d&hl=zh-CN&gl=CN&ceid=CN%3Azh-Hans",
+        "enabled": true,
+        "category": "chips-china-domestic",
+        "profile": "chip-news"
+      },
+      {
+        "name": "Google News - China chip policy and cooperation",
+        "url": "https://news.google.com/rss/search?q=%E8%8A%AF%E7%89%87+%E5%87%BA%E5%8F%A3%E7%AE%A1%E5%88%B6+OR+%E8%8B%B1%E4%BC%9F%E8%BE%BE+%E4%B8%AD%E5%9B%BD+when%3A1d&hl=zh-CN&gl=CN&ceid=CN%3Azh-Hans",
+        "enabled": true,
+        "category": "chips-china-policy",
+        "profile": "chip-news"
+      },
+      {
+        "name": "NVIDIA Newsroom",
+        "url": "https://nvidianews.nvidia.com/releases.xml",
+        "enabled": true,
+        "category": "chips-nvidia-official",
+        "profile": "chip-news"
+      },
+      {
         "name": "LWN.net",
         "url": "https://lwn.net/headlines/full_text?key=${LWN_KEY}",
         "enabled": false,
@@ -166,6 +205,7 @@
     "max_items": null,
     "profile_order": [
       "tech-news",
+      "chip-news",
       "tech-blog",
       "finance-news"
     ],
