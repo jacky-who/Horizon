@@ -70,8 +70,10 @@ jobs:
       - name: Run Horizon
         if: steps.guard.outputs.skip != 'true'
         env:
-          # 只需要 DeepSeek 的 Key；它对应 config.github.json 里的 ai.api_key_env
-          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          # SiliconFlow（OpenAI 兼容）：Key 走 Secret，模型名走 Variable，
+          # 分别对应 config.github.json 里的 ai.api_key_env 与 ai.model
+          SILICONFLOW_API_KEY: ${{ secrets.SILICONFLOW_API_KEY }}
+          HORIZON_AI_MODEL: ${{ vars.HORIZON_AI_MODEL }}
           # 以后想推送到飞书时，再添加这个 Secret 并把 webhook.enabled 改回 true
           HORIZON_WEBHOOK_URL: ${{ secrets.HORIZON_WEBHOOK_URL }}
         run: uv run horizon --hours 24

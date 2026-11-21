@@ -15,7 +15,7 @@ from src.ai.client import create_ai_client
 from src.models import AIConfig
 
 
-PROVIDERS = ["anthropic", "azure", "openai", "minimax", "deepseek", "ali", "doubao", "ollama"]
+PROVIDERS = ["anthropic", "azure", "openai", "minimax", "deepseek", "siliconflow", "ali", "doubao", "ollama"]
 CHAT_PROVIDERS = PROVIDERS[1:]
 TEMPERATURE_ERROR = "Unsupported value: 'temperature' does not support 0.3. Only the default (1) is supported."
 TOKEN_ERROR = "Unsupported parameter: 'max_tokens'. Use 'max_completion_tokens' instead."

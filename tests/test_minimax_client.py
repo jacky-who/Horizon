@@ -406,3 +406,19 @@ class TestFactoryFunction:
 
     def test_deepseek_provider_enum(self):
         assert AIProvider.DEEPSEEK.value == "deepseek"
+
+    def test_creates_openai_client_for_siliconflow(self, monkeypatch):
+        monkeypatch.setenv("SILICONFLOW_API_KEY", "test-key")
+        config = _make_config(
+            provider=AIProvider.SILICONFLOW,
+            api_key_env="SILICONFLOW_API_KEY",
+        )
+        client = create_ai_client(config)
+        assert isinstance(client, OpenAIClient)
+        assert client.provider == "siliconflow"
+        assert str(client.client.base_url).rstrip("/") == "https://api.siliconflow.cn/v1"
+
+    def test_siliconflow_provider_defaults(self):
+        defaults = AI_PROVIDER_DEFAULTS[AIProvider.SILICONFLOW]
+        assert defaults["api_key_env"] == "SILICONFLOW_API_KEY"
+        assert defaults["base_url"] == "https://api.siliconflow.cn/v1"

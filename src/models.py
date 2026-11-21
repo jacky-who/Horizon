@@ -130,6 +130,7 @@ class AIProvider(str, Enum):
     DOUBAO = "doubao"
     MINIMAX = "minimax"
     DEEPSEEK = "deepseek"
+    SILICONFLOW = "siliconflow"
     OLLAMA = "ollama"
 
 
@@ -182,6 +183,11 @@ AI_PROVIDER_DEFAULTS = {
         "api_key_env": "DEEPSEEK_API_KEY",
         "base_url": "https://api.deepseek.com",
     },
+    AIProvider.SILICONFLOW: {
+        "model": "${HORIZON_AI_MODEL}",
+        "api_key_env": "SILICONFLOW_API_KEY",
+        "base_url": "https://api.siliconflow.cn/v1",
+    },
     AIProvider.OLLAMA: {
         "model": "llama3.1",
         "api_key_env": "",
@@ -232,6 +238,25 @@ class AIConfig(BaseModel):
                 raise ValueError("ai.extra_body is not supported for openai-chatgpt preview requests")
             if self.api_key_env:
                 raise ValueError("openai-chatgpt uses OAuth; leave api_key_env empty")
+        return self
+
+    @model_validator(mode="after")
+    def validate_model_placeholder(self) -> "AIConfig":
+        """Fail fast when ai.model still holds an unresolved ``${VAR}`` token.
+
+        The checked-in config references ``${HORIZON_AI_MODEL}`` so the model id
+        can be supplied through a GitHub Actions Variable or .env. Without it we
+        would send the literal token to the API and could publish an empty
+        digest, so reject it at config load with an actionable message.
+        """
+        model = self.model.strip()
+        if not model or re.fullmatch(r"\$\{[A-Za-z_][A-Za-z0-9_]*\}", model):
+            raise ValueError(
+                "ai.model is empty or still contains an unresolved ${...} environment variable. "
+                "Set HORIZON_AI_MODEL (GitHub Actions Variable or .env) to a "
+                "SiliconFlow model id such as vendor/model-name, or replace the "
+                "placeholder with the model id directly in data/config.json."
+            )
         return self
 
     @field_validator("languages")
