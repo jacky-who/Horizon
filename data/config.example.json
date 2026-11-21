@@ -27,8 +27,8 @@
         "topic_dedup": true
       },
       "chip-news": {
-        "threshold": 7.0,
-        "topic_dedup": true
+        "threshold": 4.0,
+        "topic_dedup": false
       }
     }
   },
