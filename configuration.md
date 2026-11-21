@@ -143,6 +143,31 @@ Common API key variable names:
 | Aliyun DashScope | `DASHSCOPE_API_KEY` |
 | Doubao | `DOUBAO_API_KEY` |
 | DeepSeek | `DEEPSEEK_API_KEY` |
+| SiliconFlow | `SILICONFLOW_API_KEY` |
+
+**SiliconFlow (硅基流动, OpenAI-compatible)**:
+
+`siliconflow` is a first-class provider using the OpenAI-compatible endpoint
+`https://api.siliconflow.cn/v1`. The key comes from `SILICONFLOW_API_KEY`. The
+checked-in config leaves the model id as `${HORIZON_AI_MODEL}` so it can be set
+as a GitHub Actions Variable (or in `.env` for local runs) without editing the
+repository; model ids use the `vendor/model-name` form listed in the SiliconFlow
+console.
+
+```json
+{
+  "ai": {
+    "provider": "siliconflow",
+    "model": "${HORIZON_AI_MODEL}",
+    "base_url": "https://api.siliconflow.cn/v1",
+    "api_key_env": "SILICONFLOW_API_KEY"
+  }
+}
+```
+
+Add `SILICONFLOW_API_KEY` to GitHub Actions Secrets and `HORIZON_AI_MODEL` to
+GitHub Actions Variables. For local runs put both in `.env`, or simply replace
+`${HORIZON_AI_MODEL}` with a literal model id in `data/config.json`.
 
 **Anthropic Claude**:
 
