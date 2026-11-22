@@ -5,346 +5,374 @@ date: 2026-11-22
 lang: en
 ---
 
-> From 26 items, 14 important content pieces were selected
+> From 33 items, 18 important content pieces were selected
 
 ---
 
 **Technology News**
-1. [Lean formalization of the Riemann Hypothesis reportedly verified](#item-tech-news-1) ⭐️ 10.0/10
-2. [GPGME pre-2.3.0 double free disclosed as RCE](#item-tech-news-2) ⭐️ 8.0/10
-3. [Trump threatens &\#x27;massive taxes&\#x27; on US firms building AI data centers abroad](#item-tech-news-3) ⭐️ 8.0/10
-4. [Microsoft previews RDMA over USB4 for multi-PC local AI](#item-tech-news-4) ⭐️ 8.0/10
-5. [OpenRouter warns MiniMax prompts may have been read by third parties](#item-tech-news-5) ⭐️ 8.0/10
-6. [Zhejiang University reports first on-chip QRAM demonstration](#item-tech-news-6) ⭐️ 8.0/10
-7. [🚘 特斯拉开始推送 FSD v15](#item-tech-news-7) ⭐️ 8.0/10
-8. [Monitor&\#x27;s USB Ethernet cut download speed 75%](#item-tech-news-8) ⭐️ 7.0/10
-9. [Graham Dumpleton launches Muru, an AI-assisted Rust server for Python apps](#item-tech-news-9) ⭐️ 7.0/10
-10. [ChatGPT Spaces opens collaboration to Plus users](#item-tech-news-10) ⭐️ 7.0/10
+1. [OpenAI Explains Why Perplexity Still Tracks Model Intelligence](#item-tech-news-1) ⭐️ 8.0/10
+2. [Tesla begins overseas FSD v15 rollout with new Reality View](#item-tech-news-2) ⭐️ 8.0/10
+3. [FT links Prince Group figure to NVIDIA chip smuggling into China](#item-tech-news-3) ⭐️ 8.0/10
+4. [Anthropic 2028 power mix projected as 87% gas](#item-tech-news-4) ⭐️ 7.0/10
+5. [Tim O&\#x27;Reilly Argues Silicon Valley Optimizes for Shareholder Value](#item-tech-news-5) ⭐️ 7.0/10
+6. [Muru: AI-assisted Rust server for ASGI and WSGI Python apps](#item-tech-news-6) ⭐️ 7.0/10
+7. [Phison 太空 SSD 将携 488 TB 入轨](#item-tech-news-7) ⭐️ 7.0/10
+8. [Moore Threads Lushan GPU reportedly targets 64 GB VRAM](#item-tech-news-8) ⭐️ 7.0/10
 
 **Global Chips**
-1. [US chip rule takes effect; Taiwanese foundry halts 16nm orders for mainland clients](#item-chip-news-1) ⭐️ 8.0/10
-2. [Report: Paid influencers promoted Nvidia AI chip exports to China](#item-chip-news-2) ⭐️ 6.0/10
+1. [US seeks answers on Nvidia&\#x27;s sale of chips to China, Bessent says](#item-chip-news-1) ⭐️ 7.0/10
+2. [Report: China spy agency prioritizes acquiring advanced chips](#item-chip-news-2) ⭐️ 7.0/10
+3. [Bessent Seeks Answers on NVIDIA&\#x27;s Role in China AI Chip Shipments](#item-chip-news-3) ⭐️ 6.0/10
+4. [Report alleges two-year Chinese spy campaign to obtain advanced AI chips](#item-chip-news-4) ⭐️ 6.0/10
+5. [US intelligence chief hints China obtained restricted AI chips](#item-chip-news-5) ⭐️ 5.0/10
+6. [Senator Kennedy Seeks Sworn Testimony From Lutnick on China&\#x27;s Nvidia Chip Access](#item-chip-news-6) ⭐️ 4.0/10
 
 **Technology Blog**
-1. [Avoid Blunders to Code Well](#item-tech-blog-1) ⭐️ 6.0/10
+1. [Deliberate Flailing as a Strategy Under Uncertainty](#item-tech-blog-1) ⭐️ 6.0/10
+2. [Good Programming Is Mostly Avoiding Blunders](#item-tech-blog-2) ⭐️ 6.0/10
 
 **Financial News**
-1. [特朗普力挺卢特尼克，并希望黄仁勋道歉后回归](#item-finance-news-1) ⭐️ 7.0/10
+1. [US tech selloff prompts emergency market measures in Asia](#item-finance-news-1) ⭐️ 9.0/10
+2. [中国要求美国撤销电话号段接入限制](#item-finance-news-2) ⭐️ 7.0/10
 
 ---
 
 ## Technology News
 
 <a id="item-tech-news-1"></a>
-### [Lean formalization of the Riemann Hypothesis reportedly verified](https://leanprover-community.github.io/blog/posts/riemann-hypothesis/) ⭐️ 10.0/10
+### [OpenAI Explains Why Perplexity Still Tracks Model Intelligence](https://openai.com/index/perplexity-and-intelligence/) ⭐️ 8.0/10
 
-On November 20, 2026, Levent Alpöge reportedly published a Lean formalization of the Riemann Hypothesis in a codebase of roughly 17 million lines. The next day, Lean FRO and the Mathlib Initiative jointly stated that the formalized proposition matches Mathlib&\#x27;s \`RiemannHypothesis\` and that the codebase compiles without errors, with multiple independent proof checkers confirming the proof&\#x27;s validity. The claim comes from a Telegram repost of the Lean community blog announcement rather than an independent technical report, so the certification rests on the community&\#x27;s stated verification.
+OpenAI published an article examining how perplexity, a measure of next-token prediction loss, relates to language-model intelligence. The piece drew substantial technical discussion, including surprise that cross-entropy trends remain a clear signal of capability and reasoning progress even as reinforcement-learning-based training becomes more common. The article&\#x27;s full argument and any specific claims or measured results are not available in the supplied material, and the piece is OpenAI-authored rather than an independent evaluation.
 
-telegram · zaihuapd · Nov 21, 16:48
+hackernews · acossta · Nov 22, 17:06 · [Discussion](https://news.ycombinator.com/item?id=50601525)
 
-**「Prior claim and Lean context」** Levent Alpöge, an Anthropic researcher, announced on November 20, 2026 that he and Claude had produced a Lean formalization of the Riemann Hypothesis plus a method extending to the Generalized Riemann Hypothesis; early write-ups treated it as a claim rather than a verified proof, and one account described the archive as 175,187 files. Lean is a proof assistant and Mathlib its main mathematics library, where a formal statement of the Riemann Hypothesis already exists, which is why the community check compared Alpöge&\#x27;s statement against Mathlib&\#x27;s \`RiemannHypothesis\`. The development now reported is the joint Lean FRO/Mathlib Initiative certification and independent-checker verification dated November 21.
+**「Background」** Perplexity quantifies how surprised a model is when predicting the next token across a sequence: a perfect predictor scores 1, while a random predictor scores the vocabulary size. Cross-entropy loss, the training objective that produces perplexity, has long been used to compare language models, but the community discussion notes that increasingly convoluted benchmarks have proliferated alongside RL-based post-training.
 
-**「Impact」** If the certification holds, the result would give researchers a machine-checked proof tied to Mathlib&\#x27;s existing statement of the Riemann Hypothesis, shifting scrutiny toward the reliability of Lean&\#x27;s kernel and the independent checkers rather than the proof&\#x27;s mathematics. Commenters pointed to a prior fake Collatz refutation that passed one such checker, so the result&\#x27;s strength depends on how genuinely independent those verification paths are.
+**「Impact」** The discussion suggests a practical evaluation implication: if perplexity continues to track capability as models scale, developers may have a simpler, cheaper benchmark to consult alongside task-specific evaluations. Commenters caution that perplexity may not capture specialized abilities, since a model trained narrowly on math could show high general perplexity while still performing well on its target task.
 
-**「Community discussion」** Hacker News commenters argued that falsifying the result would now require a bug affecting every kernel, including those with their own consistency proofs, though one noted that a fake Collatz refutation previously slipped past an independent checker. Others credited Alpöge with eliciting the formalization and suggested the work, if valid, also constitutes a substantial contribution to formalized mathematics.
+**「Community Discussion」** Commenters debated why cross-entropy trends remain so predictive. One found it &quot;pretty shocking&quot; that cross-entropy still matters given the rise of RL and welcomed a simple benchmark, while another argued the correspondence is unsurprising because prediction and compression capture the extraction of world models from raw data. A skeptical commenter questioned claims that specific abilities &quot;emerge&quot; at particular perplexity thresholds, noting that narrowly trained smaller models can have high general perplexity.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.unite.ai/levent-alpoges-unverified-riemann-claim-puts-claudes-lean-code-in-focus/">Levent Alpöge’s Unverified Riemann Claim Puts Claude’s Lean ...</a></li>
-<li><a href="https://stateofproof.org/paper-watch/paper-2026-11-20-a-claimed-proof-of-the-riemann-hypothesis">A Claimed Proof of the Riemann Hypothesis — Paper Watch ...</a></li>
-<li><a href="https://casrai.org/news/anthropic-levent-alpoge-claude-lean-riemann-hypothesis-claim-2026">175,000-File Lean Riemann Hypothesis Proof Claim — CASRAI</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#Lean`, `#formal verification`, `#Riemann Hypothesis`, `#Mathlib`, `#mathematics`
+**Tags**: `#perplexity`, `#language-models`, `#model-evaluation`, `#cross-entropy`, `#benchmarking`
 
 ---
 
 <a id="item-tech-news-2"></a>
-### [GPGME pre-2.3.0 double free disclosed as RCE](https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html) ⭐️ 8.0/10
+### [Tesla begins overseas FSD v15 rollout with new Reality View](https://x.com/Tesla/status/2124222447855743019) ⭐️ 8.0/10
 
-GPGME versions before 2.3.0 reportedly contain a memory-safety flaw affecting any software that links the library, including mail clients, XMPP clients, Samba, and Flatpak. The disclosure was moved up to 2026-11-20 from a planned 2026-11-25 coordinated date because GitLab needed to ship updates earlier amid the Ruby2Shell bug; GitLab also published an Omnibus patch for the signed-commit path. Commenters dispute the framing: one says the underlying issue is a double free rather than a full RCE chain, while another points to a Red Hat fix from roughly five years ago that upstream apparently missed. No exploit details or confirmed real-world impact are available in the supplied material.
+Tesla has started rolling out FSD v15 to overseas customers, according to a company post relayed via Telegram. Tesla claims the update improves handling of safety-critical scenarios by 25x, though the post gives no baseline, methodology, or independent verification for that figure. The release adds a &quot;Tesla Reality View&quot; interface that overlays camera footage and the FSD driving plan on the in-car screen, with full-screen, map, and split-screen views plus a quiet mode. Navigation turn cues can be overlaid on the display, turn-signal chimes are softer and fade gradually, and Tesla says it refined driving over potholes and debris and speed control near schools and in bad weather.
 
-hackernews · gdgghhhhh · Nov 21, 08:32 · [Discussion](https://news.ycombinator.com/item?id=50587208)
+telegram · zaihuapd · Nov 22, 00:03
 
-**「Background」** GPGME, the library applications use to integrate GnuPG, has a double-free flaw tracked as CVE-2026-129975 that is triggered by a crafted OpenPGP key. The advisory states the issue affects GPGME versions before 2.3.1, and before 1.24.4 on the 1.x branch. Community commenters add that a Red Hat downstream patch reportedly addressed the flaw years ago without an upstream fix.
+**「Context: FSD&\#x27;s end-to-end stack and the unverified 25x figure」** Tesla&\#x27;s Full Self-Driving software has been delivered in numbered major releases, and v15 is framed by the company as an upgrade to every part of its end-to-end driving network. Coverage of the rollout notes that Tesla published the 25x multiplier for improved critical-intervention rate but not the baseline rate, so the safety claim cannot yet be independently checked. The release also explicitly targets long-standing weaknesses including sign reading, potholes and school-zone speeds.
 
-**「Affected deployments」** All software linked against GPGME before version 2.3.0 is affected, whether GPGME is loaded as a shared library, a Windows DLL, or statically linked, according to the advisory and coverage citing CVE-2026-129975. Maintainers and users of mail clients, XMPP clients, Samba, Flatpak, and Gpg4win should verify which GPGME version their builds actually ship and upgrade to 2.3.0 or later; the disclosure date was moved from 2026-11-25 to 2026-11-20 because GitLab needed to ship its signed-commit patch earlier.
-
-**「Community discussion」** Commenters disagreed on severity and accuracy: mik1998 called it a double free and questioned whether the RCE label was intentionally overstated, while uptrails noted that Red Hat apparently fixed the issue about five years ago in a CentOS Stream packaging patch that upstream missed. miduil added that Johan Carlsson discovered the bug and that GitLab informed the project on 2026-11-12, prompting the earlier disclosure date.
+**「Impact」** Because the 25x safety claim is a vendor statement without published benchmarks, owners and regulators cannot yet treat it as a measured improvement; the rollout&\#x27;s practical effect will depend on which overseas markets and vehicle configurations actually receive v15.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://blog.ostorlab.co/gpgme-double-free-cve-2026-129975.html">GPGME Double Free: Data Theft, Possible RCE (CVE-2026-129975)</a></li>
-<li><a href="https://lists.gnu.org/archive/html/info-gnu/2026-11/msg00006.html">GnuPG Security Advisory for GPGME (T8557,CVE-2026-129975)</a></li>
-<li><a href="https://thecybersecguru.com/uncategorized/cve-2026-129975-gpgme-double-free/">GPGME Bug Hid for 24 Years: CVE-2026-129975 Explained | The ...</a></li>
-<li><a href="https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html">[Announce] GnuPG Security Advisory for GPGME ...</a></li>
-<li><a href="https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html">GnuPG Warns Critical GPGME Flaw Could Expose App Data via...</a></li>
+<li><a href="https://explainx.ai/blog/tesla-fsd-v15-rollout-25x-critical-intervention-claim-what-is-verified-2026">Tesla FSD v15: 25x Claim Explained and Checked | explainx.ai Blog</a></li>
+<li><a href="https://electrek.co/2026/11/21/tesla-fsd-v15-rollout-25x-safety-reality-view/">Tesla launches FSD v15, targets its biggest weaknesses, from ...</a></li>
+<li><a href="https://www.digitaltrends.com/cars/tesla-fsd-v15-rollout/">FSD v15 is rolling out, and Tesla says it handles risky ...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#security`, `#GnuPG`, `#GPGME`, `#vulnerability`, `#open source`
+**Tags**: `#autonomous driving`, `#Tesla FSD`, `#AI systems`, `#software release`, `#computer vision`
 
 ---
 
 <a id="item-tech-news-3"></a>
-### [Trump threatens &\#x27;massive taxes&\#x27; on US firms building AI data centers abroad](https://apnews.com/article/trump-artificial-intelligence-data-centers-f1ac03b73d13445400eeed8631d9d879) ⭐️ 8.0/10
+### [FT links Prince Group figure to NVIDIA chip smuggling into China](https://www.ft.com/content/f3ad8a81-3890-4a8a-8853-ff0a94b08ba9?syn-25a6b1a6=1) ⭐️ 8.0/10
 
-Speaking at a White House press conference on November 20, Trump said he plans to impose &quot;massive taxes&quot; on US tech companies that build AI data centers overseas, framing the measure as a way to keep data centers in the United States and preserve AI competitiveness with China. He said he had not yet told officials inside his administration about the plan. He also urged US communities to accept data centers, suggesting they negotiate with developers for payments, as localities around the country oppose new projects over electricity demand and noise concerns. The proposal has no stated implementation details or timeline.
+The Financial Times, citing people familiar with the matter, reported that Hu Xiaowei — described by the U.S. Treasury Department as the &quot;number two&quot; figure at Cambodia&\#x27;s Prince Group — is suspected of involvement in moving NVIDIA chips into China. The report ties the conglomerate to a network of alleged shell companies and underground financing channels that used private aircraft to smuggle goods. Trade data cited by the FT put the declared value of imports by Megaspeed&\#x27;s Malaysian subsidiary at about $4.6 billion from December 2024 to December 2025, with some chips allegedly reaching China&\#x27;s black market. Prince Group denied that Hu ever worked for it and said the allegations of an illegal network and private-aircraft smuggling lack factual basis.
 
-telegram · zaihuapd · Nov 21, 03:26
+telegram · zaihuapd · Nov 22, 04:34
 
-**「Background」** Trump&\#x27;s remarks came during a White House press conference on November 20, 2026, and were reported as a threat to penalize or restrict American companies that build data centers abroad, with Trump citing a &quot;tremendous tax&quot; penalty as the mechanism. He acknowledged he had not yet disclosed the plan to officials within his own administration, so the proposal has no published legislative text, rate, or enforcement procedure. The statement sits alongside his call for U.S. communities to accept data centers and negotiate payments from developers, as local opposition over electricity demand and noise has stalled projects in many parts of the country.
+**「Background」** U.S. export controls restrict the sale of advanced NVIDIA AI chips to China, making diverted hardware a focus of semiconductor supply-chain enforcement. The FT report centers on Prince Group, a Cambodian conglomerate whose alleged role in the network is tied to Hu Xiaowei, whom the Treasury Department has described as its &quot;number two&quot; — a characterization the group rejects through its denial that Hu worked for it.
 
-**「Impact」** For US operators weighing overseas AI capacity, the statement introduces tax risk without published scope, rate, or legislative path, so it cannot yet be modeled into site-selection decisions. The simultaneous push for communities to negotiate developer payments signals that local opposition over power use and noise remains a practical constraint on domestic buildouts.
+**「Impact」** The reported $4.6 billion in declared imports by Megaspeed&\#x27;s Malaysian subsidiary, if accurate, illustrates how Malaysian intermediaries can appear in trade data as legitimate importers while allegedly supplying China&\#x27;s black market — a routing pattern relevant to companies and compliance teams auditing Southeast Asian chip flows under U.S. export controls. The allegations remain unproven, and Prince Group denies them.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.reuters.com/technology/trump-says-us-penalize-firms-building-data-centers-abroad-2026-11-20/">Trump says US to penalize firms building data centers abroad</a></li>
-<li><a href="https://www.nytimes.com/2026/11/20/us/politics/trump-data-centers-ban.html">Trump threatens to bar U.S. tech firms from building data ...</a></li>
-<li><a href="https://www.cnbc.com/2026/11/20/trump-data-centers-ai-companies-tax.html">Trump vows to stop U.S. companies from building data centers ...</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AI infrastructure`, `#data centers`, `#tech policy`, `#US-China competition`, `#tax policy`
+**Tags**: `#NVIDIA`, `#chip smuggling`, `#export controls`, `#semiconductor supply chain`, `#AI hardware`
 
 ---
 
 <a id="item-tech-news-4"></a>
-### [Microsoft previews RDMA over USB4 for multi-PC local AI](https://videocardz.com/newz/microsoft-brings-rdma-over-usb4-to-windows-allowing-multiple-pcs-to-run-one-local-ai-model) ⭐️ 8.0/10
+### [Anthropic 2028 power mix projected as 87% gas](https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/) ⭐️ 7.0/10
 
-Microsoft released a developer preview of RDMA over USB4 for Windows that lets multiple PCs share memory and GPU compute over ordinary USB4 connections, without specialized network cards or switches, to run a single local AI model. In a demonstration, three AMD Ryzen AI Max+ 395 systems ran a 4-bit quantized Qwen3-235B-A22B model at about 18.5 tokens per second. The preview is to be distributed through Windows Insider. These details come from a Telegram summary of a VideoCardz article rather than Microsoft&\#x27;s primary documentation, and the performance figure has not been independently verified in the supplied material.
+A Better Data Center Project analysis, discussed on Hacker News, projects that by 2028 87% of Anthropic&\#x27;s power will come from natural gas and 11% from coal. The figures are presented as a projection tied to the company&\#x27;s data-center sourcing, not as measured emissions or a company commitment. The item&\#x27;s source content was unavailable, so the underlying methodology and the scope of the facilities covered could not be verified.
 
-telegram · zaihuapd · Nov 21, 06:13
+hackernews · happosai · Nov 22, 08:57 · [Discussion](https://news.ycombinator.com/item?id=50597612)
 
-**「Background」** RDMA \(remote direct memory access\) has traditionally required specialized network adapters and switches; Microsoft&\#x27;s developer preview applies it over the USB4 links already present on many PCs so connected machines can pool memory capacity and GPU compute for a single model. Microsoft announced the preview on November 19, 2026, and is distributing it through Windows Insider builds.
+**「Background」** Colossus 1 is a Memphis-area data center built by xAI that is largely leased to Anthropic; it houses more than 220,000 Nvidia GPUs and provides over 300 megawatts of compute capacity. That lease is the backdrop for the projected 2028 power mix under discussion.
 
-**「Impact」** For developers and small teams, this points to pooling existing USB4-equipped machines into a local inference cluster without buying dedicated networking hardware. Because the capability is a developer preview delivered via Windows Insider, it should be treated as experimental rather than a supported production path until Microsoft publishes compatibility and setup requirements.
+**「Impact」** For communities hosting Anthropic&\#x27;s leased data-center capacity, the projection implies that local air-quality and emissions burdens would continue to rest largely on fossil generation rather than new renewable supply. Commenters specifically point to the Memphis Colossus 1 lease and argue the company has made no US renewable commitments, contrasting it with Alphabet&\#x27;s public renewable procurement.
+
+**「Community Discussion」** Commenters broadly criticized the fossil-heavy mix: one called Anthropic a &quot;legitimately bad actor&quot; over pollution from the Memphis Colossus 1 lease and its lack of US renewable commitments, while another argued regulation is needed because purely financial accounting ignores environmental and social costs passed to distant communities. A separate thread noted that much US natural gas is a byproduct of shale oil production and is sometimes flared, framing gas-fired data-center demand as tied to continued oil extraction.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://techcommunity.microsoft.com/blog/microsoftusbblog/introducing-rdma-over-usb4%C2%AE-on-windows-run-larger-local-ai-models-across-pcs/4574602">Introducing RDMA over USB4® on Windows: run larger local AI ...</a></li>
-<li><a href="https://xenospectrum.com/en/windows-rdma-usb4-local-ai/">Microsoft Previews RDMA over USB4 for Windows, Splitting ...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Colossus_%28data_center%29">Colossus ( data center ) - Wikipedia</a></li>
+<li><a href="https://thenextweb.com/news/musk-spacex-colossus-anthropic-180-day-lease">Musk walks back the Anthropic Colossus deal to a six-month lease</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#RDMA over USB4`, `#Windows`, `#local AI inference`, `#distributed computing`, `#USB4`
+**Tags**: `#AI energy use`, `#data centers`, `#Anthropic`, `#grid infrastructure`, `#climate policy`
 
 ---
 
 <a id="item-tech-news-5"></a>
-### [OpenRouter warns MiniMax prompts may have been read by third parties](https://news.ycombinator.com/item?id=50585962) ⭐️ 8.0/10
+### [Tim O&\#x27;Reilly Argues Silicon Valley Optimizes for Shareholder Value](https://www.oreilly.com/radar/what-happened-to-silicon-valley/) ⭐️ 7.0/10
 
-OpenRouter has reportedly emailed users warning that request content sent to MiniMax models may have been read by third parties. Security researchers sent prompts containing test URLs to MiniMax models between July and October 2026, and third parties accessed those URLs 40–130 hours later, according to the relayed report. OpenRouter attributed the issue to MiniMax and its relays AtlasCloud, Novita, and StreamLake, removed the &quot;zero data retention&quot; labels from affected endpoints, and advised users who sent sensitive credentials to rotate API keys and passwords. OpenRouter has not published a public notice on its website, and the account comes from a Telegram relay of a Hacker News post rather than an official disclosure.
+In a new O&\#x27;Reilly Radar essay, Tim O&\#x27;Reilly argues that Silicon Valley has optimized for shareholder value instead of human flourishing, and proposes mechanism design—which he calls &quot;reverse game theory&quot;—as a way to rethink the rules shaping the tech economy. The essay&\#x27;s central question, quoted by a commenter, is &quot;What game ought we be playing?&quot;, to which O&\#x27;Reilly answers: &quot;The game of human flourishing.&quot; This is an opinionated industry analysis, not a product, policy, or pricing announcement; it reports no shipped capability, version, or independently measured result.
 
-telegram · zaihuapd · Nov 21, 06:53
+hackernews · greenyouse · Nov 22, 19:20 · [Discussion](https://news.ycombinator.com/item?id=50602947)
 
-**「Background」** OpenRouter is a routing layer that forwards prompts to third-party model hosts, and its Zero Data Retention setting restricts traffic to endpoints that pledge not to routinely store prompts or responses after processing. The labels now removed from the affected MiniMax endpoints and the AtlasCloud, Novita, and StreamLake relays were the indicators that such a policy applied to those routes.
+**「Background」** Mechanism design is an economics approach that starts from a desired outcome and works backward to the rules—incentives, constraints, and information flows—that would produce it, which is why O&\#x27;Reilly frames it as reverse game theory. The essay applies that lens to the incentives that have shaped Silicon Valley&\#x27;s growth and current priorities.
 
-**「Impact」** Developers routing LLM traffic through OpenRouter to MiniMax models or the affected AtlasCloud, Novita, and StreamLake relays can no longer rely on those endpoints&\#x27; &quot;zero data retention&quot; designation, so prompts containing secrets, credentials, or sensitive customer data should be treated as potentially exposed. The recommended mitigation is to rotate any API keys and passwords that appeared in such prompts and to reassess which endpoints are acceptable for confidential workloads.
+**「Impact」** For technologists and founders, the essay&\#x27;s framing suggests examining which metrics and incentive structures their own organizations reward rather than treating market outcomes as a natural force; it offers a basis for that debate but no specific policy or implementation proposal.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://openrouter.ai/docs/guides/features/zdr">Zero Data Retention - How OpenRouter gives you control over your...</a></li>
-<li><a href="https://aifoss.dev/blog/ollama-vs-openrouter-vs-groq-vs-nvidia-nim-llm-serving-2026/">Ollama vs OpenRouter vs Groq vs NVIDIA NIM in 2026</a></li>
+**「Community Discussion」** Commenters largely agreed with O&\#x27;Reilly&\#x27;s diagnosis but disputed the proximate cause: one attributed the situation to the ZIRP era, which allowed companies to grow to &quot;grotesque proportions&quot; and pushed startups to chase green fields, and argued that with interest rates back up, tech firms are now cannibalizing core competencies on the back of AI. Another dismissed contemporary &quot;VC influencers&quot; as self-serving, while others said the essay&\#x27;s mechanism-design argument, buried near the end, was its most important contribution.
 
-</ul>
-</details>
-
-**Tags**: `#LLM security`, `#data privacy`, `#OpenRouter`, `#MiniMax`, `#API providers`
+**Tags**: `#tech industry`, `#mechanism design`, `#Silicon Valley`, `#incentives`, `#AI economics`
 
 ---
 
 <a id="item-tech-news-6"></a>
-### [Zhejiang University reports first on-chip QRAM demonstration](https://finance.sina.com.cn/stock/2026-11-21/doc-iniznhsk3530826.shtml) ⭐️ 8.0/10
+### [Muru: AI-assisted Rust server for ASGI and WSGI Python apps](https://simonwillison.net/2026/Nov/21/muru/) ⭐️ 7.0/10
 
-Zhejiang University researchers report demonstrating quantum random access memory \(QRAM\) on a real superconducting chip, &quot;Tianmu-2,&quot; which they fabricated themselves; the work was published in Nature Physics. The chip ran 4-bit and 8-bit QRAM prototypes that retrieved data with 80.9% and 60.4% accuracy respectively, according to the report. The team says circuit depth was reduced by more than 30% versus an unoptimized scheme and that the architecture showed local noise resilience for the first time. The item is a brief Sina Finance report relaying the claim rather than the primary paper, and the team&\#x27;s next step is scaling QRAM up.
+Graham Dumpleton, who started mod\_wsgi 20 years ago, has released Muru, an AI-assisted Rust server for running ASGI and WSGI Python applications in both development and production. Alongside the GitHub project, he has published a detailed 19-post development series over three weeks \(November 4–22, 2026\) covering worker internals, combined WSGI/ASGI support, HTTPS in development, releases without restarts, canary deployments without a service mesh, Kubernetes integration, scaling from worker reports, scale-to-zero, scheduled overlays, and a toolbar with tracing. Dumpleton writes that AI does much of the surface work but that he decides what is not good enough yet, drawing on two decades of mod\_wsgi experience. The supplied material contains no benchmarks, adoption figures, version numbers, or release/availability specifics.
 
-telegram · zaihuapd · Nov 21, 08:31
+rss · Simon Willison · Nov 21, 23:56
 
-**「Background」** QRAM is a proposed quantum memory architecture that would let a quantum computer fetch classical data stored at an address held in superposition, a capability needed for algorithms such as quantum search and quantum linear algebra. The source identifies the device as Zhejiang University&\#x27;s independently fabricated superconducting chip &quot;Tianmu-2&quot;; a co-first author is quoted in external coverage describing it as a 100-qubit chip with a neighbor-tunable coupling architecture. Because the supplied source is a brief repost and does not link the underlying Nature Physics paper, the reported figures and the world-first framing remain claims from the university team as relayed by Sina Finance, not independently measured results.
+**「Background」** Graham Dumpleton created mod\_wsgi two decades ago, and the experience of that project shaped his long-running effort to design a better way to serve Python web applications in production. Muru applies that perspective through a Rust-based routing edge, control plane, and Python runtime for both WSGI and ASGI apps. The supplied material presents it as an early, AI-assisted project rather than a completed, benchmarked release.
 
-**「Impact for quantum developers」** The reported 4-bit and 8-bit prototypes at 80.9% and 60.4% accuracy fall well short of fault-tolerant operation, so quantum algorithm developers relying on QRAM for data loading should treat this as a feasibility demonstration rather than usable memory. The reported circuit-depth reduction of over 30% and validation of local noise resilience give hardware teams a concrete design target, since long addressing circuits and noise have historically caused the quantum state to collapse before data is read. The team&\#x27;s stated next step is scaling QRAM research, so the capability remains research-stage on the Tianmu-2 chip rather than a general-purpose component.
+**「Impact」** Python teams evaluating production servers now have a design to watch that explicitly targets ASGI and WSGI in one process model, with features like import-once-fork-many workers and scale-to-zero; however, the evidence offered so far is the author&\#x27;s design write-ups rather than independent benchmarks or documented production use, so adoption decisions should wait for measurable results.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://min.news/en/tech/4b9aa39797970c13ed2ca775adc98f77.html">Zhejiang University &amp; Tsinghua University &quot; Nature &quot;: Realizing a ne...</a></li>
-<li><a href="https://3g.china.com/act/news/10000169/20260414/49412417.html">量 子 机 器 学习找到新的突破口 绕开 QRAM 实 现指数级内 存 优势_中华网</a></li>
-<li><a href="https://news.mydrivers.com/1/1167/1167501.htm">news.mydrivers.com/1/1167/1167501.htm</a></li>
+<li>Muru Python Server: WSGI, ASGI, Zero-Downtime (2026) - explainx.ai</li>
+<li>muruhq/muru: Routing edge, control plane and Python runtime for WSGI ...</li>
 
 </ul>
 </details>
 
-**Tags**: `#quantum computing`, `#QRAM`, `#superconducting qubits`, `#hardware`, `#research`
+**Tags**: `#Python`, `#ASGI/WSGI`, `#Rust`, `#Web servers`, `#Open source`
 
 ---
 
 <a id="item-tech-news-7"></a>
-### [🚘 特斯拉开始推送 FSD v15](https://x.com/Tesla/status/2124222447855743019) ⭐️ 8.0/10
+### [Phison 太空 SSD 将携 488 TB 入轨](https://videocardz.com/newz/phison-announces-488tb-of-ssd-storage-for-space-data-centers-pricing-expected-to-be-astronomical) ⭐️ 7.0/10
 
-特斯拉在海外开始推送 FSD v15，宣称安全关键场景处理能力提升至 25 倍，并新增 Tesla Reality View 可视化界面与多项驾驶体验优化。
+Phison announced a space-grade SSD series, with 488 TB planned for Lonestar&\#x27;s 2027 StarVault-001 orbital data center and drives offering up to 128 TB and pSLC-enhanced endurance.
 
-telegram · zaihuapd · Nov 22, 00:03
+telegram · zaihuapd · Nov 22, 10:31
 
-**Tags**: `#Tesla FSD`, `#autonomous driving`, `#software release`, `#AI safety`, `#visualization`
+**Tags**: `#storage`, `#hardware`, `#space computing`, `#data centers`, `#SSD`
 
 ---
 
 <a id="item-tech-news-8"></a>
-### [Monitor&\#x27;s USB Ethernet cut download speed 75%](https://blog.tymscar.com/posts/studiodisplayethernet/) ⭐️ 7.0/10
+### [Moore Threads Lushan GPU reportedly targets 64 GB VRAM](https://www.tomshardware.com/pc-components/gpus/moore-threads-next-lushan-gaming-gpu-could-pack-a-record-64gb-of-vram-doubles-the-rtx-5090s-32gb-lofty-claims-of-15x-gaming-and-50x-ray-tracing-over-mtt-s80) ⭐️ 7.0/10
 
-A blog post documents how routing Ethernet through a USB hub in a monitor reduced a laptop&\#x27;s download speed by 75%. The author traced the problem to added latency introduced by the monitor path, which prevented the laptop from acknowledging packets fast enough; a buffer in the USB Ethernet adapter then filled and dropped packets. Switching to a different adapter that required less frequent acknowledgement fixed the issue. The finding is an anecdotal debugging account, not a controlled benchmark.
+A Moore Threads product manager for the MTT S80 has indicated that the next-generation Lushan gaming GPU will carry more VRAM than any consumer card currently on sale, which VideoCardz calculated as 64 GB based on his earlier remark of &quot;4x the S80&\#x27;s 16 GB&quot; — double the RTX 5090&\#x27;s 32 GB. The statement is not an official company release. Moore Threads is sticking to targets disclosed at MDC 2025 for Lushan relative to the S80: 15x AAA gaming performance, 50x ray tracing, and 64x AI compute. The company says CEO Zhang Jianzhong will unveil a new flagship at MDC 2026, scheduled for December 29–30 in Beijing.
 
-hackernews · soheilpro · Nov 21, 10:36 · [Discussion](https://news.ycombinator.com/item?id=50587875)
+telegram · zaihuapd · Nov 22, 15:11
 
-**「Background」** USB Ethernet adapters depend on timely USB transfers between the adapter and the host; when those transfers are delayed, TCP acknowledgements can arrive too slowly and overwhelm adapter buffering. Monitors with built-in USB hubs add another hop between the host and the adapter, which can introduce latency and make opaque USB hub behavior harder to diagnose.
+**「Background」** The MTT S80 is Moore Threads&\#x27; current consumer gaming card with 16 GB of VRAM, and Lushan is the anticipated successor whose performance multiples were first presented at MDC 2025. The 64 GB figure derives from multiplying that S80 baseline rather than from a published specification sheet.
 
-**「Impact」** For users with monitor or dock Ethernet, the reported case suggests testing the adapter directly on the laptop before blaming the network; a different adapter or a direct connection avoided the 75% slowdown in this account.
+**「Impact」** If the 64 GB capacity holds at launch, Lushan would offer twice the VRAM of an RTX 5090, a capacity aimed at large local AI models and high-resolution gaming workloads; buyers should nonetheless treat both the capacity and the 15x/50x/64x multiples as unverified targets until the MDC 2026 announcement and independent benchmarks.
 
-**「Community Discussion」** Commenters pushed back on the monitor framing, with one arguing the better description is that the USB network switch cut download speed and that the monitor is largely irrelevant. Another commenter summarized the mechanism for readers who misunderstood the post: extra latency through the monitor led to slow acknowledgements, adapter buffer fill, and packet drops, and a different adapter with less frequent acknowledgement fixed it. A separate commenter said they had experienced a similar issue for over a year with a MacBook and Thunderbolt dock, and that enabling flow control finally made it tolerable.
-
-**Tags**: `#networking`, `#USB`, `#debugging`, `#hardware`, `#performance`
-
----
-
-<a id="item-tech-news-9"></a>
-### [Graham Dumpleton launches Muru, an AI-assisted Rust server for Python apps](https://simonwillison.net/2026/Nov/21/muru/) ⭐️ 7.0/10
-
-Graham Dumpleton, the creator of mod\_wsgi, has started Muru, an AI-assisted Rust server intended to serve ASGI and WSGI Python applications in both development and production. The project is hosted on GitHub, and over the past three weeks Dumpleton published an 18-post development journal documenting its design, including worker internals, HTTPS in development, running WSGI and ASGI together, release-without-restart deploys, canaries without a service mesh, Kubernetes integration, scaling to zero, and a tracing toolbar. The write-ups describe the project&\#x27;s goals and design rather than an independently benchmarked or widely adopted release, and Dumpleton states that AI does much of the surface work while he judges what is good enough.
-
-rss · Simon Willison · Nov 21, 23:56
-
-**「Background」** Muru is a follow-up to mod\_wsgi, the Apache module Dumpleton began 20 years ago for hosting WSGI Python applications. Existing servers such as Gunicorn already run both WSGI and ASGI frameworks, and ASGI separates server implementation from application framework, so Muru enters a crowded space. His development journal documents design choices including the \`muru.wsgi\_to\_asgi\` bridge object placed in the WSGI environ so WSGI requests can be handed off to ASGI applications.
-
-**「Impact」** Developers running WSGI or ASGI apps get early visibility into an alternative server from the author of mod\_wsgi, with features aimed at production deployment such as Kubernetes-aware operation, scheduled overlays, and scaling to zero; however, the material published so far is a design journal, so teams should treat Muru as early-stage rather than as a validated replacement for existing servers.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://grahamdumpleton.me/posts/2026/11/muru-wsgi-and-asgi-together/">Muru : WSGI and ASGI together - Graham Dumpleton</a></li>
-<li><a href="https://github.com/Kludex/uvicorn">GitHub - Kludex/uvicorn: An ASGI web server , for Python.· GitHub</a></li>
-<li><a href="https://gunicorn.org/">Gunicorn - Python WSGI HTTP Server for UNIX</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#python`, `#asgi`, `#wsgi`, `#rust`, `#web-servers`
-
----
-
-<a id="item-tech-news-10"></a>
-### [ChatGPT Spaces opens collaboration to Plus users](https://x.com/ChatGPT/status/2123850912867471807) ⭐️ 7.0/10
-
-ChatGPT&\#x27;s Space feature is now available to Plus subscribers, letting them collaborate with others on interactive pages, slideshows, and websites. Spaces sits in the sidebar and holds pages, slideshows, images, files, and uploads; pages and slideshows can be set to auto-update from connected tools, and others can be invited to co-edit. Mobile editing is supported, and OpenAI claims the overall experience is smoother and more stable. The item relays OpenAI&\#x27;s announcement without independent testing or details on rollout timing or plan limits.
-
-telegram · zaihuapd · Nov 21, 02:30
-
-**「Background」** ChatGPT Space initially launched for Pro, Business, and Enterprise plan subscribers, where it served as a shared home for pages, uploaded files, and other work in ChatGPT. OpenAI is now extending the feature to Plus subscribers paying $20 per month, and OpenAI&\#x27;s help documentation says Space is rolling out to eligible Plus accounts—users who don&\#x27;t see it in the desktop app may need to update to the latest version or wait for availability on their account.
-
-**「Impact」** Plus subscribers can now invite collaborators into a Space, so teams mixing paid Plus accounts with other tiers may need to confirm who can co-edit before relying on a shared Space as a working document.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.engadget.com/2323016/openai-brings-its-collaborative-space-hubs-to-plus-users/">OpenAI brings its collaborative Space hubs to Plus users</a></li>
-<li><a href="https://help.openai.com/en/articles/20001549-getting-started-with-space-in-chatgpt">Getting started with Space in ChatGPT - OpenAI Help Center</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#ChatGPT`, `#OpenAI`, `#AI tools`, `#collaboration`, `#product update`
+**Tags**: `#GPU`, `#Moore Threads`, `#hardware`, `#VRAM`, `#gaming`
 
 ---
 
 ## Global Chips
 
 <a id="item-chip-news-1"></a>
-### [US chip rule takes effect; Taiwanese foundry halts 16nm orders for mainland clients](http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6b024f8fc40b4f7fbc8fd6ebf33c7694&amp;url=https%3a%2f%2fwww.sohu.com%2fa%2f1104594585_122434980&amp;c=5517385477629821742&amp;mkt=en-us) ⭐️ 8.0/10
+### [US seeks answers on Nvidia&\#x27;s sale of chips to China, Bessent says](http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6b037dde91064e6aa5f1e643ae7a945c&amp;url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fgeneral%2fus-seeks-answers-on-nvidia-s-sale-of-chips-to-china-bessent-says%2far-AA2hZ30C&amp;c=4330629169882901183&amp;mkt=en-us) ⭐️ 7.0/10
 
-A US Commerce Department Bureau of Industry and Security rule titled 《应对先进半导体远程访问》 took effect on November 19, and on the same day a Taiwanese foundry notified mainland Chinese customers that orders at 16nm and below are suspended until a US export licence is obtained. The reported fallback is 28nm and 40nm, but only for chips that do not use high-bandwidth memory and do not require advanced packaging. Mainstream AI chips are mostly produced at 7nm and below, so some design companies reportedly found themselves with completed designs and no available foundry slot. The report is an overview and does not name the foundry or the affected design firms, nor does it give order volumes or licensing figures.
+The US is seeking answers from Nvidia about its chip sales to China, according to Treasury Secretary Bessent.
 
-rss · Bing News - China domestic chips · Nov 21, 09:54
+rss · Bing News - NVIDIA and China · Nov 22, 09:52
 
-**「Background」** The November 19 rule, titled &quot;Addressing Remote Access to Advanced Semiconductors,&quot; builds on successive U.S. tightenings of advanced-computing exports to China. A BIS press release describes it as an interim final rule written at the direction of Treasury and the National Security Council to cover remote access to advanced super-intelligence chips and servers, extending existing restrictions on sensitive computing access. Legal and market analyses published in the days before it took effect noted that Chinese firms, barred from directly buying NVIDIA&\#x27;s high-end AI chips, had still obtained advanced compute by leasing it, including through third countries — a channel this rule targets. The source item adds that on the same day, a Taiwanese foundry told mainland customers to stop 16nm-and-below orders unless they obtain U.S. export licences, with 28nm and 40nm work permitted only for chips that use no high-bandwidth memory and no advanced packaging.
-
-**「Impact on China AI chip supply」** For Chinese AI chip designers, the practical effect is a foundry bottleneck at exactly the nodes their mainstream products use: with 16nm-and-below orders halted pending U.S. export licences, and 28/40nm offered only for designs that avoid high-bandwidth memory and advanced packaging, chips designed at 7nm and below have no compliant path at that Taiwanese foundry. The source presents this as an immediate order stop rather than a licensing review with a defined approval track, and names no specific companies, wafer volumes or licence-processing timelines, so the duration of the disruption and any substitution capacity remain unquantified.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://media.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology">media.bis.gov</a></li>
-<li><a href="https://www.junhe.com/legal-updates/3205">美国BIS新规拟限制先进算力芯片远程访问</a></li>
-<li><a href="https://finance.sina.com.cn/wm/2026-11-17/doc-iniyznqf5442111.shtml">美国BIS出新规，封堵新马泰等五国远程算力租赁通道</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#对华出口管制`, `#国产芯片`, `#AI 算力`, `#先进制程`, `#晶圆代工`
+**Tags**: `#英伟达`, `#对华出口管制`, `#中美芯片合作`
 
 ---
 
 <a id="item-chip-news-2"></a>
-### [Report: Paid influencers promoted Nvidia AI chip exports to China](http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6b024f8ffc1f498796350c8e6e9eff09&amp;url=https%3a%2f%2fwww.yahoo.com%2fnews%2fpolitics%2farticles%2finfluencers-were-paid-back-donald-191500789.html&amp;c=2021865863505746190&amp;mkt=en-us) ⭐️ 6.0/10
+### [Report: China spy agency prioritizes acquiring advanced chips](http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6b037dded24045c79d46a19c0945a9e1&amp;url=https%3a%2f%2fwww.fortuneindia.com%2fworld%2fchinas-chip-war-goes-covert-spy-agency-steps-up-hunt-for-advanced-chips-targets-global-semiconductor-intelligence%2f171697&amp;c=190024110062511024&amp;mkt=en-us) ⭐️ 7.0/10
 
-An investigation alleges that more than 80 influencers were paid to promote exports of Nvidia AI chips to China, using coordinated talking points and collectively reaching about 14 million followers, according to a report relayed by Yahoo News. The item does not name the investigators, the funders, the payment amounts or the timeframe, and it identifies no change in U.S. export-control rules or in Nvidia&\#x27;s licensed China sales. The claim therefore rests on a single investigation as described in the source, not on an enacted policy or a confirmed corporate action.
+China&\#x27;s intelligence agency has reportedly made acquiring advanced semiconductor chips and gathering intelligence on the global chip industry a strategic priority, according to a Fortune India report published November 22, 2026. The report describes a campaign lasting at least two years aimed at obtaining advanced chips and information about the global semiconductor sector. The available excerpt does not name the agency, identify specific targets, describe the methods used, or cite confirmation from any Chinese or foreign government, so the campaign remains a reported, unconfirmed claim rather than an announced policy or documented enforcement action. It does not establish which chips, companies or countries are involved, or whether any acquisition attempts succeeded.
 
-rss · Bing News - NVIDIA and China · Nov 21, 11:15
+rss · Bing News - China chip policy · Nov 22, 05:31
 
-**「Background」** The item does not name the investigating organization, the funder or the campaign dates, so the basic provenance of the paid-influencer claim remains unknown. External reports on the same investigation describe a watchdog finding that more than 80 mostly right-wing influencers likely promoted pro-AI-industry posts without clear sponsorship disclosure, praising Nvidia&\#x27;s interests and backing chip sales to China; the ultimate source of funding is described as unclear. No prior Horizon digest entry establishes a direct predecessor to this campaign.
+**「Background」** The reported intelligence campaign follows prior reporting that China&\#x27;s espionage efforts around advanced AI chips predate the current account. A New York Times report published a day before this item described a campaign in which Chinese intelligence helped domestic companies acquire and smuggle advanced chips into China and collected intelligence on the semiconductor sector and its supply chains, according to officials briefed on it. Advanced semiconductors remain the center of the U.S.-China technological rivalry, which is why chip acquisition and supply-chain intelligence have become an intelligence priority rather than only a trade-policy matter.
 
-**「Impact」** Because the report does not establish who paid for the campaign or whether it touched any formal lobbying or licensing process, its practical effect on U.S. export licensing or on Nvidia&\#x27;s China shipments is unverified; any consequence for the export-control debate depends on follow-up reporting identifying the funders and the specific policy asks the messaging promoted.
+**「Impact」** If substantiated, the reported campaign would bear directly on export-control enforcement, since the advanced chips at issue are the same category of items restricted under existing controls on China&\#x27;s access to advanced semiconductors. The excerpt provides no evidence on whether any shipments, licences or diversions actually occurred, so no practical effect on supply, licensing or domestic substitution can be confirmed from this account.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://cybernews.com/news/influencer-campaign-nvidia-chip-sales-china/">Paid influencers pushed Nvidia’s China chip sales while ...</a></li>
-<li><a href="https://emergent.sh/news/right-wing-influencers-paid-push-nvidia-ai">Right-Wing Influencers Paid to Push Nvidia AI Talking Points</a></li>
+<li><a href="https://www.nytimes.com/2026/11/21/world/asia/china-nvidia-spy-chips-state-security.html">China ’s Spies Set Sights on A.I. Chips Years Before Nvidia Scandal</a></li>
+<li><a href="https://www.bbc.com/news/articles/cry49plv8v3go">Nvidia dismisses campaign to bring back Jensen Huang as Trump...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#英伟达`, `#对华出口管制`, `#中美芯片合作`, `#AI 算力`
+**Tags**: `#对华出口管制`, `#国产芯片`, `#中美芯片合作`, `#先进制程`, `#半导体情报`
+
+---
+
+<a id="item-chip-news-3"></a>
+### [Bessent Seeks Answers on NVIDIA&\#x27;s Role in China AI Chip Shipments](http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6b037dde91064e6aa5f1e643ae7a945c&amp;url=https%3a%2f%2fwww.msn.com%2fen-us%2fnews%2fother%2fbessent-we-need-answers-on-nvidia-role-in-sending-china-ai-chips%2far-AA2hYC6F&amp;c=8529885070083262531&amp;mkt=en-us) ⭐️ 6.0/10
+
+U.S. Treasury Secretary Scott Bessent said the government needs answers on NVIDIA&\#x27;s role in sending AI chips to China, asking whether the company had &quot;malicious actors down at the bottom of the company who were responsible for the noncompliance&quot; with chip export controls. The statement, reported on November 22, 2026, frames the matter as an enforcement question about individual employees rather than an announced action against the company. The supplied excerpt gives no specific enforcement measure, rule change, company response, dates or figures, so it remains an official statement of concern, not a confirmed finding or penalty.
+
+rss · Bing News - NVIDIA and China · Nov 22, 10:49
+
+**「Background」** The questioning comes amid a U.S. enforcement review of NVIDIA&\#x27;s China chip sales under existing export controls. Reuters reported that Washington is seeking answers on those sales and on who was in charge of compliance at the company, which it described as formerly led by Jensen Huang, who resigned following an affair. Bessent&\#x27;s remarks, reported by CBS News and Yahoo Finance, frame the issue as whether &quot;malicious actors down at the bottom of the company&quot; were responsible for noncompliance, rather than as a new rule or licensing decision.
+
+**「Impact」** The remark indicates that U.S. enforcement scrutiny of NVIDIA&\#x27;s China-bound AI chip sales is concentrating on internal compliance and individual accountability, leaving licensing and shipment risk for China-bound products unresolved until the government says whether it has found a violation or is weighing action; the excerpt does not indicate any resulting restriction, charge or licence decision.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.cbsnews.com/news/bessent-nvidia-china-ai-chips-alice-huang-canard/">Bessent says we &quot;need answers&quot; on role Nvidia played in ...</a></li>
+<li><a href="https://finance.yahoo.com/technology/ai/articles/scott-bessent-nvidia-must-answer-175445674.html?fr=sycsrp_catchall">Scott Bessent: Nvidia Must Answer Questions on China Chip Sales</a></li>
+<li><a href="https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/">US seeks answers on Nvidia&#x27;s sale of chips to China, Bessent ...</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#英伟达`, `#对华出口管制`, `#AI 算力`, `#中美芯片合作`
+
+---
+
+<a id="item-chip-news-4"></a>
+### [Report alleges two-year Chinese spy campaign to obtain advanced AI chips](http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6b037dded24045c79d46a19c0945a9e1&amp;url=https%3a%2f%2fwww.msn.com%2fen-in%2fnews%2fother%2fchina-ran-2-year-spy-campaign-to-acquire-advanced-ai-chips-evade-us-curbs-report%2far-AA2hXEnG&amp;c=6558449294980266658&amp;mkt=en-us) ⭐️ 6.0/10
+
+A report cited in a Bing News summary alleges that a Chinese intelligence agency ran a two-year campaign to acquire advanced AI chips and to map global supply chains, framing the effort as an attempt to evade US export controls. The item does not name the agency, the report&\#x27;s author or publisher, the specific chip types or quantities sought, or any dates or licensing provisions. It also includes no response from Chinese officials or companies, and the allegation is not independently corroborated in the supplied material.
+
+rss · Bing News - China chip policy · Nov 22, 05:06
+
+**「Background」** The claim follows earlier reporting that tied Chinese chip-acquisition efforts to a multi-year intelligence campaign. The New York Times reported on November 21, 2026 that the Chinese spy agency&\#x27;s campaign to acquire chips had been underway for at least two years, citing current and former officials who spoke anonymously and noting the details had not previously been reported. That account also places the campaign years before the Nvidia-related scrutiny it references, indicating US attention has extended from formal export-licensing rules to intelligence-collection channels.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.nytimes.com/2026/11/21/world/asia/china-nvidia-spy-chips-state-security.html">China ’s Spies Set Sights on A . I . Chips Years Before Nvidia Scandal</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#对华出口管制`, `#英伟达`, `#AI 算力`, `#国产芯片`, `#中美芯片合作`
+
+---
+
+<a id="item-chip-news-5"></a>
+### [US intelligence chief hints China obtained restricted AI chips](http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6b037dded24045c79d46a19c0945a9e1&amp;url=https%3a%2f%2fwww.msn.com%2fen-in%2fnews%2fworld%2fus-intelligence-chief-seemingly-confirms-china-accessed-restricted-america-made-ai-chips%2far-AA2hYJIR&amp;c=15614776108833554957&amp;mkt=en-us) ⭐️ 5.0/10
+
+US intelligence chief Jay Clayton suggested that China unlawfully obtained restricted American AI chips, according to a report tied to an ongoing investigation into an alleged chip-smuggling network. The source provides no named companies, chip models, quantities, charges or confirmed findings, and its language remains hedged, describing what Clayton &quot;suggested&quot; rather than any announced enforcement action or enacted policy change. The report therefore signals an incremental development in an active smuggling probe rather than a verified restriction, shipment figure or confirmed court finding.
+
+rss · Bing News - China chip policy · Nov 22, 13:50
+
+**「Background」** The remark follows a federal smuggling case: in October 2026 the FBI arrested California tech CEO Greg Lui on charges of allegedly exporting more than $300 million in restricted US-made AI graphics processors to China, according to the New York Post report retrieved for this item. A New York Times report dated 21 November 2026 further described a Chinese intelligence campaign that included helping Chinese companies acquire and smuggle advanced chips into China, and collecting intelligence on semiconductor supply chains. Clayton&\#x27;s remark is a public statement by the Director of National Intelligence rather than a court finding; no chip models, quantities or named buyers have been confirmed.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.nytimes.com/2026/11/21/world/asia/china-nvidia-spy-chips-state-security.html">China ’s Spies Set Sights on A . I . Chips Years Before Nvidia Scandal</a></li>
+<li><a href="https://nypost.com/2026/10/01/us-news/california-tech-ceo-arrested-for-allegedly-smuggling-300-million-in-restricted-ai-chips-into-china/">Exclusive | FBI arrests California tech CEO for smuggling $300M in AI ...</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#对华出口管制`, `#AI 算力`, `#中美芯片合作`, `#英伟达`
+
+---
+
+<a id="item-chip-news-6"></a>
+### [Senator Kennedy Seeks Sworn Testimony From Lutnick on China&\#x27;s Nvidia Chip Access](http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6b037dde91064e6aa5f1e643ae7a945c&amp;url=https%3a%2f%2fwww.washingtonpost.com%2fpolitics%2f2026%2f11%2f22%2fsen-kennedy-urges-scrutiny-lutnick-over-chinas-access-nvidia-chips%2f&amp;c=7926976116405803250&amp;mkt=en-us) ⭐️ 4.0/10
+
+Sen. John Kennedy \(R-Louisiana\) said he wants Commerce Secretary Howard Lutnick and Treasury Secretary Scott Bessent to testify under oath and &quot;answer some hard questions&quot; about China&\#x27;s access to Nvidia chips, according to a Washington Post report carried in Bing News&\#x27; Nvidia and China feed. The report supplies no new policy provision, licensing decision, product name, shipment figure or effective date — only the senator&\#x27;s call for sworn testimony. It therefore indicates continued congressional scrutiny of the Commerce Department&\#x27;s export-control posture toward Nvidia&\#x27;s China business rather than any change in what is permitted, restricted or shipped. The report does not say whether either secretary has responded, and no hearing date is given.
+
+rss · Bing News - NVIDIA and China · Nov 22, 14:06
+
+**「Background」** The Commerce Department, which Lutnick leads, administers the US export-control system that determines which Nvidia accelerators may be sold to Chinese customers and under what licence conditions, while Treasury&\#x27;s involvement runs through investment and sanctions authorities. Kennedy&\#x27;s demand for testimony under oath sits within that existing arrangement, but the supplied report does not identify the specific earlier rule, licence decision or hearing that prompted it.
+
+**Tags**: `#英伟达`, `#对华出口管制`, `#中美芯片合作`
 
 ---
 
 ## Technology Blog
 
 <a id="item-tech-blog-1"></a>
-### [Avoid Blunders to Code Well](https://seangoedecke.com/to-code-well-avoid-blunders/) ⭐️ 6.0/10
+### [Deliberate Flailing as a Strategy Under Uncertainty](https://seangoedecke.com/when-in-doubt-flail-about/) ⭐️ 6.0/10
+
+rss · Sean Goedecke · Nov 23, 00:00
+
+**「Background」** When an engineer faces an unclear situation—no clear guidance and no obvious next step—the intuitive response is to wait until the situation is better understood. Sean Goedecke argues that this caution is usually a mistake, and that the faster path to understanding is deliberate &quot;flailing&quot;: acting speculatively before you know what will work. He acknowledges the obvious danger that badly executed flailing can damage a reputation.
+
+**「Solution」** Goedecke&\#x27;s method has three mutually reinforcing parts: try many different things, pay very close attention to feedback, and ruthlessly drop anything that isn&\#x27;t getting positive feedback. Trying many things matters because most plans will be bad—if one has a low chance of being right, ten gives you a better shot—and because a portfolio of plans prevents over-investment in any single one. Feedback comes both from people with more expertise and from reality itself, such as measured latency or user metrics; ideally, plans that don&\#x27;t get a &quot;wow\!&quot; reaction are dropped immediately. He identifies three settings: product flailing, where the product hasn&\#x27;t found fit and it&\#x27;s better to explore at the margins than commit early—citing GitHub Models features that mostly failed, except AI inference via a GitHub Actions token, which became the seed of &quot;Continuous AI&quot;; engineering flailing, where large, tangled, or already-optimized systems are too complex to study exhaustively, so engineers should make speculative changes and dig in only if something looks better \(AI agents make this cheaper, he notes\); and organizational flailing, where senior engineers face non-technical problems and should try automating manual work, volunteering for tasks, or proposing long-term plans. In the organizational case, he warns that failing to notice when a plan is failing can redirect people&\#x27;s anger at you, whereas dropping it quickly can build trust. He calls the approach &quot;flailing&quot; because it feels like repeated failure from the inside, even if managers see a proactive experimenter; recognizing that feeling, he argues, helps treat it as a positive signal rather than trouble.
+
+**「Takeaway」** The broader point is that uncertainty is best reduced through direct contact with many possible solutions and honest feedback, not through prolonged analysis—provided you are willing to abandon failing plans immediately. Acknowledging the psychological discomfort is part of the method, since it otherwise encourages premature retreat to caution.
+
+**Tags**: `#engineering-practice`, `#decision-making-under-uncertainty`, `#organizational-effectiveness`, `#feedback-loops`, `#senior-engineers`
+
+---
+
+<a id="item-tech-blog-2"></a>
+### [Good Programming Is Mostly Avoiding Blunders](https://seangoedecke.com/to-code-well-avoid-blunders/) ⭐️ 6.0/10
 
 rss · Sean Goedecke · Nov 22, 00:00
 
-**「Background」** Sean Goedecke argues that programmers and others overvalue brilliance. In large commercial codebases, clever abstractions and “extra credit” features distract engineers from the real job: avoiding catastrophic mistakes.
+**「Background」** Sean Goedecke argues that engineers misunderstand what makes code good: they picture brilliant insights and elegant new abstractions, when the real goal is simply to avoid catastrophic mistakes. Writing for people working in large commercial codebases with big teams, he compares programming to chess and tennis, where never blundering beats almost anyone who is only occasionally brilliant.
 
-**「Solution」** Goedecke&\#x27;s central insight is that programming offers no durable winning advantage. Unlike basketball, where a blunder merely trims a large lead, one bad decision can turn an elegant codebase into a janky one. He lists common blunders: introducing a parallel system that does the same task, creating a second source of truth for key data, converting a safe synchronous operation into a delicate asynchronous one, adding subtle failure points, and complicating a key interface. These share two cardinal sins: inconsistency and unnecessary requirements. Inconsistency breaks trust—engineers can no longer assume code behaves sensibly and must hunt for surprises. Unnecessary requirements are sticky, because someone encountering one must assume it is necessary unless willing to investigate, and they interact combinatorially, making large codebases hard to work in. His prescription is to fit each task as normally as possible into the existing codebase and trim it to the smallest set of requirements, leaving little energy for clever patterns or extra features. He warns that thinking “I could implement this with a clever pattern” signals distraction and risk.
+**「Solution」** The reason programming rewards this discipline is that it offers no durable winning advantage: one blunder can turn an elegant codebase into a janky one, unlike a basketball lead that survives a bad play. Goedecke&\#x27;s examples include introducing a parallel system for the same task, adding a second source of truth for key data, turning a safe sync operation into a delicate async one, adding subtle points of failure, and complicating a key interface. These reduce to two cardinal sins, inconsistency and unnecessary requirements. Inconsistency is dangerous because it breaks trust: engineers can no longer assume code works the sensible way and must hunt for surprises. Unnecessary requirements are dangerous because they are sticky, since someone encountering one in the codebase must assume it is necessary unless willing to research it, and because they interact combinatorially, so each new feature must be checked against every existing requirement. His prescription is to find where a task fits most normally into the current codebase and to trim it to the smallest set of requirements. Thinking &quot;I could implement it with this clever pattern&quot; is, to him, a warning sign of distraction and blunder risk; he adds that coding agents are roughly human-level at consistency but much worse at avoiding unnecessary requirements.
 
-**「Takeaway」** Goedecke concludes that great programming does not require cleverness—it may even be a disadvantage. Attention to detail and a focus on consistency and minimal requirements matter more, though he notes his advice targets large, team-based commercial codebases and that coding agents remain weaker than humans at avoiding unnecessary requirements.
+**「Takeaway」** Goedecke&\#x27;s thesis is that great programming does not require cleverness and may even be hindered by it; attention to detail and a laser focus on consistency and minimal requirements matter more. The broader point is that avoiding blunders, not discovering beautiful abstractions, is the main thing.
 
-**Tags**: `#software engineering`, `#code quality`, `#technical debt`, `#engineering judgment`, `#maintainability`
+**Tags**: `#software design`, `#codebase maintainability`, `#engineering judgment`, `#consistency`, `#requirements management`
 
 ---
 
 ## Financial News
 
 <a id="item-finance-news-1"></a>
-### [特朗普力挺卢特尼克，并希望黄仁勋道歉后回归](https://www.reuters.com/world/us/trump-says-he-still-backs-lutnick-urges-nvidias-huang-apologize-2026-11-20/) ⭐️ 7.0/10
+### [US tech selloff prompts emergency market measures in Asia](https://news.bjd.com.cn/2026/11/22/12039852.shtml) ⭐️ 9.0/10
 
-美国总统特朗普 11 月 20 日表示仍支持商务部长卢特尼克，称其“做得很好”，尽管英伟达相关争议令外界质疑卢特尼克对华芯片销售的处理；他还称希望已辞职的英伟达 CEO 黄仁勋“郑重道歉后回归”，并称已与中国国家主席习近平谈及此事。特朗普的说法与财政部长贝森特称通话未涉及黄仁勋相矛盾。
+US AI technology stocks sold off sharply on Friday, with the Nasdaq falling 5.28% in a single day and the Philadelphia Semiconductor Index dropping nearly 11%. In response, mainland China, South Korea and Taiwan announced emergency market-stability measures, including Taiwan&\#x27;s full ban from Nov 23 on short-selling below the previous close.
 
-telegram · zaihuapd · Nov 21, 05:03
+telegram · zaihuapd · Nov 22, 13:24
 
-**「Background」** The scrutiny of Lutnick stems from criticism that his Commerce Department shielded Nvidia from tougher rules on advanced AI chip sales to China, and some critics called for his resignation over reports he stalled a crackdown on chip diversions. Nvidia&\#x27;s board announced Jensen Huang&\#x27;s resignation as CEO earlier in November 2026, naming CFO Colette Kress as interim boss.
+**「Background」** The selloff follows a Reuters report that a wave of AI-related selling had already pushed Wall Street sharply lower in the prior session, with the Philadelphia Semiconductor Index — up as much as 106.6% in mid-June — now giving back part of that gain \(tool-1-3\). China&\#x27;s three main stock exchanges cut the minimum margin ratio for margin financing from 100% to 80% effective November 30, after China Securities Regulatory Commission approval, a measure estimated to theoretically unlock nearly RMB 400 billion in incremental capital \(tool-2-2\).
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.nytimes.com/2026/11/12/us/politics/lutnick-nvidia-commerce-china-chips.html">Howard Lutnick Took Softer Line on Nvidia as Calls for Tougher...</a></li>
-<li><a href="https://www.newsmax.com/newsmax-tv/howard-lutnick-gordon-chang-nvidia/2026/11/14/id/1276323/">Gordon Chang to Newsmax: Lutnick Should Resign Over Nvidia ...</a></li>
-<li><a href="https://www.theguardian.com/technology/2026/nov/12/nvidia-ceo-jensen-huang-resigns">Jensen Huang resigns as Nvidia CEO after alleged... | The Guardian</a></li>
-<li><a href="https://www.bbc.co.uk/news/live/c6zjry11v8w1t">Huang agrees to appear before Congress, US lawmakers say, after...</a></li>
+<li><a href="https://www.reuters.com/legal/transactional/wall-st-futures-slip-anthropic-debut-fails-reassure-ai-investors-2026-11-20/">Wall St ends sharply lower on AI selloff, S&amp;P 500, Dow in ...</a></li>
+<li><a href="https://phemex.com/news/article/chinas-three-major-bourses-cut-margin-ratio-to-80-chinext-plans-market-maker-system-104510">China Cuts Margin Ratio to 80%, Unlocks RMB 400B Capital ...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#US-China chip policy`, `#Nvidia`, `#Commerce Department`, `#executive personnel`, `#technology regulation`
+**Tags**: `#U.S. tech selloff`, `#semiconductor stocks`, `#market stabilization measures`, `#Asian equities`, `#short-selling rules`
+
+---
+
+<a id="item-finance-news-2"></a>
+### [中国要求美国撤销电话号段接入限制](https://www.bloomberg.com/news/articles/2026-11-22/china-objects-to-us-curbs-on-telecoms-access-to-phone-numbers) ⭐️ 7.0/10
+
+中国商务部11月22日敦促美国撤销一项措施，该措施禁止中国移动、中国电信和中国联通直接获取美国电话号码。中国商务部称，美国联邦通信委员会（FCC）11月19日收紧互联网语音服务商接入美国号码安全要求的投票援引国家安全风险，却缺乏事实依据，并违反非歧视与公平竞争原则。
+
+telegram · zaihuapd · Nov 22, 06:44
+
+**「Background」** The FCC voted on Nov. 19 to bar China Mobile, China Telecom and China Unicom, among other IP-enabled service providers, from direct access to US phone numbers, citing national security and robocall concerns; the proposal had been scheduled for a vote since late October. Beijing&\#x27;s Nov. 22 demand follows earlier US restrictions on Chinese carriers&\#x27; US operations.
+
+<details><summary>References</summary>
+<ul>
+<li>FCC votes to ban Chinese telecoms from direct access to US ... - Reuters</li>
+<li><a href="https://www.reuters.com/world/fcc-votes-ban-chinese-telecoms-direct-access-us-phone-numbers-2026-11-19/">FCC votes to ban Chinese telecoms from direct access to US ...</a></li>
+<li><a href="https://www.usnews.com/news/top-news/articles/2026-10-29/us-plans-to-ban-chinese-telecom-firms-from-direct-access-to-us-phone-numbers">US Plans to Ban Chinese Telecom Firms From Direct Access to ...</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#US-China relations`, `#telecom regulation`, `#FCC`, `#China carriers`, `#tech decoupling`
 
 ---
