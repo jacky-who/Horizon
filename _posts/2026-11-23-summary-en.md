@@ -5,369 +5,588 @@ date: 2026-11-23
 lang: en
 ---
 
-> From 37 items, 17 important content pieces were selected
+> From 48 items, 27 important content pieces were selected
 
 ---
 
 **Technology News**
-1. [OpenAI Links Language-Model Perplexity to Intelligence](#item-tech-news-1) ⭐️ 8.0/10
-2. [FT 称与太子集团有关联的人士参与英伟达芯片走私](#item-tech-news-2) ⭐️ 8.0/10
-3. [Google builds simulated internet to test Chrome AI agent](#item-tech-news-3) ⭐️ 8.0/10
-4. [Phison&\#x27;s space-rated Pascari SSDs to carry 488 TB into orbit](#item-tech-news-4) ⭐️ 7.0/10
-5. [Moore Threads PM hints Lushan gaming GPU at 64 GB VRAM](#item-tech-news-5) ⭐️ 7.0/10
+1. [Zhipu&\#x27;s GLM-5.4 adds looped-transformer architecture](#item-tech-news-1) ⭐️ 8.0/10
+2. [Apple removed my open-source app from EU App Stores after 9 years](#item-tech-news-2) ⭐️ 8.0/10
+3. [Ladybird browser engine reaches first alpha release](#item-tech-news-3) ⭐️ 8.0/10
+4. [Google builds simulated internet Mirror Dimension to test Chrome AI agent](#item-tech-news-4) ⭐️ 8.0/10
+5. [Codex2api 疑似供应链投毒，3.1.10–3.1.12 疑含后门](#item-tech-news-5) ⭐️ 8.0/10
+6. [Meta AI chief warns superintelligence is near as control risk grows](#item-tech-news-6) ⭐️ 8.0/10
+7. [NVIDIA Board Reinstates Jensen Huang as President and CEO](#item-tech-news-7) ⭐️ 8.0/10
+8. [LeCun accuses Amodei of hyping risk to suppress open models](#item-tech-news-8) ⭐️ 7.0/10
+9. [Spelunkr.tv Curates Internet Archive Videos Into Free Linear TV Channels](#item-tech-news-9) ⭐️ 7.0/10
+10. [Open-source nospeaker makes MacBook trackpad vibrate out speech](#item-tech-news-10) ⭐️ 7.0/10
 
 **Global Chips**
-1. [US Treasury Seeks Answers From Nvidia on China Chip Sales, Bessent Says](#item-chip-news-1) ⭐️ 7.0/10
-2. [Bessent Seeks Answers on Nvidia&\#x27;s Role in China AI Chip Export Noncompliance](#item-chip-news-2) ⭐️ 7.0/10
-3. [US intelligence chief hints China obtained restricted AI chips](#item-chip-news-3) ⭐️ 7.0/10
-4. [Senator Kennedy Seeks Sworn Testimony on China&\#x27;s Nvidia Chip Access](#item-chip-news-4) ⭐️ 6.0/10
-5. [China’s chip war goes covert: Spy agency steps up hunt for advanced chips, targets global semiconductor intelligence](#item-chip-news-5) ⭐️ 6.0/10
-6. [Report: China&\#x27;s top spy agency added AI chip goals to priorities](#item-chip-news-6) ⭐️ 5.0/10
-7. [Report: H200 sales halted as overseas AI compute route narrows](#item-chip-news-7) ⭐️ 5.0/10
-8. [Report Links China Spy Priorities to AI Chip Barriers](#item-chip-news-8) ⭐️ 4.0/10
-9. [Report alleges China ran two-year campaign to obtain advanced AI chips](#item-chip-news-9) ⭐️ 4.0/10
+1. [星思半导体获证监会备案，拟赴港交所IPO](#item-chip-news-1) ⭐️ 7.0/10
+2. [US Intelligence Chief Says China Likely Has Nvidia Advanced AI Chips](#item-chip-news-2) ⭐️ 6.0/10
+3. [LCY in advanced talks to sell control of China chip chemicals unit to HSG-led group for about $600M](#item-chip-news-3) ⭐️ 6.0/10
+4. [New U.S. BIS chip export rule takes effect amid China auto-tech concerns](#item-chip-news-4) ⭐️ 6.0/10
+5. [Report alleges Huang associate had China spy agency contact](#item-chip-news-5) ⭐️ 5.0/10
+6. [Nvidia Says U.S. Officials Cleared Jensen Huang&\#x27;s Return as No Security Risk](#item-chip-news-6) ⭐️ 5.0/10
+7. [Pakistan, China researchers discuss advanced semiconductor collaboration](#item-chip-news-7) ⭐️ 5.0/10
+8. [Report claims two Chinese vendors in top five intelligent-driving chip ranks](#item-chip-news-8) ⭐️ 5.0/10
+9. [BIS Nov 16 rule tightens overseas tape-out access, report says](#item-chip-news-9) ⭐️ 5.0/10
+10. [How Nvidia’s billion-dollar turnaround in China is threatened by Huang’s exit](#item-chip-news-10) ⭐️ 4.0/10
+11. [SoftBank&\#x27;s Reported $1 Trillion SK Hynix Buyout Bid Called a Non-Starter](#item-chip-news-11) ⭐️ 4.0/10
 
 **Technology Blog**
-1. [When in Doubt, Flail About](#item-tech-blog-1) ⭐️ 6.0/10
+1. [Skip the DRAM Tier: Running Agentic KV Cache on NVMe](#item-tech-blog-1) ⭐️ 8.0/10
+2. [Flailing as a Strategy Under Uncertainty](#item-tech-blog-2) ⭐️ 6.0/10
+3. [What OpenAI&\#x27;s Perplexity Graph Reveals About Training](#item-tech-blog-3) ⭐️ 5.0/10
 
 **Financial News**
-1. [美股科技股大跌引发亚洲市场稳定措施](#item-finance-news-1) ⭐️ 9.0/10
-2. [蚂蚁集团领投 Simplexity Robotics 1亿美元 pre-A 轮，投后估值16亿美元](#item-finance-news-2) ⭐️ 7.0/10
+1. [上海地铁21年来首次调整票价](#item-finance-news-1) ⭐️ 8.0/10
+2. [蚂蚁集团领投中国具身智能公司 1 亿美元，估值 16 亿美元](#item-finance-news-2) ⭐️ 7.0/10
+3. [Bloomberg：英伟达董事会据称未经咨询高管层便恢复黄仁勋CEO职务](#item-finance-news-3) ⭐️ 7.0/10
 
 ---
 
 ## Technology News
 
 <a id="item-tech-news-1"></a>
-### [OpenAI Links Language-Model Perplexity to Intelligence](https://openai.com/index/perplexity-and-intelligence/) ⭐️ 8.0/10
+### [Zhipu&\#x27;s GLM-5.4 adds looped-transformer architecture](https://z.ai/blog/glm-5.4) ⭐️ 8.0/10
 
-OpenAI published an analysis arguing that language-model perplexity — the degree of surprise a model shows when predicting each next token — tracks with model intelligence. In the accompanying discussion, commenters noted that perplexity is 1 for a perfect predictor and equals the vocabulary size at worst. The article is a conceptual piece, not a new model or benchmark release; the supplied metadata contains no measured results beyond what the community thread describes.
+Zhipu has released GLM-5.4, which it describes as its first model built on a &quot;loop transformer&quot; architecture that reuses layer weights across repeated compute iterations instead of computing each layer once. The company presents the design as easing inference memory-bandwidth pressure and improving generalized coding. GLM-5.4 is available to GLM Coding Plan subscribers, adds vision capability, and raises quotas 50% versus GLM-5.3 for weekly-quota plans. The supplied material includes no benchmark results or independent validation of the claimed efficiency gains, and one early user reported the model was not yet reachable via OpenRouter or the standard Z.ai API plan.
 
-hackernews · acossta · Nov 22, 17:06 · [Discussion](https://news.ycombinator.com/item?id=50601525)
+hackernews · foohis · Nov 23, 10:06 · [Discussion](https://news.ycombinator.com/item?id=50609685)
 
-**「Background」** Perplexity is derived from cross-entropy loss: it measures how uncertain a model is about the next token across a sequence, so lower values mean better prediction. Because it requires only held-out text rather than task-specific labeling, it is far simpler to compute than the bespoke benchmarks now common in model evaluation.
+**「Background」** Conventionally, an LLM computes each transformer layer once per generated token, streaming that layer&\#x27;s weights from HBM into the chip and back out before moving to the next layer, which makes memory bandwidth a primary inference bottleneck. A looped transformer instead reuses the same layer weights across multiple passes; according to a technical walkthrough, GLM-5.4 reuses the same 28 layers across iterations, paired with gated progressive updates and a hybrid KV cache. Z.ai&\#x27;s developer documentation describes GLM-5.4 as its latest flagship model and the first built on the Loop Transformer architecture, with the Model API still pending a security assessment.
 
-**「Impact」** Commenters said the article&\#x27;s apparent trend is striking because cross-entropy loss was assumed to matter less as reinforcement-learning-based training spread, and they welcomed a simple benchmark in place of increasingly convoluted evaluations. One commenter also claimed Microsoft has begun reporting base-model log-perplexity on OpenAI&\#x27;s held-out set — a claim from the discussion thread, not something the supplied source material confirms.
+**「Access and quota effects for Coding Plan users」** Users on the GLM Coding Plan now get GLM-5.4 with vision support, and weekly-quota plans carry 50% more quota than they had for GLM-5.3. One reviewer reported that the new model was not reachable through OpenRouter or the regular Z.ai API plan, so access required moving to the Coding Plan, whose keys behave like regular API keys but expose the new model. Because the announcement included no benchmark results, developers weighing a migration should test GLM-5.4 on their own coding tasks rather than assume the claimed coding improvements hold.
 
-**「Community Discussion」** Commenters supplied the definition the article reportedly omits, explaining that perplexity ranges from 1 for a perfect next-token predictor to the vocabulary size for a random one. One commenter argued the perplexity-intelligence correspondence follows necessarily from intelligence as extracting world models from raw data, citing a 2008 paper; another questioned what happened with GPT-4.5 and dated true reasoning models to o1.
-
-**Tags**: `#AI`, `#language-models`, `#perplexity`, `#machine-learning`, `#model-evaluation`
-
----
-
-<a id="item-tech-news-2"></a>
-### [FT 称与太子集团有关联的人士参与英伟达芯片走私](https://www.ft.com/content/f3ad8a81-3890-4a8a-8853-ff0a94b08ba9?syn-25a6b1a6=1) ⭐️ 8.0/10
-
-据《金融时报》援引知情人士报道，被美国财政部指认为柬埔寨太子集团“二号人物”的胡小伟，涉嫌参与将英伟达芯片走私进入中国。该报道称，相关网络利用空壳公司、地下融资渠道和私人飞机运送货物；报道援引的贸易数据显示，在 2024 年 12 月至 2025 年 12 月期间，Megaspeed 的马来西亚子公司进口货物的申报价值约为 46 亿美元，其中部分芯片据称流入了中国黑市。太子集团否认胡小伟曾为其工作，并表示关于非法网络和私人飞机走私的指控缺乏事实依据。这些指控来自未具名消息源，且仍存在争议。
-
-telegram · zaihuapd · Nov 22, 04:34
-
-**「Background」** The United States restricts exports of advanced Nvidia AI chips to China, and reporting has documented efforts to move restricted hardware into the country anyway. The New York Times reported in November 2026 that a group was assigned to China&\#x27;s &quot;counter-blockade&quot; work, helping Chinese companies acquire and smuggle advanced chips, while CNN reported the same month that restricted Nvidia chips appeared on procurement records from a Chinese university blacklisted by the U.S. government. The FT report describes one alleged channel: shell companies, underground financing and private aircraft, with a Malaysian subsidiary declaring about $4.6 billion in imports over the cited period.
-
-**「Southeast Asia Intermediaries Face Added Scrutiny」** For firms handling Nvidia hardware in Southeast Asia, the report directs scrutiny at the intermediary layer—Malaysian subsidiaries, shell companies, and underground financing—rather than at Nvidia itself. Malaysia&\#x27;s police opened a probe in April 2025 under the Strategic Trade Act 2010 into US allegations that the country served as a transit point for diverted advanced chips, and Singapore has pursued its largest semiconductor export-control case as fraud and money-laundering charges rather than as export violations. That pattern means regional distributors and logistics operators face traceability expectations beyond checking end-user paperwork.
-
-**「社区讨论」** 未提供社区评论，因此没有可总结的讨论。
+**「Community discussion」** Commenters credited Zhipu with unusually detailed technical disclosure; one explained that a loop transformer cuts memory-bandwidth cost by computing each loaded layer several times rather than moving a fresh layer onto the chip for every token, and noted that the original Transformer resembles an unrolled loop pairing separate attention and feed-forward weight sets. A practitioner countered that Chinese models&\#x27; long &quot;thinking&quot; sessions make even conceptually simple tasks slow, suggesting that behavior may be how they close the gap on benchmarks.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.nytimes.com/2026/11/21/world/asia/china-nvidia-spy-chips-state-security.html">China ’s Spies Set Sights on A.I. Chips Years Before Nvidia Scandal</a></li>
-<li><a href="https://edition.cnn.com/2026/11/21/world/video/meanwhile-in-asia-nvidia-chip-china-hnk-digvid-mia-vod-hrzn-vrtc">How do restricted Nvidia chips make it into China ? | CNN</a></li>
-<li><a href="https://modeldiplomat.com/story/singapores-390m-nvidia-chip-case-explained">Singapore&#x27;s $390M Nvidia Chip Case Explained</a></li>
-<li><a href="https://www.malaymail.com/news/malaysia/2026/11/14/a-secret-transit-hub-for-nvidia-ai-chips-minister-says-malaysian-police-on-the-case-since-april/243254">A secret transit hub for Nvidia AI chips? Minister says ...</a></li>
+<li><a href="https://docs.z.ai/guides/llm/glm-5.4">GLM - 5 . 4 - Overview - Z.AI DEVELOPER DOCUMENT</a></li>
+<li><a href="https://www.youtube.com/watch?v=M6vD9r8kI3A">GLM 5 . 4 Makes AI Smarter by Loop Architecture - YouTube</a></li>
+<li><a href="https://explainx.ai/blog/glm-5-4-coding-plan-vision-50-percent-quota-boost-november-2026">GLM-5.4 Coding Plan: +50% Quota, Vision (Nov 2026 ...</a></li>
+<li><a href="https://www.buildfastwithai.com/blogs/glm-5-4-review">GLM-5.4 Review: What&#x27;s New and What&#x27;s Confirmed</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#Nvidia`, `#chip smuggling`, `#export controls`, `#AI hardware`, `#tech industry`
+**Tags**: `#loop transformers`, `#LLM architecture`, `#inference efficiency`, `#code generation`, `#Zhipu GLM`
+
+---
+
+<a id="item-tech-news-2"></a>
+### [Apple removed my open-source app from EU App Stores after 9 years](https://github.com/glushchenko/fsnotes/discussions/2056) ⭐️ 8.0/10
+
+An open-source Mac app developer reports Apple removed their app from EU App Stores after nine years, with commenters identifying lapsed EU DSA trader verification as the likely cause and citing similar cases.
+
+hackernews · fluder · Nov 23, 18:48 · [Discussion](https://news.ycombinator.com/item?id=50616933)
+
+**Tags**: `#EU DSA`, `#Apple App Store`, `#open source`, `#app compliance`, `#developer platforms`
 
 ---
 
 <a id="item-tech-news-3"></a>
-### [Google builds simulated internet to test Chrome AI agent](https://www.landian.news/archives/128701.html) ⭐️ 8.0/10
+### [Ladybird browser engine reaches first alpha release](https://ladybird.org/posts/alpha/) ⭐️ 8.0/10
 
-Google reportedly built an isolated simulated internet, called Mirror Dimension, to test Chrome&\#x27;s AI agent as it opens sites, searches, logs in, adds items to carts, and completes tasks. According to Landian, the environment contains thousands of mock websites, gives each engineer an individually isolated test setup, and runs more than 1,000 test cases per day, with emphasis on defending against malicious prompt injection from web pages. The report is a brief secondary account attributed to Landian, and Google has not been independently confirmed to have publicly detailed the system.
+The Ladybird project has released its first alpha, letting macOS and Linux users install the browser without compiling it themselves. Ladybird is built from scratch rather than on Chromium&\#x27;s Blink or WebKit, with its own HTML parser, CSS engine, layout, JavaScript engine, and WebAssembly support; it still relies on HarfBuzz for text shaping, Skia for 2D graphics, ffmpeg for video, and SQLite. The alpha is explicitly early: Andreas Kling&\#x27;s announcement warns that some websites will not work and the browser will sometimes crash, and asks users to report broken sites and crash reports from inside the browser. The source reports Ladybird finishing October with about 2,184,722 passing web-platform-tests subtests, ahead of Safari&\#x27;s roughly 2,172,990 and just below Firefox&\#x27;s 2,189,315, after a 75,650-pass gain that the project attributes largely to AI coding agents filling in missing functionality.
+
+hackernews · janvdberg · Nov 23, 16:13 · [Discussion](https://news.ycombinator.com/item?id=50614249)
+
+**「Background」** Ladybird grew out of SerenityOS, Andreas Kling&\#x27;s from-scratch operating system, and its browser still incorporates code from that predecessor project. According to the source account, Kling wrote in February 2026 that Ladybird had adopted Rust, porting parts of its LibJS JavaScript engine from C++ to roughly 25,000 lines of Rust in two weeks with AI coding tools. The October 2026 engineering push described in the source — moving style and layout to their own thread, a new JavaScript JIT, and a rewritten WebAssembly engine — preceded this first alpha build.
+
+**「Impact」** Hands-on testing in the supplied accounts found WebAssembly-heavy tools working, including an ffmpeg video compressor and a Pyodide Python REPL, but Datasette Lite failed because \`navigator.serviceWorker.startMessages\` is unimplemented — a FIXME in Ladybird&\#x27;s ServiceWorkerContainer IDL — so service-worker-dependent sites remain a practical compatibility gap. One commenter suggests limiting alpha use to browsing that does not involve logins, authentication, payments, or downloads, consistent with the project&\#x27;s own crash warning.
+
+**「Community discussion」** Commenters reported mostly successful rendering across many sites, including YouTube, Google Maps, and a ProxMox NoVNC view that one found snappier than in Firefox; another noticed slightly jerky page scrolling. One commenter credited the switch to production-grade dependencies such as SQLite and Skia for the improvement while expressing nostalgia for the original SerenityOS hacker spirit.
+
+**Tags**: `#browser engines`, `#open source`, `#web rendering`, `#software releases`
+
+---
+
+<a id="item-tech-news-4"></a>
+### [Google builds simulated internet Mirror Dimension to test Chrome AI agent](https://www.landian.news/archives/128701.html) ⭐️ 8.0/10
+
+Google has built an isolated simulated internet called Mirror Dimension to test its Chrome AI agent, according to a report from Landian News. The environment reportedly contains thousands of simulated websites, with each engineer testing in a separate isolated instance and more than 1,000 test cases run per day. The tests cover agent actions such as opening sites, searching, logging in, adding items to a cart, and completing tasks, with a focus on defending against prompt-injection attacks from malicious web pages. The report is a secondhand aggregation and provides no primary documentation, so the scale and effectiveness of the setup remain unverified.
 
 telegram · zaihuapd · Nov 23, 01:30
 
-**「Background」** Google&\#x27;s Mirror Dimension is a synthetic web made of thousands of simulated sites, built so Chrome engineers can evaluate the browser&\#x27;s &quot;auto browse&quot; agent in realistic online journeys without exposing the live web to an experimental agent. The isolation matters because agentic browsing widens the attack surface: any page the agent reads can carry prompt-injection instructions, so testing in a sealed environment lets Google observe failures and defenses without putting real accounts, purchases, or data at risk.
+**「Background」** Google has been adding agentic capabilities to Chrome that let an in-browser agent open sites, search, log in, and complete tasks such as adding items to a cart on a user&\#x27;s behalf. Because such agents read page content and act on it, hostile prompt injections embedded in web pages are a central security risk; Mirror Dimension is Google&\#x27;s isolated, synthetic-web environment for repeatedly evaluating those defenses before agents encounter the real web.
 
-**「Impact」** If the reported setup reflects Chrome&\#x27;s development process, testing browser agents would need to move beyond single-page checks to large-scale runs across many simulated sites, including adversarial pages designed to hijack agent instructions. The reported per-engineer isolation also points to a practical constraint: agent tests that log in and complete purchases must be kept separate to avoid cross-contaminating accounts and state.
+**「Impact」** If the described setup is accurate, it points to a testing requirement for browser-integrated agents: prompt injection from ordinary web content is a direct attack surface, so agent features need sandboxed environments and adversarial pages before they handle logins or purchases on real sites. The report does not specify which Chrome agent features or release channels use this testing, so users cannot yet tell which capabilities have been evaluated this way.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://blog.google/security/mirror-dimension-for-agents/">Mirror Dimension for Agents: Evaluating Browser-Use Agents ...</a></li>
 <li><a href="https://www.wired.com/story/google-built-a-giant-mirror-dimension-internet-to-test-its-chrome-ai-agents/">Google Built a Giant ‘Mirror Dimension’ Internet to Test Its ...</a></li>
+<li><a href="https://windowsforum.com/news/google-mirror-dimension-a-synthetic-web-for-testing-chrome-ai-agents-against-prompt-injection.453465/">Google Mirror Dimension: A Synthetic Web for Testing Chrome ...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI agents`, `#browser automation`, `#prompt injection`, `#security testing`, `#Chrome`
-
----
-
-<a id="item-tech-news-4"></a>
-### [Phison&\#x27;s space-rated Pascari SSDs to carry 488 TB into orbit](https://videocardz.com/newz/phison-announces-488tb-of-ssd-storage-for-space-data-centers-pricing-expected-to-be-astronomical) ⭐️ 7.0/10
-
-Phison has announced the Pascari Space SSD line for spacecraft, satellites, and orbital data centers, and confirmed that Lonestar Data Holdings&\#x27; StarVault-001 orbital data center will use 488 TB of them. StarVault-001 is planned to launch in the first half of 2027, and about 370 TB will be usable after low-Earth-orbit redundancy; that figure covers the whole machine. The line is split into Flight Critical, Main Storage, and Orbital Data Center tiers, tops out at 128 TB, and is already on sale. Phison says pSLC mode on some models can raise write endurance by up to 60 times, but pricing has not been disclosed.
-
-telegram · zaihuapd · Nov 22, 10:31
-
-**「Background」** Phison&\#x27;s space-rated Pascari line is aimed at spacecraft, satellites, and orbital data centers, a category distinct from terrestrial data-center SSDs because of launch, power, and reliability constraints. The series spans Flight Critical, Main Storage, and Orbital Data Center tiers, reaches 128 TB per drive, and Phison says pSLC can raise write endurance by up to 60 times on some models. Phison says the products are already on sale, while Lonestar Data Holdings&\#x27; StarVault-001 orbital data center is planned to launch in the first half of 2027 with 488 TB of Phison SSDs, about 370 TB usable in low Earth orbit after redundancy.
-
-**「Impact」** The confirmed deployment gives StarVault-001 a named storage supplier and capacity figure ahead of its planned 2027 launch. Phison&\#x27;s tiering and pSLC endurance option point to capacity versus write endurance as a concrete tradeoff for orbital operators, while the roughly 118 TB difference between raw and usable capacity shows redundancy consumes a substantial share of the installed drives.
-
-**Tags**: `#storage`, `#space computing`, `#hardware`, `#data centers`, `#SSD`
+**Tags**: `#AI 代理`, `#Chrome`, `#提示词注入`, `#浏览器自动化`, `#AI 安全`
 
 ---
 
 <a id="item-tech-news-5"></a>
-### [Moore Threads PM hints Lushan gaming GPU at 64 GB VRAM](https://www.tomshardware.com/pc-components/gpus/moore-threads-next-lushan-gaming-gpu-could-pack-a-record-64gb-of-vram-doubles-the-rtx-5090s-32gb-lofty-claims-of-15x-gaming-and-50x-ray-tracing-over-mtt-s80) ⭐️ 7.0/10
+### [Codex2api 疑似供应链投毒，3.1.10–3.1.12 疑含后门](https://github.com/WormW/codex2api-incident-2026-11) ⭐️ 8.0/10
 
-A Moore Threads product manager for the MTT S80 said the next-generation Lushan gaming GPU will have more VRAM than any consumer graphics card currently on sale, VideoCardz reported; extrapolating from his earlier statement of &quot;4x the S80&\#x27;s 16 GB&quot; gives 64 GB, twice the RTX 5090&\#x27;s 32 GB. The remark is not an official company release, so the 64 GB figure is a media extrapolation rather than a confirmed specification. Moore Threads has carried over targets disclosed at MDC 2025 for Lushan: 15x the S80&\#x27;s AAA gaming performance, 50x ray tracing, and 64x AI compute. The company says CEO Zhang Jianzhong will unveil a new flagship at MDC 2026, scheduled for December 29-30 in Beijing.
+A Telegram post reports that the codex2api author account was compromised and that the attacker bypassed the main branch by pushing tags, causing Release builds to publish backdoored versions. According to the post, v3.1.11 removed authentication, effectively enabling unauthenticated remote command execution, and a workflow exfiltrated 16 GitHub Actions secrets from at least 21 repositories under the same account. Users who installed or updated to versions 3.1.10–3.1.12 are advised to stop using the tool immediately, roll back to 3.1.9, and rotate the GitHub token, SSH keys, database credentials, and other related secrets such as DeepSeek keys. The post explicitly frames the incident as suspected and relays claimed external reports without independent technical verification.
 
-telegram · zaihuapd · Nov 22, 15:11
+telegram · zaihuapd · Nov 23, 11:21
 
-**「Where the 64 GB figure comes from」** Moore Threads&\#x27; current gaming GPU, the MTT S80, carries 16 GB of VRAM. The company had previously promised the Lushan generation would offer four times the memory capacity of its predecessor, so the product manager&\#x27;s statement that Lushan will exceed any currently selling consumer card points to a 64 GB estimate rather than an official specification. The 15x gaming, 50x ray-tracing, and 64x AI targets also date from MDC 2025, ahead of the CEO&\#x27;s planned flagship launch at MDC 2026 in Beijing on December 29-30.
+**「Why tag-triggered releases matter here」** The reported attack depends on a release workflow in which pushing a tag can build and publish an artifact without going through the main branch, so control of the maintainer account is enough to ship a backdoored version. The Telegram post cites an incident retrospective and an original report but provides no primary technical evidence, and Horizon has no earlier summary of codex2api releases or prior compromises to establish a baseline. The post also does not clarify whether the 21 affected repositories and the exposed DeepSeek keys belong to the maintainer or to downstream users.
 
-**「Impact」** Because the 64 GB figure comes from an informal remark and the 15x/50x multiples have no independent validation, readers planning around Lushan should treat these as unconfirmed targets until the December 29-30 MDC 2026 unveiling, when Moore Threads is expected to publish actual specifications and performance data.
+**「Impact」** Anyone who ran Codex2API v3.1.10–v3.1.12 should stop that instance immediately, preserve its logs for investigation, and redeploy v3.1.9 as the rollback target. Because the compromised workflow exposed 16 GitHub Actions secrets across at least 21 repositories, affected operators also need to rotate GitHub tokens, SSH keys, and all database and DeepSeek-related credentials; the backdoored releases have reportedly been removed from GitHub, but removal does not revoke secrets already leaked.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.tomshardware.com/pc-components/gpus/moore-threads-next-lushan-gaming-gpu-could-pack-a-record-64gb-of-vram-doubles-the-rtx-5090s-32gb-lofty-claims-of-15x-gaming-and-50x-ray-tracing-over-mtt-s80">Moore Threads &#x27; next &#x27; Lushan &#x27; gaming GPU could pack a record 64 GB ....</a></li>
-<li><a href="https://www.techpowerup.com/355084/moore-threads-claims-its-next-gpu-will-break-the-consumer-vram-record">Moore Threads Claims Its Next GPU Will Break the Consumer VRAM ...</a></li>
-<li><a href="https://wccftech.com/moore-threads-teases-lushan-desktop-gpu-largest-vram-capacity-consumer-history/">China’s Moore Threads Has Teased An Upcoming Graphics Card...</a></li>
+<li><a href="https://ccnavx.com/blog/codex2api-supply-chain-incident">Codex2API Supply Chain Attack: Affected Versions &amp; Fix</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#GPUs`, `#Moore Threads`, `#hardware`, `#gaming graphics`, `#VRAM`
+**Tags**: `#supply-chain security`, `#github actions`, `#backdoor`, `#credential rotation`, `#open source security`
+
+---
+
+<a id="item-tech-news-6"></a>
+### [Meta AI chief warns superintelligence is near as control risk grows](https://thenextweb.com/news/metas-ai-chief-says-superintelligence-is-arriving-and-control-is-at-risk) ⭐️ 8.0/10
+
+Meta&\#x27;s chief AI officer and Superintelligence Labs head Alexandr Wang wrote on X that superintelligence is no longer a &quot;someday&quot; issue, citing a Riemann Hypothesis proof produced by mathematician Levent Alpöge with Anthropic&\#x27;s Claude and machine-verified by the Lean and Mathlib communities on Saturday. Wang argued the gap between AI and top human mathematicians now reduces to specific knowledge, engineering integration, and experimentation, and warned that humans will struggle to retain control of systems capable of unlimited self-improvement or systems 1,000 times smarter than themselves. He called for urgent investment in safety, alignment, and protection research. The proof has no human-readable version yet, and the supplied material provides no independent verification of it.
+
+telegram · zaihuapd · Nov 23, 12:49
+
+**「Background」** The Riemann Hypothesis is one of the Clay Mathematics Institute&\#x27;s Millennium Prize Problems, open since 1859. Lean is a proof assistant whose Mathlib library lets mathematicians formalize arguments as machine-checkable code; on Nov. 21, 2026, the Lean and Mathlib communities certified Levent Alpöge&\#x27;s Claude-assisted Lean proof as correct, with verifiers checking 17 million lines of code. Wang cites that certification as evidence that the gap between AI and top human mathematicians has narrowed to specific knowledge, engineering integration, and experimentation, though the proof still has no human-readable version.
+
+**「Impact」** Wang&\#x27;s warning is aimed at the AI-safety and alignment community, but the concrete case he cites carries an unresolved verification gap: a machine-checked Lean proof without a human-readable exposition means researchers outside the small group that ran the check cannot yet assess what was proved or how much of the work Claude performed. Until a human-readable version and independent review appear, the claim should be treated as a vendor-adjacent assertion rather than a confirmed mathematical result.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://effectstory.com/en/articles/lean-communities-certify-claude-assisted-riemann-hypothesis-proof">Alpöge claims a Claude-assisted Riemann hypothesis proof ...</a></li>
+<li><a href="https://the-decoder.com/lean-and-mathlib-community-officially-confirms-levent-alpoges-proof-of-the-riemann-hypothesis-is-correct/">Lean and Mathlib community officially confirms Levent Alpöge ...</a></li>
+<li><a href="https://www.datastudios.org/post/claude-riemann-hypothesis-proof-lean-community-certifies-levent-alpoge">Claude-assisted Riemann hypothesis proof certified by Lean ...</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI safety`, `#superintelligence`, `#AI research`, `#alignment`, `#Meta`
+
+---
+
+<a id="item-tech-news-7"></a>
+### [NVIDIA Board Reinstates Jensen Huang as President and CEO](https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director) ⭐️ 8.0/10
+
+NVIDIA&\#x27;s board voted unanimously to immediately reinstate Jensen Huang as president, CEO, and board director, with chairman Harvey Jones saying the board has &quot;full confidence&quot; in his leadership. Colette Kress, who had served as interim CEO, returns to her role as chief financial officer. The board said that after receiving input from senior levels of the U.S. government, it concluded Huang&\#x27;s reinstatement poses no national security risk; it has formed an independent-director investigation committee into reports that Huang was a target of foreign intelligence activity, and established a national security and export-control committee while beginning a search for a chief compliance officer. The announcement comes from NVIDIA&\#x27;s newsroom as relayed in a Telegram summary, and the source provides no independent verification of the underlying events.
+
+telegram · zaihuapd · Nov 23, 14:02
+
+**「What led to the reinstatement」** NVIDIA&\#x27;s board removed Jensen Huang from his roles in early November 2026 amid an investigation into whether foreign intelligence efforts had targeted him, with CFO Colette Kress serving as interim CEO. The board now says it received input from senior U.S. government officials before concluding that Huang&\#x27;s return poses no national security risk, and it is keeping an independent-director committee on the investigation while adding a national security and export-control committee and recruiting a chief compliance officer.
+
+**「Continued scrutiny and new compliance roles」** The reinstatement does not resolve the governance questions: Senator Tom Cotton, chair of the Senate Intelligence Committee, said Congress had &quot;much to investigate&quot; regarding Nvidia and Chinese chip smuggling, so export-control scrutiny is likely to continue. The board has also established a national-security and export-control committee and opened a search for a chief compliance officer, meaning Nvidia must staff and operationalize new oversight while the independent-director investigation into Huang proceeds.
+
+**「Community Discussion」** Hacker News commenters focused on the board&\#x27;s statement that it received input from senior U.S. government officials, with one calling that the &quot;most operative part&quot; of the announcement. Others questioned the unanimous reversal after Huang was reportedly forced out less than two weeks earlier, and one commenter argued the board handled communications poorly—either it should have explained its evidence more clearly or hedged by announcing an internal investigation first.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.reuters.com/technology/nvidia-reinstates-jensen-huang-ceo-2026-11-23/">Huang returns as Nvidia CEO after Trump intervention in ...</a></li>
+<li><a href="https://www.nytimes.com/2026/11/08/technology/nvidia-investigation-jensen-huang.html">What to Know About Nvidia’s Investigation of CEO Jensen Huang ...</a></li>
+<li><a href="https://www.cfr.org/articles/nvidia-chinese-espionage-and-the-ai-race-four-foreign-policy-issues-to-watch">Jensen Huang Resigns From Nvidia: Policy Issues Central to ...</a></li>
+<li><a href="https://www.nytimes.com/live/2026/11/23/technology/nvidia-jensen-huang-reinstated">Nvidia Live Updates: Jensen Huang’s Reinstatement as CEO Sparks...</a></li>
+<li><a href="https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html">Jensen Huang reinstated as Nvidia CEO. Stock skyrockets 31%</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#NVIDIA`, `#corporate-governance`, `#AI-hardware`, `#export-controls`, `#semiconductor-industry`
+
+---
+
+<a id="item-tech-news-8"></a>
+### [LeCun accuses Amodei of hyping risk to suppress open models](https://twitter.com/ylecun/status/2124550037912920090) ⭐️ 7.0/10
+
+In a post on X, Yann LeCun claimed that Dario Amodei has been hyping AI dangers since GPT-2 so that open models would be made illegal and Amodei would retain control. The Hacker News thread treated the allegation as a claim rather than a verified fact, and the supplied source reports no specific policy proposal, version, or measured effect behind it.
+
+hackernews · MrBuddyCasino · Nov 23, 17:07 · [Discussion](https://news.ycombinator.com/item?id=50615308)
+
+**「Open-vs-Closed AI and Regulatory Capture」** Yann LeCun accused Anthropic CEO Dario Amodei of using safety warnings and capability-focused regulation to shield closed AI labs from open-weight competition, framing the dispute as regulatory capture rather than genuine risk concern. The two have clashed over open-versus-closed model policy before, and this exchange continues that argument. The Hacker News thread picks up LeCun&\#x27;s claim and discusses possible mechanisms for restricting open models, such as hardware limits and private-compute registration.
+
+**「Impact」** The concrete consequence raised for open-weight users is that restrictions could migrate from model weights to the hardware used to run them: community commenters describe floated ideas such as microcode updates limiting consumer GPUs or registration requirements for privately owned compute. Those are proposals discussed by people in the regulatory space, not enacted rules, and the source provides no policy text or confirmation that any such measure is being drafted. External reporting confirms that export controls already attach to GPU capability and destination, with the January 2025 AI Diffusion rule extending restrictions to certain GPU exports and related AI use—the regulatory channel through which hardware-level limits would most plausibly operate.
+
+**「Community discussion」** One commenter who said they work with people in the AI regulatory space reported an emerging consensus that if you can&\#x27;t ban the bullets, you ban the guns, with floated ideas including microcode updates limiting consumer GPUs&\#x27; LLM capabilities and registration for privately owned compute. Other commenters argued open models are necessary for defense, citing the HuggingFace incident, and accused closed-model companies of appropriating open knowledge and then lobbying to prevent others from doing the same.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://officechai.com/ai/dario-amodei-hypes-ai-dangers-so-that-open-models-are-made-illegal-and-he-can-stay-in-control-yann-lecun/">Dario Amodei Hypes AI Dangers So That Open Models Are Made ...</a></li>
+<li><a href="https://asksurf.ai/pulse/en/lecun-accuses-amodei-of-regulatory-capture-open-vs-closed-ai">LeCun Accuses Amodei of Regulatory Capture in the Open-vs ...</a></li>
+<li><a href="https://www.timesnownews.com/technology-science/ai-godfather-yann-lecun-attacks-anthropic-ceo-dario-amodei-says-he-wants-to-control-ai-article-156555505">AI Godfather Yann LeCun Attacks Anthropic CEO Dario Amodei ...</a></li>
+<li><a href="https://introl.com/blog/ai-export-controls-navigating-chip-restrictions-globally-2025">AI Export Controls: Navigating Chip Restrictions Globally</a></li>
+<li><a href="https://www.gtlaw.com/en/-/media/files/insights/alerts/2025/12/gt-advisory_navigating-gpu-export-controls-and-ai-use-restrictions-in-data-center-operations.pdf">GT Alert_Navigating GPU Export Controls and AI Use ...</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#ai-policy`, `#open-weight-models`, `#regulatory-capture`, `#ai-safety-debate`, `#hardware-regulation`
+
+---
+
+<a id="item-tech-news-9"></a>
+### [Spelunkr.tv Curates Internet Archive Videos Into Free Linear TV Channels](https://spelunkr.tv/) ⭐️ 7.0/10
+
+Spelunkr.tv presents a free, linear &quot;TV network&quot; that curates obscure Internet Archive videos into scheduled channels. Commenters on Hacker News say it streams directly from the Internet Archive rather than hosting its own copies. The project drew 921 points and 159 comments, with users describing watching era-specific music programming and commercials. No source content was supplied, so the exact channel lineup, scheduling mechanics, and whether the code is open source could not be verified.
+
+hackernews · SockThief · Nov 23, 01:13 · [Discussion](https://news.ycombinator.com/item?id=50606192)
+
+**「Context」** I can&\#x27;t write a grounded background because the item provides no source content beyond its analysis summary and comments. The tool results describe Spelunkr.tv itself as 24/7 synchronized channels of Internet Archive video, and FieldStation 42 as an open-source scheduled-broadcast simulator for Raspberry Pi and Linux; neither establishes a earlier Horizon-reported development or a documented predecessor that this item changes.
+
+**「Impact」** The project offers a working example of an always-on, scheduled alternative to on-demand streaming built on Internet Archive material; commenter Woodrow503 reports achieving a similar setup with the open-source FieldStation42 on a Raspberry Pi 5, combining archive and personal media with commercials from YouTube and the Internet Archive.
+
+**「Community Discussion」** Commenters praised the nostalgia of scheduled, era-specific programming, with goatherders describing 45 minutes of 1987 Headbangers Ball and gabriel666smith saying linear viewing eases the loneliness of asynchronous on-demand streaming. andsoitis questioned whether the Internet Archive objects to a third-party interface that bypasses its own user experience.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://spelunkr.tv/">SPELUNKR — Cable TV , but weirder</a></li>
+<li><a href="https://www.itechguides.com/fieldstation42-the-golden-age-of-90s-cable-brought-to-you-by-a-raspberry-pi/">FieldStation 42 : 90s Cable TV Simulator on Raspberry Pi</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#Internet Archive`, `#streaming media`, `#media preservation`, `#retro TV`, `#DIY/open source`
+
+---
+
+<a id="item-tech-news-10"></a>
+### [Open-source nospeaker makes MacBook trackpad vibrate out speech](https://m.mydrivers.com/newsview/1167826.html?ref=https%3A//www.google.com/) ⭐️ 7.0/10
+
+Developer Cody Collier has open-sourced nospeaker, a tool that uses the haptic motor under a MacBook Force Touch trackpad to speak text aloud by driving it at up to 4,000 times per second, fast enough that the glass&\#x27;s vibration becomes audible. It feeds text through macOS speech synthesis, samples two formants every 10 ms, and replays them along with loudness and pitch, producing a robotic-sounding voice. The author reports audible output from 100 Hz to 4 kHz, clearest around 1 kHz, and says it has only been validated on one M5 Max MacBook Pro. The tool speaks text only — not music or video — and bypasses Apple&\#x27;s public haptics APIs by calling the private MultitouchSupport framework.
+
+telegram · zaihuapd · Nov 23, 07:16
+
+**「Background」** Apple&\#x27;s Force Touch trackpads use a linear resonant actuator to simulate clicks through vibration rather than a physical button, and Apple exposes haptics to developers through public APIs intended for feedback patterns, not audio playback. nospeaker instead drives the actuator far above its normal feedback range and relies on formant synthesis, the technique of reconstructing speech from resonant frequency peaks, to turn those vibrations into intelligible words.
+
+**「Impact」** Anyone trying the tool needs Force Touch hardware and should expect it to break, since it depends on an undocumented private framework rather than a supported API; the author&\#x27;s single validated machine also means results on other MacBook models are unconfirmed. Its scope is limited to speech, so it is an experiment in repurposing haptic hardware rather than a replacement for speakers.
+
+**Tags**: `#haptics`, `#open-source`, `#macOS`, `#speech-synthesis`, `#hardware-hacking`
 
 ---
 
 ## Global Chips
 
 <a id="item-chip-news-1"></a>
-### [US Treasury Seeks Answers From Nvidia on China Chip Sales, Bessent Says](http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6b03a80ff0454abc82b3fd345520c7f9&amp;url=https%3a%2f%2fwww.msn.com%2fen-us%2fnews%2fother%2fus-seeks-answers-on-nvidias-sale-of-chips-to-china-bessent-says%2far-AA2hZ30C&amp;c=3104520399582928168&amp;mkt=en-us) ⭐️ 7.0/10
+### [星思半导体获证监会备案，拟赴港交所IPO](http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6b04cf9e81bd4cfcb0028a3aa417260a&amp;url=https%3a%2f%2fwww.eet-china.com%2fmp%2fa541211.html&amp;c=7886811501635680782&amp;mkt=en-us) ⭐️ 7.0/10
 
-US Treasury Secretary Scott Bessent said the US government is seeking answers from Nvidia about its chip sales to China and will establish who was in charge of compliance at the company, Reuters reported on November 22. The report, citing Bessent, presents this as a government inquiry rather than an announced enforcement action, and the published excerpt does not identify which products, transactions or period are under scrutiny. Nvidia has not been accused of violating export controls in the supplied material, and no licence decision, penalty or rule change was disclosed.
+星思半导体已获中国证监会国际合作司境外上市备案，计划在香港联合交易所发行不超过3.88亿股境外上市普通股。备案通知书同时显示，公司76名股东拟将所持合计28.23亿股境内未上市股份转为境外上市股份，并在港交所上市流通。这是监管备案环节的进展，尚非完成发行或挂牌。星思半导体主营卫星通信芯片，属国产芯片设计企业。
 
-rss · Bing News - NVIDIA and China · Nov 22, 09:52
+rss · Bing News - China domestic chips · Nov 23, 04:42
 
-**「Earlier compliance demands」** The request follows Bessent&\#x27;s November 15 public call for Nvidia&\#x27;s board to look outside the company for its next chief executive and for other executives to face scrutiny over the chipmaker&\#x27;s compliance with U.S. export controls; he said the priority was whether Nvidia knowingly allowed its most advanced AI chips to reach China. In the same remarks, he argued the administration already has the tools it needs to limit sales to China and should focus on enforcement rather than new chip-sale legislation.
+**「背景」** 中国境内企业赴境外上市须先取得证监会国际合作司出具的备案通知书，之后才能推进港交所的发行与上市程序，此次披露的正是星思半导体在这一环节的结果。备案文件同时列明新股发行上限与现有股东境内股份转为境外上市股份的安排，表明公司拟以新发H股叠加存量股份流通的方式登陆港股。
 
-**「Impact」** As far as the supplied report shows, the practical effect is added scrutiny of Nvidia&\#x27;s China business and of the compliance function that oversaw it, since Bessent&\#x27;s stated aim of finding out who ran compliance suggests the inquiry could reach beyond individual shipments to how the company policed export rules. No shipment halt, licence condition or revenue figure was disclosed, so any effect on Nvidia&\#x27;s China sales remains unquantified.
+**「影响」** 若后续发行与挂牌完成，星思半导体将获得境外股权融资渠道，其76名股东所持28.23亿股境内股份也可在港交所流通，为这家卫星通信芯片设计公司提供研发资金并给股东增加退出路径。目前仅完成证监会备案，3.88亿股的发行上限、最终定价与时间表仍取决于港交所审核及市场情况。
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.cnbc.com/2026/11/15/bessent-nvidia-ceo-lutnick-megaspeed.html">Bessent calls for ‘dramatic shakeup’ at Nvidia , urges outside CEO</a></li>
-<li><a href="https://www.newsmax.com/newsfront/nvidia-bessent-results/2026/11/15/id/1276371/">US Treasury Chief Wants Answers Soon from Nvidia | Newsmax.com</a></li>
-<li><a href="https://www.politico.com/news/2026/11/15/bessent-pushes-back-chip-sale-legislation-01166709">Bessent pushes back on need for tighter chip sale ... - POLITICO</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#英伟达`, `#对华出口管制`, `#中美芯片合作`, `#合规审查`
+**Tags**: `#国产芯片`, `#卫星通信芯片`, `#港股IPO`, `#资本市场`
 
 ---
 
 <a id="item-chip-news-2"></a>
-### [Bessent Seeks Answers on Nvidia&\#x27;s Role in China AI Chip Export Noncompliance](http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6b03a80ff0454abc82b3fd345520c7f9&amp;url=https%3a%2f%2fwww.msn.com%2fen-us%2fnews%2fother%2fbessent-we-need-answers-on-nvidia-role-in-sending-china-ai-chips%2far-AA2hYC6F&amp;c=8529885070083262531&amp;mkt=en-us) ⭐️ 7.0/10
+### [US Intelligence Chief Says China Likely Has Nvidia Advanced AI Chips](http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6b04cf9d947e4b4b82196c997440c34f&amp;url=https%3a%2f%2fwww.yahoo.com%2fnews%2fvideos%2fchina-likely-nvidia-advanced-ai-124615337.html&amp;c=892859684981909522&amp;mkt=en-us) ⭐️ 6.0/10
 
-U.S. Treasury Secretary Scott Bessent said the government wants to know whether Nvidia had &quot;malicious actors down at the bottom of the company who were responsible for the noncompliance&quot; with chip export controls tied to China AI chips. The statement, reported on November 22, 2026, frames the issue as an inquiry into individual responsibility rather than a confirmed finding, charge or enforcement action against the company. The supplied excerpt discloses no specific violations, named individuals, penalties or timelines.
+US Director of National Intelligence Jay Clayton told CNN&\#x27;s Dana Bash that he expects China has found ways to obtain Nvidia&\#x27;s advanced AI chips. He did not specify which chip models, quantities, intermediaries or channels were involved, and gave no timeline. The statement is an unconfirmed public assessment rather than a documented shipment, enforcement action or change to export-control rules; it does not identify any licensed, permitted or prohibited transaction, and no Nvidia or Chinese government response was reported. The account therefore leaves open whether the concern covers chips restricted under current US controls or older, still-legal parts.
 
-rss · Bing News - NVIDIA and China · Nov 22, 10:49
+rss · Bing News - NVIDIA and China · Nov 23, 04:46
 
-**「Background」** The remarks follow a leadership change at Nvidia: Reuters reports that Jensen Huang resigned as chief executive following an affair, and that Washington is now seeking answers from the company on its China chip sales and on who was in charge of compliance. Bessent&\#x27;s statement, as reported by Newsmax, widens that scrutiny beyond individual transactions to whether compliance failures were confined to lower-level employees or extended through the company.
+**「Context」** The remark came during a CNN interview in which Jay Clayton was also asked about Nvidia and about ongoing investigations of Megaspeed and China, according to published accounts of the Sunday programme. The statement is a general intelligence assessment rather than an enforcement finding: no models, quantities, buyers or diversion channels were disclosed, so it does not establish what Nvidia hardware China holds or how it was obtained.
 
-**「Impact」** The practical effect on Nvidia&\#x27;s China business is still contingent: Bessent&\#x27;s remarks indicate U.S. authorities are examining whether export-control lapses originated inside the company, but the excerpt contains no licensing change, shipment restriction or penalty that would alter Nvidia&\#x27;s China access or revenue. Any concrete consequence would depend on the outcome of that inquiry, which the supplied content does not describe.
+**「Export-control effect」** The DNI&\#x27;s remark implies that current US export controls have not stopped Nvidia&\#x27;s advanced AI chips from reaching China, but he gave no details on quantities, chip models or distribution channels, so the practical scale of any leakage remains unquantified. The remark coincides with Taiwan&\#x27;s move to criminalize unauthorized exports of advanced AI chips to China, aimed at closing a loophole exposed when Nvidia-powered servers bought on the island reached Chinese buyers via Indonesia, Japan and Hong Kong, according to an Asia Times report cited alongside the DNI statement.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/">US seeks answers on Nvidia&#x27;s sale of chips to China, Bessent ...</a></li>
-<li><a href="https://www.newsmax.com/newsfront/scott-bessent-trump-administration-nvidia/2026/11/22/id/1277169/">Scott Bessent: Nvidia Must Answer Questions on China Chip ...</a></li>
+<li><a href="https://theconservativetreehouse.com/blog/2026/11/22/sunday-talks-odni-jay-clayton-discusses-cyber-security-with-dana-bash/">Sunday Talks - ODNI Jay Clayton Discusses Cyber Security with...</a></li>
+<li><a href="https://asiatimes.com/2026/11/taiwan-to-criminalize-nvidia-ai-chip-smuggling-to-china/">Taiwan to criminalize Nvidia AI chip smuggling to China - Asia Times</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#英伟达`, `#对华出口管制`, `#AI 算力`, `#中美芯片合作`
+**Tags**: `#英伟达`, `#对华出口管制`, `#中美芯片合作`, `#AI 算力`
 
 ---
 
 <a id="item-chip-news-3"></a>
-### [US intelligence chief hints China obtained restricted AI chips](http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6b03a80f06c44918935acab0a1752a9d&amp;url=https%3a%2f%2fwww.msn.com%2fen-in%2fnews%2fworld%2fus-intelligence-chief-seemingly-confirms-china-accessed-restricted-america-made-ai-chips%2far-AA2hYJIR&amp;c=15614776108833554957&amp;mkt=en-us) ⭐️ 7.0/10
+### [LCY in advanced talks to sell control of China chip chemicals unit to HSG-led group for about $600M](http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6b04cf9d80574ffbb852e6d42a9ae36c&amp;url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fother%2flcy-s-china-chip-chemicals-business-draws-600m-takeover-interest-from-hsg-led-consortium-report%2far-AA2i2RcN&amp;c=1322568966284489748&amp;mkt=en-us) ⭐️ 6.0/10
 
-US intelligence chief Jay Clayton suggested that China unlawfully acquired restricted American AI chips, as authorities investigate an alleged chip-smuggling network, according to a brief report. The item names no investigating agency beyond Clayton, no specific chip models, quantities, routes, or new rule or licence decision. His statement is characterized as a suggestion rather than a confirmed enforcement finding or an enacted policy change.
+Taiwan-based LCY Group is reportedly in advanced talks to sell control of its China semiconductor chemicals business to a consortium led by HSG, in a deal valued at around $600 million, according to a report relayed by Bing News. The item is report-based: the supplied material does not confirm that a definitive agreement has been signed, that terms were disclosed by either party, or that a closing timetable exists. The asset in question is semiconductor chemicals — a materials-supply operation within China&\#x27;s chip supply chain — rather than AI compute, NVIDIA products or advanced-node equipment. The reported change concerns ownership of China-based chip-materials capacity, not any adjustment to what is permitted, restricted or shipped under export-control rules.
 
-rss · Bing News - China chip policy · Nov 22, 13:50
+rss · Bing News - China chip policy · Nov 23, 03:50
 
-**「Background」** The United States has restricted exports of advanced AI chips to China since 2022, and enforcement attention has increasingly focused on alleged diversion networks. In a separate case, US authorities charged a Super Micro Computer co-founder with illegally diverting Nvidia-powered servers to China, described in reporting as the highest-profile prosecution over alleged smuggling of restricted AI technology to the country. Taiwan prosecutors have also conducted searches in a related investigation into the alleged illegal export of high-end Supermicro AI servers containing Nvidia chips, a case in which reporting says the US provided assistance. The source item does not identify specific chip models, quantities or routes tied to Clayton&\#x27;s remarks.
+**「Background」** LCY Group is a Taiwan-based chemicals producer whose China unit supplies semiconductor-grade chemicals; the reported transaction would transfer control at roughly 4 billion yuan \($600 million\), a valuation one report pegs at more than 20 times the unit&\#x27;s core earnings, with LCY seeking to remain the largest single shareholder. The talks remain report-based: no agreement, signing or regulatory clearance has been disclosed, so this is a deal under negotiation rather than a completed sale.
 
-**「Impact」** If the alleged smuggling network is substantiated, the practical effect would fall on export-control enforcement rather than on licensing terms: the report discloses no enacted rule change, no named chip vendor, and no confirmed shipment or seizure, so it does not by itself alter the conditions under which restricted US AI accelerators can reach Chinese buyers.
+**「Impact」** If completed, the transaction would transfer control of an existing China-based semiconductor chemicals operation from a Taiwanese owner to an HSG-led investment consortium, shifting who directs that materials capacity rather than adding new capacity; the report gives no closing date or regulatory approval step, so the timing and completion of any ownership change remain unconfirmed.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.businesstimes.com.sg/companies-markets/telcos-media-tech/super-micro-co-founder-charged-sending-ai-tech-china">Super Micro co-founder charged with sending AI tech to China</a></li>
-<li><a href="https://www.ntd.com/taiwan-says-us-helped-solve-advanced-chip-smuggling-case_1162832.html">Taiwan Says US Helped Solve Advanced Chip Smuggling Case | NTD</a></li>
+<li>HSG-led consortium in talks to buy controlling stake in LCY&#x27;s China chip chemicals business</li>
+<li>LCY Group Nears $600M Sale of Semiconductor Chemicals Unit Amid - GuruFocus</li>
 
 </ul>
 </details>
 
-**Tags**: `#对华出口管制`, `#AI 算力`, `#中美芯片合作`, `#英伟达`
+**Tags**: `#半导体材料`, `#供应链`, `#对华投资`, `#国产芯片`, `#并购`
 
 ---
 
 <a id="item-chip-news-4"></a>
-### [Senator Kennedy Seeks Sworn Testimony on China&\#x27;s Nvidia Chip Access](http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6b03a80ff0454abc82b3fd345520c7f9&amp;url=https%3a%2f%2fwww.washingtonpost.com%2fpolitics%2f2026%2f11%2f22%2fsen-kennedy-urges-scrutiny-lutnick-over-chinas-access-nvidia-chips%2f&amp;c=7926976116405803250&amp;mkt=en-us) ⭐️ 6.0/10
+### [New U.S. BIS chip export rule takes effect amid China auto-tech concerns](http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6b04cf9e81bd4cfcb0028a3aa417260a&amp;url=https%3a%2f%2fnews.qq.com%2frain%2fa%2f20261124A02O4R00&amp;c=279504482962160428&amp;mkt=en-us) ⭐️ 6.0/10
 
-Senator John Kennedy \(R-Louisiana\) said he wants Commerce Secretary Howard Lutnick and Treasury Secretary Scott Bessent to testify under oath and &quot;answer some hard questions&quot; about China&\#x27;s access to Nvidia chips, according to a Washington Post report. The call is a demand for congressional scrutiny rather than an enacted rule or a documented licensing decision, and the available account does not specify which Nvidia chips, volumes or policy provisions are at issue. No hearing date, subpoena or formal committee action was reported.
+A new chip export rule issued by the U.S. Bureau of Industry and Security \(BIS\) took effect around the same time as news about NVIDIA CEO Jensen Huang, according to a truncated Chinese-language news item. The report says the rule could significantly affect the automotive industry and China&\#x27;s broader technology sector, and it raises questions about whether Chinese autonomous-driving training and homegrown chip development will be constrained. However, the supplied text is only a teaser: it does not specify the rule&\#x27;s provisions, its exact effective date, which companies or products are covered, or what is permitted or restricted for China. The claim that the rule has material consequences for Chinese auto-tech and domestic chip sectors therefore cannot be verified from the available evidence.
 
-rss · Bing News - NVIDIA and China · Nov 22, 14:06
+rss · Bing News - China domestic chips · Nov 23, 08:05
 
-**「Background」** The Commerce Department, through its Bureau of Industry and Security, administers U.S. export controls on advanced AI chips, including Nvidia products, and grants or denies the licences that govern sales to Chinese customers; the Treasury Department handles related investment and sanctions matters. Kennedy&\#x27;s request follows that existing division of authority, but the supplied source does not identify a specific prior licence decision or rule change that prompted it.
+**「Preceding export-control rules」** The new BIS rule follows the AI Diffusion Rule issued on January 13, 2025, which introduced a worldwide licence requirement and complex controls on certain advanced computing chips and on model weights for advanced closed-weight AI models, according to Baker McKenzie&\#x27;s sanctions blog \(tool-1-1\). WilmerHale reports that BIS issued an interim final rule on &quot;remote access&quot; to advanced semiconductors — the high-performance processors used to train and run AI models — on November 15, 2026 \(tool-1-3\). Fenwick says the rule came after pressure from Trump administration officials and Congress to address AI-chip diversion and the absence of controls on remote access from Country Group D:5, which includes China \(tool-1-2\). The supplied source itself does not specify what the new rule prohibits or which products it covers.
 
-**「Impact」** If Kennedy&\#x27;s push leads to sworn testimony, Lutnick and Bessent would have to publicly account for how the Commerce and Treasury departments have handled Nvidia chip flows to China, which could constrain how much licensing discretion the agencies exercise without congressional explanation. Any practical effect on shipments or licence approvals depends on whether a hearing is actually scheduled, and none has been reported.
+<details><summary>References</summary>
+<ul>
+<li><a href="https://sanctionsnews.bakermckenzie.com/bis-restricts-remote-access-to-advanced-ai-chips-and-formally-rescinds-the-ai-diffusion-rule/">BIS Restricts Remote Access to Advanced AI Chips and Formally ...</a></li>
+<li><a href="https://www.fenwick.com/insights/publications/bis-announces-new-export-controls-remote-access-ai-chips">BIS Announces New Export Controls on Remote Access, AI Chips</a></li>
+<li><a href="https://www.wilmerhale.com/en/insights/client-alerts/20261117-us-government-restricts-remote-access-to-advanced-ai-chips-and-formally-rescinds-the-ai-diffusion-rule">US Government Restricts Remote Access to Advanced AI Chips ...</a></li>
 
-**Tags**: `#英伟达`, `#对华出口管制`, `#中美芯片合作`, `#美国国会`, `#AI 算力`
+</ul>
+</details>
+
+**Tags**: `#对华出口管制`, `#国产芯片`, `#AI 算力`, `#英伟达`
 
 ---
 
 <a id="item-chip-news-5"></a>
-### [China’s chip war goes covert: Spy agency steps up hunt for advanced chips, targets global semiconductor intelligence](http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6b03a80f06c44918935acab0a1752a9d&amp;url=https%3a%2f%2fwww.fortuneindia.com%2fworld%2fchinas-chip-war-goes-covert-spy-agency-steps-up-hunt-for-advanced-chips-targets-global-semiconductor-intelligence%2f171697&amp;c=190024110062511024&amp;mkt=en-us) ⭐️ 6.0/10
+### [Report alleges Huang associate had China spy agency contact](http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6b04cf9d947e4b4b82196c997440c34f&amp;url=https%3a%2f%2fabc7chicago.com%2fstory%2fwoman-center-nvidia-scandal-was-touch-chinas-top-spy-agency-sources%2f20069206%2f&amp;c=17224972434123134999&amp;mkt=en-us) ⭐️ 5.0/10
 
-China&\#x27;s intelligence agency reportedly elevated advanced-chip acquisition and global semiconductor intelligence gathering to a strategic priority over at least two years.
+A report carried by ABC7 Chicago, citing unnamed sources, alleges that the woman described as having had an affair with NVIDIA CEO Jensen Huang was also in contact with an official of China&\#x27;s top intelligence agency, and that the contact took place while she was in a relationship with the former executive. The item does not name the woman or the official, gives no dates, and offers no documentation or on-record confirmation; the allegation is reported as unconfirmed. The account does not identify any change to NVIDIA products, export licensing, or shipments to China.
 
-rss · Bing News - China chip policy · Nov 22, 05:31
+rss · Bing News - NVIDIA and China · Nov 23, 02:39
 
-**Tags**: `#对华出口管制`, `#国产芯片`, `#AI 算力`, `#半导体情报`
+**「Earlier resignation and reinstatement」** The scrutiny follows Jensen Huang&\#x27;s earlier departure from the CEO role: a Yahoo News report states he resigned in the wake of the alleged affair, and BBC News reported that Nvidia&\#x27;s board voted unanimously to reinstate him as CEO and president after he stepped down earlier that month. The same Yahoo report says Alice Huang&\#x27;s contact with a Ministry of State Security official ran from spring 2025 into the fall of this year, the period now under scrutiny.
+
+**「Governance scrutiny, no shipment change documented」** The supplied evidence documents no new export-control measure, licence decision or shipment restriction affecting Nvidia&\#x27;s China business; the item is an unconfirmed allegation from unnamed sources. External reports in the same window do indicate continuing U.S. scrutiny of Nvidia&\#x27;s China exposure: California authorities are reportedly investigating whether Nvidia chip exports ended up in China, and the board reinstated Jensen Huang as CEO on November 23 after his November 13 resignation, saying it had input from senior levels of the U.S. government. The practical consequence supported so far is heightened governance and compliance attention on Nvidia&\#x27;s China channels, not a change in what is permitted to ship.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.yahoo.com/news/politics/articles/woman-center-nvidia-scandal-touch-061322657.html">Woman at center of Nvidia scandal was in touch with China &#x27;s top spy ...</a></li>
+<li><a href="https://www.bbc.com/news/live/crd61y5dwqgpt">Jensen Huang reinstated as Nvidia CEO, board says - BBC News</a></li>
+<li><a href="https://www.theguardian.com/technology/2026/nov/23/jensen-huang-reinstated-as-nvidia-chief-executive">Jensen Huang reinstated as Nvidia CEO | Jensen Huang | The Guardian</a></li>
+<li><a href="https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html">Jensen Huang reinstated as Nvidia CEO. Stock skyrockets 31%</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#英伟达`, `#中美芯片合作`, `#对华出口管制`, `#Jensen Huang`, `#China`
 
 ---
 
 <a id="item-chip-news-6"></a>
-### [Report: China&\#x27;s top spy agency added AI chip goals to priorities](http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6b03a80f06c44918935acab0a1752a9d&amp;url=https%3a%2f%2fwww.seattletimes.com%2fbusiness%2fchinas-spies-set-sights-on-ai-chips-years-before-nvidia-scandal%2f&amp;c=17514016541139213266&amp;mkt=en-us) ⭐️ 5.0/10
+### [Nvidia Says U.S. Officials Cleared Jensen Huang&\#x27;s Return as No Security Risk](http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6b04cf9d947e4b4b82196c997440c34f&amp;url=https%3a%2f%2fgizmodo.com%2fthe-single-most-important-line-from-nvidias-statement-about-jensen-huangs-return-2000844082&amp;c=17956557870182898364&amp;mkt=en-us) ⭐️ 5.0/10
 
-A news report says China&\#x27;s top espionage agency added, in a priorities update this year, the goal of overcoming Western barriers to technologies that Xi Jinping considers crucial to China&\#x27;s rise, including AI chips. The report links the change to an Nvidia-related scandal. The supplied excerpt does not name the agency, specify the policy provisions or dates, or detail the alleged incident, so the concrete scope and timing remain unconfirmed.
+Nvidia said U.S. government officials assured its board that reinstating Jensen Huang posed no national security risk, according to a Gizmodo report carried by Bing News. The statement addresses a governance question rather than any new export-control provision, product launch or China shipment decision. The supplied account does not identify which officials gave the assurance, when it was given, or what role Huang is returning to. No figures on AI compute supply, capacity or China revenue were disclosed.
 
-rss · Bing News - China chip policy · Nov 22, 09:55
+rss · Bing News - NVIDIA and China · Nov 23, 11:30
 
-**「Prior context」** The item provides only a one-sentence excerpt: China&\#x27;s top espionage agency added &quot;overcoming Western barriers&quot; to technologies Xi Jinping considers crucial as a priority in its updated mandate this year. The supplied material does not name the agency, specify the policy provisions or effective date, or detail the Nvidia-linked scandal itself, so the concrete predecessor event remains unverified in this source.
+**「Background」** The assurance is framed as a board-level clarification, indicating that Huang&\#x27;s return to a leadership position had been treated as a question requiring U.S. government sign-off. The supplied text does not specify the prior arrangement that removed or limited his role, nor the earlier licence or policy decision that prompted the board to seek the assurance.
 
-**「Impact」** If the reported priority shift is accurate, it signals that Beijing&\#x27;s effort to work around U.S.-led export controls on advanced AI chips extends beyond domestic R&amp;D and procurement into intelligence collection, a channel that falls outside licensing rules and cannot be addressed through export-control waivers alone — though the excerpt provides no evidence of specific shipments, thefts or targets.
+**「Impact」** The practical effect supported by the evidence is narrow: Nvidia&\#x27;s board now has a stated U.S. government assurance that Huang&\#x27;s reinstatement raises no national security concern, which removes a governance obstacle rather than altering export licensing or China access. Because the source names no officials, date or conditions, it cannot be read as clearance for any specific product shipment to China.
 
-**Tags**: `#对华出口管制`, `#英伟达`, `#国产芯片`, `#AI 算力`, `#中美芯片合作`
+**Tags**: `#英伟达`, `#对华出口管制`, `#中美芯片合作`
 
 ---
 
 <a id="item-chip-news-7"></a>
-### [Report: H200 sales halted as overseas AI compute route narrows](http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6b03a80f4d6c448f87957f4b27695a83&amp;url=https%3a%2f%2fee.ofweek.com%2f2026-11%2fART-8420-2801-30712829.html&amp;c=5441554697017970739&amp;mkt=en-us) ⭐️ 5.0/10
+### [Pakistan, China researchers discuss advanced semiconductor collaboration](http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6b04cf9d80574ffbb852e6d42a9ae36c&amp;url=https%3a%2f%2fwww.msn.com%2fen-xl%2fscience%2fgeneral%2fpak-china-researchers-to-cooperate-in-advanced-semiconductor-techpublished-on-november-23-2026-9-04-am%2far-AA2i0Yqi&amp;c=10844837300057430555&amp;mkt=en-us) ⭐️ 5.0/10
 
-An OFweek article claims that H200 sales have been suspended and that restrictions on AI compute leasing are intended to block Chinese AI companies from obtaining overseas compute through leasing. The article says firms had previously built data centers abroad and accessed NVIDIA advanced AI chips remotely because those chips could not enter China, and that this route is now closed. The item names no policy provision, effective date, official source, or shipment figure, so the H200 sales halt is an assertion rather than a confirmed rule or vendor action.
+Researchers from Pakistan and China explored opportunities for collaboration in advanced semiconductor technologies at an international symposium hosted by Pakistan&\#x27;s National University, according to a November 23 report. The item describes the event as a discussion of possible cooperation; it names no participating institutions beyond the host university, no specific technologies, process nodes, funding or agreements, and no timeline. No joint programme, memorandum or research output was reported as agreed or shipped.
 
-rss · Bing News - China domestic chips · Nov 22, 18:42
+rss · Bing News - China chip policy · Nov 23, 01:34
 
-**「Background」** The item supplies no details on the export-control or licensing step that preceded the alleged H200 sales halt, and no earlier Horizon summary or verified external record was available to establish a direct predecessor. The only stated precursor is the article&\#x27;s own account that advanced NVIDIA AI chips could not be sold into China, which led some Chinese AI firms to build compute centers abroad and call them remotely — the route the article says is now blocked.
+**「Background」** The symposium is reported as a bilateral academic exchange rather than a government or corporate arrangement, and the supplied source does not identify any prior Pakistan-China semiconductor cooperation agreement that this event follows. Pakistan has no established commercial advanced-node manufacturing base, so the reported talks concern research collaboration rather than fab capacity or production.
 
-**「Impact」** Nvidia&\#x27;s H200 China business remains effectively stalled even where sales are licensed: Reuters reported on 18 November 2026 that Nvidia had stopped shipping US-approved AI chips to China, and a July 2026 account noted the company held US licences to sell H200 chips to China but almost none had shipped, with a 25% tariff applying. For Chinese AI firms, the practical effect of curbs on overseas compute leasing is to narrow the remote-access route the article describes — building data centres abroad and calling capacity remotely — pushing them toward domestically designed accelerators led by Huawei, which Beijing has been encouraging as the substitute.
+**「Impact」** Because the report names no institutions, funding or work plan, the practical effect cannot yet be assessed: no Chinese or Pakistani company gains fab access, licensing or supply capacity from the announced discussions, and any follow-on research cooperation would depend on details not disclosed in the source.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://techjournal.org/us-imposes-25-tariff-on-nvidia-h200-ai-chips-bound-for-china">US-China AI Chip War 2026: Nvidia, Tariffs &amp; the H200</a></li>
-<li><a href="https://www.reuters.com/world/china/nvidia-stops-shipping-us-approved-ai-chips-china-2026-11-18/">Nvidia stops shipping US-approved AI chips to China | Reuters</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#对华出口管制`, `#英伟达`, `#AI 算力`, `#国产芯片`, `#H200`
+**Tags**: `#中美芯片合作`, `#国产芯片`, `#先进制程`, `#半导体研究`
 
 ---
 
 <a id="item-chip-news-8"></a>
-### [Report Links China Spy Priorities to AI Chip Barriers](http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6b03a80ff0454abc82b3fd345520c7f9&amp;url=https%3a%2f%2fwww.seattletimes.com%2fbusiness%2fchinas-spies-set-sights-on-ai-chips-years-before-nvidia-scandal%2f&amp;c=17514016541139213266&amp;mkt=en-us) ⭐️ 4.0/10
+### [Report claims two Chinese vendors in top five intelligent-driving chip ranks](http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6b04cf9e81bd4cfcb0028a3aa417260a&amp;url=https%3a%2f%2fwww.sohu.com%2fa%2f1105159807_121097259&amp;c=4922930732126220630&amp;mkt=en-us) ⭐️ 5.0/10
 
-According to a Seattle Times teaser tied to an Nvidia-related scandal, China&\#x27;s top espionage agency added overcoming Western barriers to AI-relevant technologies as a priority when it updated its goals this year. The supplied source does not name the agency, identify the specific technologies or the date of the update, or describe the Nvidia scandal, and it does not confirm any actual espionage operation. The item therefore conveys a reported priority statement rather than an enacted policy, a licensing decision or a chip shipment.
+A Sohu article asserts that domestic Chinese vendors now hold two of the top five positions in intelligent-driving chips, with Huawei reaching fifth, and frames this as evidence of NVIDIA&\#x27;s decline in that segment. The supplied excerpt, however, contains no top-five list, no market-share or shipment figures, no process-node or performance details, and no sourcing for the ranking, so the claimed placements of the two domestic vendors and Huawei&\#x27;s fifth place cannot be verified from the available text. The excerpt only establishes the article&\#x27;s framing: electric-vehicle subsystems divide into a three-electric system \(battery, motor, electronic control\), intelligent-driving systems including chips and algorithms, and smart-cockpit chips and software, with China described as fully self-sufficient in the three-electric category and holding roughly 80% of global battery share, while cockpit and intelligent-driving chips are characterized as a remaining weak point. No company names beyond Huawei, dates, or shipment figures for the claimed ranking shift appear in the supplied content.
 
-rss · Bing News - NVIDIA and China · Nov 22, 09:55
+rss · Bing News - China domestic chips · Nov 23, 03:54
 
-**「Background」** The teaser refers to an update of the Ministry of State Security&\#x27;s stated priorities, and external reporting dated November 21, 2026 describes a previously unreported MSS campaign of at least two years to acquire advanced AI semiconductors and gather supply-chain intelligence, attributed to serving and former foreign security officials. The supplied source does not identify which earlier priority list was revised, when the update took effect, or what the Nvidia-related scandal involves, so those details remain unverified here.
+**「Background」** Horizon&\#x27;s mid-2026 data already showed Nvidia leading China&\#x27;s urban NOA-capable intelligent-driving chip market for own-brand passenger cars with 39.43%, ahead of Horizon Robotics at 22.82%, establishing a two-vendor top tier. The same reporting noted that several automakers, including Li Auto, Xpeng and Xiaomi, were developing in-house intelligent-driving chips, with Li Auto&\#x27;s expected to reach mass production in 2026. The current claim that domestic vendors hold two of the top five spots and that Huawei has reached fifth extends that earlier ranking picture, but the supplied excerpt provides no top-five list, market-share or shipment figures to confirm it.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.nytimes.com/2026/11/21/world/asia/china-nvidia-spy-chips-state-security.html">China Spies Set Sights on Chips Years Before NVIDIA Scandal ...</a></li>
-<li><a href="https://explainx.ai/blog/china-mss-ai-chip-espionage-campaign-two-years-nyt-claimed-vs-verified-november-2026">China MSS AI Chips: 2-Year Campaign Explained | explainx.ai Blog</a></li>
+<li><a href="https://bianews.com/news/details?id=197814">市 值逼近Mobileye， 地 平 线 真的迎来曙光</a></li>
+<li><a href="https://k.sina.com.cn/article_6347973665_17a5e642102701wg1m.html">英 伟 达 第一，但半年丢了10%！ 地 平 线 坐稳第二，高阶 智 驾 芯 片 双强</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#对华出口管制`, `#AI 算力`, `#英伟达`, `#国产芯片`, `#间谍活动`
+**Tags**: `#国产芯片`, `#智能驾驶芯片`, `#英伟达`, `#华为`, `#AI 算力`
 
 ---
 
 <a id="item-chip-news-9"></a>
-### [Report alleges China ran two-year campaign to obtain advanced AI chips](http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6b03a80f06c44918935acab0a1752a9d&amp;url=https%3a%2f%2fwww.msn.com%2fen-in%2fnews%2fother%2fchina-ran-2-year-spy-campaign-to-acquire-advanced-ai-chips-evade-us-curbs-report%2far-AA2hXEnG&amp;c=6558449294980266658&amp;mkt=en-us) ⭐️ 4.0/10
+### [BIS Nov 16 rule tightens overseas tape-out access, report says](http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6b04cf9e81bd4cfcb0028a3aa417260a&amp;url=https%3a%2f%2f36kr.com%2fnewsflashes%2f4082941578318729&amp;c=13891380597614384693&amp;mkt=en-us) ⭐️ 5.0/10
 
-A report alleges that a Chinese intelligence agency ran a two-year campaign to acquire advanced AI chips and to map global supply chains, with the stated aim of evading US export curbs. The supplied excerpt does not name the agency, the companies involved, chip models, quantities, dates or specific policy provisions, and it attributes the claim to a report rather than to documented evidence. No element of the alleged campaign is confirmed by an official US or Chinese source in the material provided. The item therefore describes an allegation, not an enacted rule, a licensing decision or a shipped transaction.
+A Shanghai Securities News report carried by 36Kr said rumours that Samsung had begun penetrating audits of contract manufacturing were inaccurate, citing checks with domestic foundries and chip design companies. The report said the pressure behind the rumours is &quot;abuse of export controls&quot; following a new rule issued by the U.S. Bureau of Industry and Security \(BIS\) on Nov. 16, which industry figures said further tightened access to overseas tape-out. Several industry people said building a domestic AI supply chain is now necessary, and with process technology lagging overseas advanced manufacturers, so-called &quot;super nodes&quot; are expected to offset single-chip compute shortfalls and open a development opportunity window, according to the report.
 
-rss · Bing News - China chip policy · Nov 22, 05:06
+rss · Bing News - China domestic chips · Nov 23, 09:08
 
-**「Background」** The supplied excerpt does not identify the intelligence agency, the report&\#x27;s publisher, a time frame or any specific chip model or shipment involved, so no concrete predecessor action can be established from the source. The alleged campaign is framed against Washington&\#x27;s tightening export controls on advanced AI chips to China, but the item provides no rule, licence decision or prior enforcement case to anchor the claim in a verifiable sequence of events.
+**「Background」** The restriction the report cites is the November 16 rule from the Commerce Department&\#x27;s Bureau of Industry and Security covering advanced hardware for superintelligence and remote access, which CSIS describes as the formal rescission and replacement of the Biden administration&\#x27;s earlier measure. It follows earlier BIS action: a January 15, 2025 package that tightened export controls on advanced computing semiconductors and added entities in China and Singapore to the Entity List. The source cites no specific provisions, product models, process nodes or volumes, so the practical scope of the tightened overseas tape-out channel remains unquantified.
 
-**「Impact」** Because the excerpt names no entities, quantities or enforcement action, the practical effect on licensing, shipments or China&\#x27;s domestic substitution cannot be established from this material; any consequence for AI compute supply or for vendor access to the China market remains unverified.
+**「Impact」** The reported effect is on where Chinese AI chip designers can tape out: the Nov. 16 BIS rule is described as narrowing overseas foundry channels, which pushes designers toward domestic foundries and toward system-level &quot;super node&quot; designs that pool multiple chips to compensate for weaker per-chip compute. The source does not specify which rule provisions apply, which products are covered, or when any restriction takes effect, so the scope of the tightened access remains unconfirmed.
 
-**Tags**: `#对华出口管制`, `#AI 算力`, `#国产芯片`, `#中美芯片合作`
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.bis.gov/press-release/commerce-strengthens-restrictions-advanced-computing-semiconductors-enhance-foundry-due-diligence-prevent">www.bis.gov</a></li>
+<li><a href="https://www.csis.org/analysis/new-export-controls-remote-access-implications-industry-and-competition-china">New Export Controls on Remote Access: The Implications for ...</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#对华出口管制`, `#国产芯片`, `#AI 算力`, `#晶圆代工`, `#供应链`
+
+---
+
+<a id="item-chip-news-10"></a>
+### [How Nvidia’s billion-dollar turnaround in China is threatened by Huang’s exit](http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6b04cf9d947e4b4b82196c997440c34f&amp;url=https%3a%2f%2fwww.msn.com%2fen-us%2fnews%2fother%2fhow-nvidia-s-billion-dollar-turnaround-in-china-is-threatened-by-huang-s-exit%2far-AA2i2R8Z&amp;c=16636505390457349027&amp;mkt=en-us) ⭐️ 4.0/10
+
+A Reuters teaser says Nvidia staged a China comeback with less powerful chips and software after US export bans, but offers no concrete details or figures.
+
+rss · Bing News - NVIDIA and China · Nov 23, 03:38
+
+**Tags**: `#英伟达`, `#对华出口管制`, `#中美芯片合作`, `#AI 算力`
+
+---
+
+<a id="item-chip-news-11"></a>
+### [SoftBank&\#x27;s Reported $1 Trillion SK Hynix Buyout Bid Called a Non-Starter](https://www.eetimes.com/the-enigma-of-softbanks-1-trillion-sk-hynix-buyout-attempt/) ⭐️ 4.0/10
+
+EE Times published a commentary arguing that SoftBank&\#x27;s reported $1 trillion attempt to buy SK Hynix was a non-starter, without disclosing deal terms, named sources or a transaction date. The piece frames the approach as a reported bid rather than an agreed or completed deal, and uses it to illustrate memory&\#x27;s strategic appeal amid the AI buildup. It offers no verifiable detail on HBM capacity, DRAM output or how such an acquisition would be financed or approved. The $1 trillion figure should therefore be treated as an unverified report, not a transaction that changes supply agreements or capacity plans.
+
+rss · EE Times · Nov 23, 08:30
+
+**「Background」** The story traces to a report by The Information published on Friday, Nov. 20, 2026, which said SoftBank Group CEO Masayoshi Son had recently approached Wall Street institutions about financing a possible trillion-dollar buyout of SK Hynix, the world&\#x27;s second-largest memory chipmaker. Reuters and other outlets relayed that same report on Nov. 21, 2026, describing the move as exploratory financing soundings rather than a filed or agreed transaction. EE Times&\#x27; commentary treats the approach as a non-starter and uses it to argue that memory has become strategically central to the AI buildup.
+
+**「Impact」** Because the item provides no confirmed terms, financing structure or regulatory status, its practical effect on AI compute supply and on SK Hynix&\#x27;s HBM and DRAM shipments is unestablished; readers tracking memory allocation have no evidence here of a change to customer agreements or capacity plans.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.eetimes.com/the-enigma-of-softbanks-1-trillion-sk-hynix-buyout-attempt/">The Enigma of SoftBank’s $1 Trillion SK Hynix Buyout Attempt</a></li>
+<li><a href="https://www.reuters.com/world/asia-pacific/softbanks-son-explored-1-trillion-buyout-sk-hynix-information-reports-2026-11-21/">SoftBank’s Son explored $1 trillion buyout of SK Hynix, the ...</a></li>
+<li><a href="https://economictimes.indiatimes.com/tech/technology/softbanks-son-explored-1-trillion-buyout-of-sk-hynix-the-information/articleshow/136043315.cms">SoftBank&#x27;s Son explored $1 trillion buyout of SK Hynix: The ...</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI 算力`, `#存储芯片`, `#行业分析`
 
 ---
 
 ## Technology Blog
 
 <a id="item-tech-blog-1"></a>
-### [When in Doubt, Flail About](https://seangoedecke.com/when-in-doubt-flail-about/) ⭐️ 6.0/10
+### [Skip the DRAM Tier: Running Agentic KV Cache on NVMe](https://vllm.ai/blog/2026-11-23-skip-the-dram-tier) ⭐️ 8.0/10
+
+rss · vLLM Blog · Nov 23, 00:00
+
+**「Background」** Agentic serving resends long prefixes: in AgentX traces the median turn is 142K input tokens, and over 96% of those tokens are prefix the server has already seen. A KV cache hit avoids recomputing that prefix, and the authors measured that raising the hit rate by 1% of prompt tokens was worth about 10% more throughput in their Kimi-K3 runs. Host DRAM is the usual tier behind GPU memory, but Kimi-K3 wrote 2.3–4.6 TB of KV an hour, so a 1.8 TB DRAM pool \(about $76,000\) holds only the last 23–47 minutes of it.
+
+**「Solution」** AMD and Embedded LLM tested whether vLLM&\#x27;s KV pool could run entirely on local NVMe using UMBP, the KV cache pool in AMD&\#x27;s open-source MoRI library, on 16 MI355X GPUs. In back-to-back runs on the same machines, a 1.8 TB NVMe pool stayed within 1% of a 1.8 TB DRAM pool at 48, 70 and 96 concurrent sessions on Kimi-K3, with KV hit rates differing by at most 0.08% of prompt tokens; a repeat on another pair of machines put NVMe ahead by 0.4–0.9%. DRAM only buffered writes \(64 GB, one to two minutes of new KV\) and staged reads \(16 GiB\), under 5% of the pool; at 70 sessions even a 4 MiB write buffer cost nothing, though the authors advise keeping it under heavier load. The explanation is that throughput follows hit rate, and same-size pools that evict the same way keep the same KV: vLLM&\#x27;s asynchronous load finished while requests waited for prefill. On the longer kvlab prompts, capacity rather than medium drove results — a 4.6 TB NVMe pool held 92.7–95.8% hit rate at every load and served 8,813 tok/s per GPU at 70 sessions, against a 52% hit rate for a 1.0 TB DRAM pool. Three levers mattered: 256 MiB rather than the default 4 GiB segment files \(eviction frees space only by deleting whole files\) raised hit rate from 94.45% to 95.65% and throughput 15.6%; reporting GPU prefix hits to the pool added 2.1–3.9% throughput and cut TTFT p99 from 70–77 s to 35–43 s; and checkpointing every 7,168 tokens raised hit rate from 91.4% to 95.6% and throughput 33%. The authors frame cost as DRAM per TB held versus NVMe per TB written: drives rated for Kimi-K3&\#x27;s 83 TB of writes a day hold a day of KV for about $59,000 — the same as a 1.8 TB NVMe pool replaced as it wears out — against $76,000 for the 1.8 TB DRAM pool. The tradeoff is that every computed KV block is written to the drives, and the 1.8 TB test pair would exhaust its rated life in roughly five and a half months at 96 sessions; the cost figures are list-price arithmetic that omit power, rack space and drive servers, and the retention-to-throughput estimate chains two fitted models.
+
+**「Takeaway」** The authors conclude that for agentic KV caches, NVMe can replace the DRAM tier at equal pool size, because capacity and hit rate matter more than the medium, and NVMe&\#x27;s cost scales with writes rather than held bytes, buying far more retention per dollar. The open questions are write endurance and the fitted estimates behind the cost and throughput projections.
+
+**Tags**: `#KV cache`, `#NVMe`, `#vLLM`, `#agentic serving`, `#memory tiering`
+
+---
+
+<a id="item-tech-blog-2"></a>
+### [Flailing as a Strategy Under Uncertainty](https://seangoedecke.com/when-in-doubt-flail-about/) ⭐️ 6.0/10
 
 rss · Sean Goedecke · Nov 23, 00:00
 
-**「Background」** Sean Goedecke addresses the situation engineers often face when guidance is unclear and they don&\#x27;t yet know what will help. The instinct is to be cautious and wait for better understanding, but he argues that this usually delays progress and that deliberate experimentation is the faster route.
+**「Background」** Engineers often face situations with no clear guidance: a product without market fit, a system too tangled or large to fully understand, or an organizational problem nobody can articulate. Sean Goedecke argues that the cautious instinct to wait and study first is usually wrong, because modern systems and products change too fast for exhaustive upfront analysis.
 
-**「Solution」** Goedecke&\#x27;s central insight is that &\#x27;flailing&\#x27;—trying many speculative approaches while reading feedback closely and ruthlessly dropping plans that aren&\#x27;t working—is often the quickest way to become useful in an unclear situation. He explains that trying lots of things gives direct contact with reality, increases the odds that one idea is good since most plans will fail, and prevents over-investment in any single plan. He distinguishes three contexts: product flailing, where teams search for product-market fit around the margins \(at GitHub Models, an AI-inference feature run from a GitHub Actions token proved surprisingly sticky and seeded &\#x27;Continuous AI&\#x27;\); engineering flailing, where speculative changes beat attempting to understand large, fast-changing systems first \(AI agents help generate candidates\); and organizational flailing, for non-technical problems such as teams not communicating, where trying several things demonstrates effort. He warns that organizational flailing demands the most feedback sensitivity, since pressing on with failing plans can turn others&\#x27; anger toward you. The approach is dangerous if done badly—engineers with only bad ideas can damage their reputation—and the author notes that it feels like failing from the inside even when managers see a proactive engineer.
+**「Solution」** Goedecke&\#x27;s alternative is deliberate, feedback-sensitive experimentation — &quot;flailing.&quot; The method has three parts: try many different things to get direct contact with reality, watch feedback from both people and metrics very carefully, and ruthlessly drop anything that isn&\#x27;t getting positive feedback. Trying many plans also prevents over-investment; with ten plans, you only need one to succeed, so abandoning failing ones is easy. He identifies three contexts. In product work, most features will fail, but one lucky experiment can be the seed of something lasting — as with a GitHub Models integration that let AI inference run from a GitHub Actions token, which proved surprisingly sticky and fed into &quot;Continuous AI.&quot; In engineering, rather than carefully reading an entire complex system before recommending changes, he suggests making speculative changes, dropping them immediately if they don&\#x27;t improve things, and digging in only when they do; AI agents make generating several candidate refactors cheap. In organizational work, senior engineers should try many plausible interventions — automating manual work, volunteering for tasks, proposing long-term plans — because most won&\#x27;t help, but showing effort builds trust. This third case demands the most feedback sensitivity: dropping a failing plan quickly builds trust, while pressing on redirects people&\#x27;s frustration onto you. The catch is that flailing feels like failing from the inside, even when it looks proactive from outside, so the author says that discomfort must be recognized as a normal signal rather than a warning.
 
-**「Takeaway」** Goedecke&\#x27;s broader point is that the uncomfortable feeling of flailing is a psychological barrier to push through rather than a sign of trouble: as long as you stay sensitive to feedback and drop failing plans immediately, deliberate flailing can be an effective approach to difficult engineering and organizational problems.
+**「Takeaway」** Goedecke&\#x27;s thesis is that under genuine uncertainty, cheap experiments judged by fast feedback beat careful upfront analysis — and that the uncomfortable feeling of flailing is itself a sign you&\#x27;re doing the right thing, provided you stay responsive and abandon failing plans.
 
-**Tags**: `#engineering-practice`, `#uncertainty`, `#experimentation`, `#organizational-dynamics`, `#feedback-loops`
+**Tags**: `#engineering management`, `#experimentation`, `#handling uncertainty`, `#product development`, `#organizational dynamics`
+
+---
+
+<a id="item-tech-blog-3"></a>
+### [What OpenAI&\#x27;s Perplexity Graph Reveals About Training](https://seangoedecke.com/notes-on-openais-perplexity-reveal/) ⭐️ 5.0/10
+
+rss · Sean Goedecke · Nov 23, 00:00
+
+**「Background」** Sean Goedecke reacts to OpenAI&\#x27;s release of a perplexity-over-time graph for all its released models, which he calls the most visibility anyone has had into a frontier lab&\#x27;s internal training metrics. Perplexity measures how well a model predicts held-out text, making it a pre-training metric rather than a measure of RL or post-training success.
+
+**「Solution」** Goedecke stresses that perplexity is dataset-dependent, so even an Anthropic graph on the same axes would not be directly comparable. He notes that for frontier models, rumor puts pre-training at half or less of total training time and compute, with the rest going to RL that perplexity cannot capture. Even granting that pre-training creates capabilities while RL elicits them, he argues other measures such as chain-of-thought improvement need not correlate with perplexity. The chart&\#x27;s surprise, to him, is how few models share a base: rather than 4o and 4.1 being post-trained into many releases, it looks like only o1 and o3 did, and 4.1 and o3 share a base despite o3 being the stronger model. He reads GPT-4.5 as a point where OpenAI briefly stopped making large pretrained models, though he cannot tell whether that was a choice or an internal scaling wall. A real acceleration in perplexity loss from GPT-5.2 onward, he says, contradicts common wisdom that labs have largely abandoned pre-training for RL. On alignment, he doubts transparency alone helps: only OpenAI could notice a sudden scary drop, and threshold agreements would require releasing the held-out dataset. He also notes mismatch between the curve and felt model strength—a big GPT-3.5-to-GPT-4 jump, stagnation until GPT-5.5, then acceleration—whereas his own big jumps were o3 and GPT-5.3-Codex, possibly due to RL on chain-of-thought and sycophancy.
+
+**「Takeaway」** Goedecke&\#x27;s conclusion is that OpenAI&\#x27;s perplexity release is genuinely informative about pre-training progress and post-training lineage, but it is a narrow metric that says little about RL-driven capability or alignment risk, and its value depends on publishing the underlying dataset and unreleased-model numbers.
+
+**Tags**: `#perplexity`, `#LLM pre-training`, `#RL post-training`, `#AI safety transparency`
 
 ---
 
 ## Financial News
 
 <a id="item-finance-news-1"></a>
-### [美股科技股大跌引发亚洲市场稳定措施](https://news.bjd.com.cn/2026/11/22/12039852.shtml) ⭐️ 9.0/10
+### [上海地铁21年来首次调整票价](https://weibo.com/1699432410/5368461393397183) ⭐️ 8.0/10
 
-美国AI科技股周五遭遇大规模抛售，纳斯达克指数单日下跌5.28%，费城半导体指数重挫近11%。随后中国内地、韩国和中国台湾地区相继推出市场稳定措施，包括下调融资保证金比例、限制卖空和放宽回购限制。
+上海轨道交通将于12月1日实施21年来首次票价调整，起乘价3元、起乘间距0-4公里；同步推出四档计次票，11月26日开售，同一支付渠道当月累计满90元后享9折。
 
-telegram · zaihuapd · Nov 22, 13:24
+telegram · zaihuapd · Nov 23, 10:45
 
-**「Background」** The drop extends an earlier AI-driven retreat in US tech shares: the Nasdaq Composite had already lost 5.2% in October, as investors sold semiconductor stocks ahead of earnings, midterm elections and a key jobs report.
+**「Background」** Shanghai&\#x27;s metro fares had gone unchanged for 21 years before this adjustment, so the new 3 yuan starting fare covers the first 0–4 km, with 1 yuan added for each subsequent 4, 4, 4, 7, 7, 10 and 10 km, then every 15 km beyond 50 km.
 
-**「影响」** 这些措施直接改变投资者交易科技股的成本与卖空规则：中国台湾地区自11月23日起全面禁止平盘以下卖空，并将融券保证金比例从130%提高至150%；韩国则从11月24日起实施为期3个月的放宽回购限制。
+**「Who is affected」** Commuters making longer trips face higher fares, because the 3-yuan starting fare now covers 0–4 km instead of 0–6 km; the bundled multi-ride tickets and the 10% discount after 90 yuan in a month are intended to limit the cost increase for frequent riders.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://finance.yahoo.com/markets/live/stock-market-today-monday-november-2-dow-sp-500-nasdaq-091835095.html">Stock market today: S&amp;P 500 and Nasdaq extend tech sell - off , Dow...</a></li>
+<li><a href="https://www.bjnews.com.cn/detail/1795425220129482.html">上 海 调 整 地 铁 票 价 — 新京报</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#US tech selloff`, `#semiconductor stocks`, `#market stabilization policy`, `#short-selling rules`, `#Asian markets`
+**Tags**: `#公共交通定价`, `#上海地铁`, `#票价调整`, `#通勤成本`, `#计次票优惠`
 
 ---
 
 <a id="item-finance-news-2"></a>
-### [蚂蚁集团领投 Simplexity Robotics 1亿美元 pre-A 轮，投后估值16亿美元](https://www.bloomberg.com/news/articles/2026-11-22/ant-group-bets-on-simplexity-to-thrive-in-china-s-humanoid-race) ⭐️ 7.0/10
+### [蚂蚁集团领投中国具身智能公司 1 亿美元，估值 16 亿美元](https://www.bloomberg.com/news/articles/2026-11-22/ant-group-bets-on-simplexity-to-thrive-in-china-s-humanoid-race) ⭐️ 7.0/10
 
-蚂蚁集团领投中国具身智能公司 Simplexity Robotics 的 1 亿美元 pre-A 轮融资，投后估值 16 亿美元。公司董事长兼联合创始人 Wang Kai 向彭博确认此消息，阿里巴巴、腾讯、HongShan 和蓝驰创投跟投。
+Simplexity Robotics, a Hangzhou-based embodied-AI/humanoid-robot startup founded in July 2025, raised a $100 million pre-A round led by Ant Group at a $1.6 billion post-money valuation, with existing investors Alibaba, Tencent, HongShan, and BlueRun Ventures participating.
 
 telegram · zaihuapd · Nov 23, 02:02
 
-**「背景」** Simplexity Robotics 2025 年 7 月成立于杭州，核心团队来自理想汽车；今年 3 月它曾披露成立半年内完成五轮融资、累计 20 亿元人民币，当时投后估值已超 10 亿美元。
+**Tags**: `#venture financing`, `#humanoid robotics`, `#Ant Group`, `#China tech`, `#embodied AI`
 
-**「影响」** 这笔资金将用于与宇树、优必选等更成熟的厂商争夺中国人形机器人市场。
+---
 
-**Tags**: `#embodied AI`, `#humanoid robotics`, `#private funding`, `#Ant Group`, `#China tech`
+<a id="item-finance-news-3"></a>
+### [Bloomberg：英伟达董事会据称未经咨询高管层便恢复黄仁勋CEO职务](https://www.bloomberg.com/news/articles/2026-11-23/nvidia-s-about-face-on-huang-made-without-consulting-leadership) ⭐️ 7.0/10
+
+据Bloomberg报道，英伟达董事会于11月22日周日下午决定让被免职的首席执行官Jensen Huang（黄仁勋）复职，高管层直到最后一刻才获知，且未参与咨询。报道称此举源于美国总统特朗普向董事会成员施压；相关说法均来自匿名知情人士，英伟达未予确认，也未经独立验证。
+
+telegram · zaihuapd · Nov 23, 17:59
+
+**「Background」** Jensen Huang had been removed as Nvidia&\#x27;s CEO less than two weeks before the board reinstated him on Nov. 22, according to Bloomberg, which reported that the reversal followed several meetings and input from the U.S. government.
+
+<details><summary>References</summary>
+<ul>
+<li>Nvidia Rehires Huang in Stunning Reversal After Trump Push - Bloomberg.com</li>
+<li>With the backing of President Donald Trump, Nvidia has reinstated Jensen Huang as CEO, less than two weeks after he was ousted due to scandals surrounding his alleged extramarital</li>
+
+</ul>
+</details>
+
+**Tags**: `#Nvidia`, `#corporate governance`, `#CEO succession`, `#political pressure`, `#semiconductors`
 
 ---
